@@ -1,136 +1,180 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iSEEE: MO(WR)SM</title>
-<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
-<link href="AboutPageAssets/styles/accord.css" rel="stylesheet" type="text/css">
 
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iSEEE: MO(WR)SM</title>
+  <link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+  <link href="AboutPageAssets/styles/accord.css" rel="stylesheet" type="text/css">
+
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+  <script>var __adobewebfontsappname__ = "dreamweaver"</script>
+  <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js"
+    type="text/javascript"></script>
 </head>
 
 <body>
-<!-- Header content -->
-<header>
-  <div class="profileLogo"> 
-    <!-- Profile logo. Add a img tag in place of <span>. -->
-    <p class="logoPlaceholder">
-		<a href="https://ttz-emo.fhws.de/" title="Technologie Transfer Zentrum Elektromobilität" target="_self">
-			<img src="images/TTZLogo.svg" alt="logo" href="https://ttz-emo.fhws.de/">
-		</a>
-	  </p>
-  </div>
-<!-- Identity details -->
-  <section class="profileHeader">
-    <h1> MO(WR)SM: Netzgespeiste Synchronmaschine (mit Erregerwicklung) </h1>
-	<h3><u>M</u>ains-<u>O</u>perated (<u>W</u>ound <u>R</u>otor) <u>S</u>ynchronous <u>M</u>achine </h3>
-    <hr>
-    <p>Wie beim Gleichstrommotor kann auch beim Synchronmotor die Erregung über eine bestromte Wicklung erfolgen.</p>
-	<p>Experimentieren Sie mit dem Drehmoment über den Schieberegler "torque (p.u.)" und der Erregung mit dem Schieberegler "field (p.u.)"! Außerdem kann der Wert für die bezogene Synchronreaktanz <em>x</em> = <em>X</em><sub>S</sub>/(<em>U</em><sub>SN</sub>/<em>I</em><sub>SN</sub>) im Bereich von 1.05...1.5 mit den Pfeiltasten im Ersatzschaltbild verändert werden.</p>
-	<p>Betrachtet wird hier der Betrieb am starren Netz, d.h. die Statorspannung und -frequenz bleiben konstant.</p>
-
-<!-- animation-block -->
-<p align="center">
-<object id="EdgeID" type="text/html" width="870" height="620" data-dw-widget="Edge" data="animation_assets/animateSMGrid/Assets/iSEE04_SMGrid.html">
-</object>
-</p>
-
-<!-- topics to think about -->	  
-
-<div class="row">
-  <div class="col">
-    <div class="tabs">
-      <div class="tab">
-        <input type="radio" id="rd1" name="rd">
-        <label class="tab-label" for="rd1">Ersatzschaltbild</label>
-        <div class="tab-content">
-          Im Ersatzschaltbild sind die Strangspannung <u><em>U</em></u><sub>S</sub> (grün), der Spannungsabfall an der Synchronreaktanz j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> (rot) und die Polradspannung <u><em>U</em></u><sub>P</sub> (blau) mit den gleichen Farben eingepfeilt wie im Spannungszeigerdiagramm. <br>
-			Beobachten Sie die Richtung des Polradspannungszeigers relativ zum Spannungsabfall an der Synchronreaktanz im Vergleich zur Richtung des Rotor-(Erreger-)feldes (blauer Verktor in der Animation) relativ zum Statorfeld (rote Vektoren in der Animation) und starten Sie die Animation!
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" id="rd2" name="rd">
-        <label class="tab-label" for="rd2">Generator- vs. Motorbetrieb</label>
-        <div class="tab-content">
-          Es wird das Verbraucherzählpfeilsystem unterstellt, d.h. ein negatives Drehmoment treibt die Synchronmaschine generatorisch an - die Rotorpole "drücken" die Statorpole vor sich her und der Polradspannungszeiger eilt dem Statorspannungszeiger voraus. <br>
-			Verstellen Sie jetzt das Drehmoment langsam auf +1.0! Der Polradspannungszeiger "wandert" jetzt nach rechts, die Statorpole nähern sich den Rotorpolen.<br>
-			Bei einem positiven Drehmoment wird die Arbeits-/Lastmaschine angetrieben - jetzt "drücken" die Statorpole die Rotorpole vor sich her und der Statorspannungszeiger eilt dem Polradspannungszeiger voraus.
-        </div>
-      </div>
-	  <div class="tab">
-        <input type="radio" id="rd3" name="rd">
-        <label class="tab-label" for="rd3">über- vs. unterregter Betrieb</label>
-        <div class="tab-content">
-          Reduzieren Sie jetzt langsam die Erregung!<br>
-			Solange das Drehmoment nicht verändert wird, bewegt sich die Spitze des Polradspannungszeigers genau senkrecht nach unten und der Strom wird kleiner. Dieses kann an zwei Stellen beobachtet werden: die Länge des Zeigers j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> als auch die Größe der roten Kreise werden kleiner und erreichen ein Minimum, wenn der Zeiger j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> genau in der Waagerechten liegt bzw. senkrecht auf der Statorspannung <u><em>U</em></u><sub>S</sub> steht. Bis zu diesem Punkt ist der Strom <u><em>I</em></u><sub>S</sub> voreilend zur Spannung <u><em>U</em></u><sub>S</sub>: es wird induktive Blindleistung an das Netz abgegeben und man spricht vom übererregten Betrieb.<br>  
-			Beim Stromminimum ist die aufgenommene Scheinleistung eine reine Wirkleistung. Im Generatorbetrieb ist der Leistungsfaktor cos &phi; = -1 und im Motorbetrieb ist cos &phi; = +1.<br> 
-			Wird die Erregung weiter reduziert, steigt der Strom wieder an und ist nacheilend zur Spannung: es wird induktive Blindleistung aus dem Netz aufgenommen und man spricht vom übererregten Betrieb.
-        </div>
-      </div>
-	  <div class="tab">
-        <input type="radio" id="rd4" name="rd">
-        <label class="tab-label" for="rd4">Phasenschieberbetrieb</label>
-        <div class="tab-content">
-          Stellen Sie jetzt das Drehmoment auf Null!<br>
-			Auch wenn Sie jetzt die Erregung verstellen, liegen sowohl alle drei Spannungszeiger als auch die Stator- und Rotorpole jeweils in einer Achse.<br>
-			Im übererregten Betrieb wird das Rotorfeld durch das Statorfeld geschwächt: die Nord- und Südpole des Stators und des Rotors liegen jeweils genau gegenüber und es wird induktive Blindleistung an das Netz abgegeben.<br>
-			Im untererregten Betrieb wird induktive Blindleistung aus dem Netz aufgenommen und das Rotorfeld durch das Statorfeld verstärkt: die Nord- und Südpole des Stators und des Rotors liegen jeweils genau gegenüber und es wird induktive Blindleistung aus dem Netz hierzu aufgenommen.
-        </div>
-      </div>
-      <div class="tab">
-        <input type="radio" id="rdcl" name="rd">
-        <label for="rdcl" class="tab-close">Close it &times;</label>
-      </div>
+  <!-- Header content -->
+  <header>
+    <div class="profileLogo">
+      <!-- Profile logo. Add a img tag in place of <span>. -->
+      <p class="logoPlaceholder">
+        <a href="https://ttz-emo.fhws.de/" title="Technologie Transfer Zentrum Elektromobilität" target="_self">
+          <img src="images/TTZLogo.svg" alt="logo" href="https://ttz-emo.fhws.de/">
+        </a>
+      </p>
     </div>
-  </div>
-</div>
+    <!-- Identity details -->
+    <section class="profileHeader">
+      <h1> MO(WR)SM: Netzgespeiste Synchronmaschine (mit Erregerwicklung) </h1>
+      <h3><u>M</u>ains-<u>O</u>perated (<u>W</u>ound <u>R</u>otor) <u>S</u>ynchronous <u>M</u>achine </h3>
+      <hr>
+      <p>Wie beim Gleichstrommotor kann auch beim Synchronmotor die Erregung über eine bestromte Wicklung erfolgen.</p>
+      <p>Experimentieren Sie mit dem Drehmoment über den Schieberegler "torque (p.u.)" und der Erregung mit dem
+        Schieberegler "field (p.u.)"! Außerdem kann der Wert für die bezogene Synchronreaktanz <em>x</em> =
+        <em>X</em><sub>S</sub>/(<em>U</em><sub>SN</sub>/<em>I</em><sub>SN</sub>) im Bereich von 1.05...1.5 mit den
+        Pfeiltasten im Ersatzschaltbild verändert werden.</p>
+      <p>Betrachtet wird hier der Betrieb am starren Netz, d.h. die Statorspannung und -frequenz bleiben konstant.</p>
 
-<!-- nav-buttons -->
-<hr>
-	<h3 align="center"><a href="index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische Energiewandlung</a> </h3>
-  </section>
-<!-- links to sub-pages in block aside -->
-  <aside class="navBar">
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)" title="Synchronmotor mit Permanentmagneten (PMSM)"> </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="wrsm.html"><img src="images/WRSMLogo.svg" alt="Synchronmaschine mit Rotorwicklung (WRSM)" title="Synchronmaschine mit Rotorwicklung (WRSM)" > </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)" title="Asynchronmaschine mit Kurzschlusswicklung (SCIM)" > </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine mit Schleifringläufer (WRIM)" title="Asynchronmaschine mit Schleifringläufer (WRIM)" > </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)" title="Asynchronmaschine in dq-Darstellung (SCIM/dq)" > </a></div>
-    <div class="navButton"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)" title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)" > </a></div>
-  </aside>
-</header>
+      <!-- animation-block -->
+      <p align="center">
+        <object id="EdgeID" type="text/html" width="870" height="620" data-dw-widget="Edge"
+          data="animation_assets/animateSMGrid/Assets/iSEE04_SMGrid.html">
+        </object>
+      </p>
 
-	
-<footer>
-  <hr>
-  <p class="footerDisclaimer">2022  Copyrights - <span>All Rights Reserved</span></p>
-  <p class="footerDisclaimer"><a href="https://ttz-emo.fhws.de/service/rechtliches/impressum/">Impressum</a></p>
-  <p class="footerNote">Prof. Dr.-Ing. Joachim Kempkes - <span><a href= "mailto:joachim.kempkes@fhws.de?subject=iSEEE-Feedback&body=Subject: ">Email me</a></span></p>
-</footer>
-<script type="text/javascript">
-$(function() {
-	$( "#Accordion1" ).accordion(); 
-});
-</script>
+      <!-- topics to think about -->
+
+      <div class="row">
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="radio" id="rd1" name="rd">
+              <label class="tab-label" for="rd1">Ersatzschaltbild</label>
+              <div class="tab-content">
+                Im Ersatzschaltbild sind die Strangspannung <u><em>U</em></u><sub>S</sub> (grün), der Spannungsabfall an
+                der Synchronreaktanz j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> (rot) und die Polradspannung
+                <u><em>U</em></u><sub>P</sub> (blau) mit den gleichen Farben eingepfeilt wie im Spannungszeigerdiagramm.
+                <br>
+                Beobachten Sie die Richtung des Polradspannungszeigers relativ zum Spannungsabfall an der
+                Synchronreaktanz im Vergleich zur Richtung des Rotor-(Erreger-)feldes (blauer Verktor in der Animation)
+                relativ zum Statorfeld (rote Vektoren in der Animation) und starten Sie die Animation!
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd2" name="rd">
+              <label class="tab-label" for="rd2">Generator- vs. Motorbetrieb</label>
+              <div class="tab-content">
+                Es wird das Verbraucherzählpfeilsystem unterstellt, d.h. ein negatives Drehmoment treibt die
+                Synchronmaschine generatorisch an - die Rotorpole "drücken" die Statorpole vor sich her und der
+                Polradspannungszeiger eilt dem Statorspannungszeiger voraus. <br>
+                Verstellen Sie jetzt das Drehmoment langsam auf +1.0! Der Polradspannungszeiger "wandert" jetzt nach
+                rechts, die Statorpole nähern sich den Rotorpolen.<br>
+                Bei einem positiven Drehmoment wird die Arbeits-/Lastmaschine angetrieben - jetzt "drücken" die
+                Statorpole die Rotorpole vor sich her und der Statorspannungszeiger eilt dem Polradspannungszeiger
+                voraus.
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd3" name="rd">
+              <label class="tab-label" for="rd3">über- vs. unterregter Betrieb</label>
+              <div class="tab-content">
+                Reduzieren Sie jetzt langsam die Erregung!<br>
+                Solange das Drehmoment nicht verändert wird, bewegt sich die Spitze des Polradspannungszeigers genau
+                senkrecht nach unten und der Strom wird kleiner. Dieses kann an zwei Stellen beobachtet werden: die
+                Länge des Zeigers j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> als auch die Größe der roten
+                Kreise werden kleiner und erreichen ein Minimum, wenn der Zeiger j<em>X</em><sub>S</sub>
+                <u><em>I</em></u><sub>S</sub> genau in der Waagerechten liegt bzw. senkrecht auf der Statorspannung
+                <u><em>U</em></u><sub>S</sub> steht. Bis zu diesem Punkt ist der Strom <u><em>I</em></u><sub>S</sub>
+                voreilend zur Spannung <u><em>U</em></u><sub>S</sub>: es wird induktive Blindleistung an das Netz
+                abgegeben und man spricht vom übererregten Betrieb.<br>
+                Beim Stromminimum ist die aufgenommene Scheinleistung eine reine Wirkleistung. Im Generatorbetrieb ist
+                der Leistungsfaktor cos &phi; = -1 und im Motorbetrieb ist cos &phi; = +1.<br>
+                Wird die Erregung weiter reduziert, steigt der Strom wieder an und ist nacheilend zur Spannung: es wird
+                induktive Blindleistung aus dem Netz aufgenommen und man spricht vom übererregten Betrieb.
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd4" name="rd">
+              <label class="tab-label" for="rd4">Phasenschieberbetrieb</label>
+              <div class="tab-content">
+                Stellen Sie jetzt das Drehmoment auf Null!<br>
+                Auch wenn Sie jetzt die Erregung verstellen, liegen sowohl alle drei Spannungszeiger als auch die
+                Stator- und Rotorpole jeweils in einer Achse.<br>
+                Im übererregten Betrieb wird das Rotorfeld durch das Statorfeld geschwächt: die Nord- und Südpole des
+                Stators und des Rotors liegen jeweils genau gegenüber und es wird induktive Blindleistung an das Netz
+                abgegeben.<br>
+                Im untererregten Betrieb wird induktive Blindleistung aus dem Netz aufgenommen und das Rotorfeld durch
+                das Statorfeld verstärkt: die Nord- und Südpole des Stators und des Rotors liegen jeweils genau
+                gegenüber und es wird induktive Blindleistung aus dem Netz hierzu aufgenommen.
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rdcl" name="rd">
+              <label for="rdcl" class="tab-close">Close it &times;</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav-buttons -->
+      <hr>
+      <h3 align="center"><a href="index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische
+          Energiewandlung</a> </h3>
+    </section>
+    <!-- links to sub-pages in block aside -->
+    <aside class="navBar">
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)"
+            title="Synchronmotor mit Permanentmagneten (PMSM)"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="wrsm.html"><img src="images/WRSMLogo.svg" alt="Synchronmaschine mit Rotorwicklung (WRSM)"
+            title="Synchronmaschine mit Rotorwicklung (WRSM)"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"
+            title="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Schleifringläufer (WRIM)"
+            title="Asynchronmaschine mit Schleifringläufer (WRIM)"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)"
+            title="Asynchronmaschine in dq-Darstellung (SCIM/dq)"> </a>
+      </div>
+      <div class="navButton">
+        <!-- Add a Anchor tag with nested img tag here -->
+        <a href="index.html"><img src="images/simple_stator.svg"
+            alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"
+            title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"> </a>
+      </div>
+    </aside>
+  </header>
+
+
+  <script src="footer.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#Accordion1").accordion();
+    });
+  </script>
+
 </body>
+
 </html>
