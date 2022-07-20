@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iSEEE: DC-Motor</title>
+<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<link href="AboutPageAssets/styles/accord.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Header content -->
+<header>
+  <div class="profileLogo"> 
+    <!-- Profile logo. Add a img tag in place of <span>. -->
+    <p class="logoPlaceholder">
+		<a href="https://ttz-emo.fhws.de/" title="Technologie Transfer Zentrum Elektromobilität" target="_self">
+			<img src="images/TTZLogo.svg" alt="logo" href="https://ttz-emo.fhws.de/">
+		</a>
+	  </p>
+  </div>
+<!-- Identity details -->
+  <section class="profileHeader">
+    <h1>
+		DCM: DC-Motor
+	</h1>
+    <hr>
+    <p>Über die Buttons kann die Drehrichtung (⇒ Vorzeichen der Spannung) und die Drehmomentrichtung (⇒ Vorzeichen des Stromes) verändert werden.</p>
+<!-- animation-block -->
+	<p align="center">
+	<object id="EdgeID" type="text/html" width="870" height="620" data-dw-widget="Edge" data="animation_assets/animateGM/Assets/iSEE01_GM.html">
+    </object>
+	</p>
+	<p>Die Gleichstrommaschine läuft als Motor, wenn die induzierte Spannung betragsmäßig <strong>kleiner</strong> als die Ankerspannung ist. Generatorbetrieb liegt hingegen vor, wenn die induzierte Spannung betragsmäßig <strong>größer</strong> als die Ankerspannung ist. Warum eigentlich?</p>
+	<hr>
+<div class="row">
+  <div class="col">
+    <div class="tabs">
+      <div class="tab">
+        <input type="radio" id="rd1" name="rd">
+        <label class="tab-label" for="rd1">Drehrichtung</label>
+        <div class="tab-content">
+			Die Drehzahl ist gemäß der 1. Hauptgleichung (<em>U</em><sub>i</sub> = <em>c</em>&Phi;<sub>f</sub> &Omega;<sub>m</sub>) proportional zur induzierten Spannung. Wird die Drehrichtung geändert, ändert sich demzufolge auch die Richtung der induzierten Spannung. 
+			<br><br>
+			Die kinetische Energie im Antriebsstrang ist proportional zum Quadrat der Drehzahl. Da diese gespeicherte Energie nicht beliebig schnell geändert werden kann, muss die Drehzahl die <strong>Ursache</strong> und die induzierte Spannung die <strong>Wirkung</strong> sein.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd2" name="rd">
+        <label class="tab-label" for="rd2">Drehmomentrichtung</label>
+        <div class="tab-content">
+			Das Drehmoment ist gemäß der 2. Hauptgleichung (<em>M</em><sub>i</sub> = <em>c</em>&Phi;<sub>f</sub> <em>I</em><sub>A</sub>) proportional zum Ankerstrom. Wird die Stromrichtung geändert, ändert sich demzufolge auch die Richtung des Drehmoments. 
+			<br><br>
+			Der Ankerstrom erzeugt (wie jeder Strom) ein magnetisches Feld. Die in diesem magnetischen Feld gespeicherte Feldenergie ist proportional zum Quadrat des Ankerstroms (= 1/2 <em>L</em><sub>A</sub> <em>I</em><sub>A</sub><sup>2</sup>). Da diese gespeicherte Energie nicht beliebig schnell geändert werden kann, muss der Ankerstrom die <strong>Ursache</strong> und das Drehmoment die <strong>Wirkung</strong> sein.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd3" name="rd">
+        <label class="tab-label" for="rd3">Motor vs. Generator</label>
+        <div class="tab-content">
+			Wenn das Drehmoment in der Richtung des Drehmoments wirkt, wird mechanische Leistung abgegeben: die (Gleichstromm-)Maschine wird auf jeden Fall als <strong>Motor</strong> betrieben. Wirkt aber das Drehmoment entgegengesetzt zur Drehrichtung, wird mechanische Leistung aufgenommen. Ist die aufgenommene mechanische Leistung größer als die Verlustleistung in der (Gleichstrom-)Maschine, wird auch elektrische abgegeben: die (Gleichstrom-)Maschine wird als <strong>Generator</strong> betrieben. 
+			<br><br>
+			Ist die aufgenommene mechanische Leistung aber kleiner als die Verlustleistung in der (Gleichstrom-)Maschine, muss auch zusätzliche elektrische Leistung aufgenommenwerden: die (Gleichstrom-)Maschine wird als <strong>Bremse</strong> betrieben. 
+			<br><br>
+			Die Größe und die Richtung des Ankerstroms wird letztendlich durch die Ankerspannung eingestellt. 
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="rd4" name="rd">
+        <label for="rd4" class="tab-close">Close it &times;</label>
+      </div>
+    </div>
+  </div>
+</div>
+	  <hr>
+	<h3 align="center"><a href="index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische Energiewandlung</a> </h3>
+	</section>
+  <aside class="navBar">
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)" title="Synchronmotor mit Permanentmagneten (PMSM)"> </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="wrsm.html"><img src="images/WRSMLogo.svg" alt="Synchronmaschine mit Rotorwicklung (WRSM)" title="Synchronmaschine mit Rotorwicklung (WRSM)" > </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)" title="Asynchronmaschine mit Kurzschlusswicklung (SCIM)" > </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine mit Schleifringläufer (WRIM)" title="Asynchronmaschine mit Schleifringläufer (WRIM)" > </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)" title="Asynchronmaschine in dq-Darstellung (SCIM/dq)" > </a></div>
+    <div class="navButton"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      <a href="index.html"><img src="images/simple_stator.svg"  alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)" title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)" > </a></div>
+  </aside>
+</header>
+
+<footer>
+  <hr>
+  <p class="footerDisclaimer">2022  Copyrights - <span>All Rights Reserved</span></p>
+  <p class="footerNote">Prof. Dr.-Ing. Joachim Kempkes - <span><a href= "mailto:joachim.kempkes@fhws.de?subject=iSEEE-Feedback&body=Subject: ">Email me</a></span></p>
+</footer>
+</body>
+</html>
