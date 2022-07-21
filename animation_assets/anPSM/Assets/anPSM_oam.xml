@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns="http://openajax.org/metadata" spec="1.0" name="animateGM" version="1">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" name="anPSM" version="1">
 
 <description type="text/html"><![CDATA[Widget Exported from Flash Professional]]></description>
 
 <category name="Flash Animation"/>
 <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
-<icon src="PosterImg_607.png" width="850" height="600"/>
-<require type="other" src="iSEE01_GM.html"/>
-<require type="javascript" src="iSEE01_GM.js"/>
+<icon src="PosterImg_124.png" width="850" height="600"/>
+<require type="other" src="iSEE02_PSM.html"/>
+<require type="javascript" src="iSEE02_PSM.js"/>
 <require type="javascript" src="components/sdk/anwidget.js"/>
 <require type="javascript" src="components/ui/src/numericstepper.js"/>
 <require type="other" src="images/_preloader.gif"/>
@@ -23,7 +23,7 @@
 <property name="resizable" defaultValue="true" hidden="true"/>
 <property name="centering" defaultValue="both" hidden="true"/>
 <property name="scaling" defaultValue="both" hidden="true"/>
-<property name="html-page" defaultValue="iSEE01_GM.html" hidden="true"/>
+<property name="html-page" defaultValue="iSEE02_PSM.html" hidden="true"/>
 <property name="target-platform" defaultValue="htmlcanvas" hidden="true"/>
 <property name="created-in" defaultValue="Adobe Animate CC" hidden="true"/>
 </properties>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <config>
-<oamfile src="Assets/animateGM_oam.xml" />
+<oamfile src="Assets/anPSM_oam.xml" />
 </config>

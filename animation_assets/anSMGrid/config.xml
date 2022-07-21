@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <config>
-<oamfile src="Assets/animatePSMxS_oam.xml" />
+<oamfile src="Assets/anSMGrid_oam.xml" />
 </config>

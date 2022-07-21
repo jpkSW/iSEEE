@@ -42,7 +42,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.stYoke = function(mode,startPosition,loop,reversed) {
+(lib.sliderW = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -55,21 +55,19 @@ if (reversed == null) { reversed = false; }
 
 	// Ebene_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("ArEAAQAAiPA4iEQA2h/BihiQDQjPEkAAQEmAADPDPQBiBiA2B/QA4CEAACPQAACQg4CEQg2B/hiBiQjPDPkmAAQiPAAiEg3Qh/g2hihiQhihig2h/Qg4iEAAiQgAAAHFQC8AACFiFQCFiEAAi8QAAi7iFiEQiFiFi8AAQi7AAiECFQiFCEAAC7QAAC8CFCEQCECFC7AAg");
-	this.shape.setTransform(0.0177,-0.0231,3.1746,3.1768);
+	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAoBcQAAALgMAJQgMAIgQAAQgQAAgLgIQgMgJAAgLIAAi3QAAgLAMgJQALgIAQAAQAQAAAMAIQAMAJAAALg");
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#8CCCC1").s().p("AkTKNQh/g2hihiQhihig2h/Qg4iEAAiQQAAiPA4iEQA2h/BihiQDQjPEkAAQEmAADPDPQBiBiA2B/QA4CEAACPQAACQg4CEQg2B/hiBiQjPDPkmAAQiPAAiEg3gAk/k/QiFCEAAC7QAAC8CFCEQCECFC7AAQC8AACFiFQCFiEAAi8QAAi7iFiEQiFiFi8AAQi7AAiECFg");
-	this.shape_1.setTransform(0.0177,-0.0231,3.1746,3.1768);
+	this.shape_1.graphics.rf(["#DBF0FD","#D3CDE2","#CCA6C4","#C681A9","#C06294","#BC4884","#BA377B","#B82B76","#B72674"],[0,0.11,0.239,0.369,0.498,0.627,0.753,0.878,1],0,0,0,0,0,12.4).s().p("AgbBvQgMgIAAgLIAAi3QAAgLAMgJQAMgIAPAAQAQAAANAIQALAJAAALIAAC3QAAALgLAIQgNAJgQAAQgPAAgMgJg");
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.stYoke, rect = new cjs.Rectangle(-226,-226,452,452), [rect]);
+}).prototype = getMCSymbolPrototype(lib.sliderW, rect = new cjs.Rectangle(-5,-13,10,26), [rect]);
 
 
-(lib.PhiStS = function(mode,startPosition,loop,reversed) {
+(lib.sliderV = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -82,635 +80,19 @@ if (reversed == null) { reversed = false; }
 
 	// Ebene_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgTAAIgOAnQgDAEAEAFQACAEAGAAIAxAAQAGAAADgEQADgFgDgFQgIgRgGgVQgHgXgDgTQgBgJgJAAQgCAAgDACQgDADgBAEQgDATgHAXg");
-	this.shape.setTransform(0.0078,-64.8751,3.1743,3.1767);
+	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAoBcQAAAMgMAHQgMAJgQAAQgQAAgLgJQgMgHAAgMIAAi3QAAgMAMgIQALgIAQAAQAQAAAMAIQAMAIAAAMg");
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#EC6A20").s().p("AgYA0QgGAAgCgEQgEgFADgEIAOgnQAHgXADgTQABgEADgDQADgCACAAQAJAAABAJQADATAHAXQAGAVAIARQADAFgDAFQgDAEgGAAg");
-	this.shape_1.setTransform(0.0078,-64.8751,3.1743,3.1767);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgJhbIAACoQAAAEADADQADADADAAQAEAAADgDQADgDAAgEIAAio");
-	this.shape_2.setTransform(0.0515,-27.5524,3.174,3.1765);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#EC6A20").s().p("AgGBWQgDgDAAgEIAAinIATAAIAACnQAAAEgDADQgDADgEAAQgDAAgDgDg");
-	this.shape_3.setTransform(0.0515,-28.3466,3.174,3.1765);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.PhiStS, rect = new cjs.Rectangle(-12.2,-82.4,24.4,83.5), [rect]);
-
-
-(lib.PhiStN = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgTAAQgHAVgFANIgCAFQgDAEAEAFQACAEAGAAIAxAAQAGAAADgEQADgFgDgFQgIgRgGgVQgHgXgDgTQgBgJgJAAQgCAAgDACQgDADgBAEQgDATgHAXg");
-	this.shape.setTransform(0.0078,16.5714,3.1743,3.1767);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#EC6A20").s().p("AgYA0QgGAAgCgEQgEgFADgEIACgFIAMgiQAHgXADgTQABgEADgDQADgCACAAQAJAAABAJQADATAHAXQAGAVAIARQADAFgDAFQgDAEgGAAg");
-	this.shape_1.setTransform(0.0078,16.5714,3.1743,3.1767);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgJhWIAACeQAAAEADADQADADADAAQAEAAADgDQADgDAAgEIAAie");
-	this.shape_2.setTransform(0.0515,52.3625,3.174,3.1765);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#EC6A20").s().p("AgGBRQgDgCAAgFIAAidIATAAIAACdQAAAFgDACQgDADgEABQgDgBgDgDg");
-	this.shape_3.setTransform(0.0515,51.5684,3.174,3.1765);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.PhiStN, rect = new cjs.Rectangle(-12.2,-1,24.4,80.5), [rect]);
-
-
-(lib.iSp = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAoAoIhPhP");
-	this.shape.setTransform(-0.0736,-0.0134,3.1743,3.1767);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAognIhPBP");
-	this.shape_1.setTransform(-0.0736,-0.0134,3.1743,3.1767);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("Ag4AAQAAgWARgRQAQgQAXAAQAXAAARAQQARARAAAWQAAAYgRAQQgRARgXAAQgXAAgQgRQgRgQAAgYg");
-	this.shape_2.setTransform(0.0058,-0.0134,3.1743,3.1767);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#EC6A20").s().p("AgnAoQgRgQAAgYQAAgWARgRQAQgQAXAAQAXAAARAQQARARAAAWQAAAYgRAQQgRAQgXAAQgXAAgQgQg");
-	this.shape_3.setTransform(0.0058,-0.0134,3.1743,3.1767);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.iSp, rect = new cjs.Rectangle(-19,-18.9,38,37.9), [rect]);
-
-
-(lib.iSm = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AgNAAQAAgFAEgEQAEgEAFAAQAGAAAEAEQAEAEAAAFQAAAGgEAEQgEAEgGAAQgFAAgEgEQgEgEAAgGg");
-	this.shape.setTransform(-0.0908,-0.0134,3.1743,3.1767);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#2B2B2A").s().p("AgJAKQgEgEAAgGQAAgFAEgEQAEgEAFAAQAGAAAEAEQAEAEAAAFQAAAGgEAEQgEAEgGAAQgFAAgEgEg");
-	this.shape_1.setTransform(-0.0908,-0.0134,3.1743,3.1767);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("Ag4AAQAAgWARgRQAQgQAXAAQAXAAARAQQARARAAAWQAAAYgRAQQgRARgXAAQgXAAgQgRQgRgQAAgYg");
-	this.shape_2.setTransform(-0.0469,-0.0274,3.174,3.1765);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#EC6A20").s().p("AgnAoQgRgQAAgYQAAgWARgRQAQgQAXAAQAXAAARAQQARARAAAWQAAAYgRAQQgRAQgXAAQgXAAgQgQg");
-	this.shape_3.setTransform(-0.0469,-0.0274,3.174,3.1765);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.iSm, rect = new cjs.Rectangle(-19,-18.9,38,37.8), [rect]);
-
-
-(lib.roShaftPoles = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AA5hzIAAgnIhxAAIAAAnQgmARgXAiQgYAkAAAqQAAA7AqApQApApA6AAQA7AAApgpQAqgpAAg7QAAgqgYgkQgXgigmgRg");
-	this.shape.setTransform(-1.0946,-4.5168,3.1758,3.1783);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#DBDBDA").s().p("AhjByQgqgpAAg7QAAgqAYgkQAXgiAmgRIAAgoIBxAAIAAAoQAmARAXAiQAYAkAAAqQAAA7gqApQgpAqg7AAQg6AAgpgqg");
-	this.shape_1.setTransform(-1.0946,-4.5168,3.1758,3.1783);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("ADjD/IAAn9IBxAAQg7hPhYgtQhaguhnAAQhmAAhaAuQhYAtg7BPIBxAAIAAH9IhxAAQA7BPBYAtQBaAuBmAAQBnAABaguQBYgtA7hPg");
-	this.shape_2.setTransform(0.0169,0.0123,3.1758,3.1783);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#8CCCC1").s().p("AjAF7QhYgtg7hPIBxAAIAAn9IhxAAQA7hPBYgtQBaguBmAAQBnAABaAuQBYAtA7BPIhxAAIAAH9IBxAAQg7BPhYAtQhaAuhnAAQhmAAhagug");
-	this.shape_3.setTransform(0.0169,0.0123,3.1758,3.1783);
-
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AFUD/QAkgwAMhHQAJgvAAhZQAAhYgJgwQgMhGgkgwIqnAAQgkAwgNBGQgIAvAABZQAABZAIAvQANBHAkAwg");
-	this.shape_4.setTransform(0.0169,0.0123,3.1758,3.1783);
-
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#D2E5E1").s().p("AlTD/QgkgwgNhHQgIgvAAhZQAAhZAIgvQANhGAkgwIKnAAQAkAwAMBGQAJAwAABYQAABZgJAvQgMBHgkAwg");
-	this.shape_5.setTransform(0.0169,0.0123,3.1758,3.1783);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.roShaftPoles, rect = new cjs.Rectangle(-127,-136,254,272), [rect]);
-
-
-(lib.PhiRo = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgTAAQgHAVgFANIgCAFQgDAEAEAFQACAEAGAAIAxAAQAGAAADgEQADgFgDgFQgIgRgGgVQgHgXgDgTQgBgJgJAAQgCAAgDACQgDADgBAEQgDATgHAXg");
-	this.shape.setTransform(-0.0128,-121.3799,3.174,3.1765);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#00ADE7").s().p("AgYA0QgGAAgCgEQgEgFADgEIACgFIAMgiQAHgXADgTQABgEADgDQADgCACAAQAJAAABAJQADATAHAXQAGAVAIARQADAFgDAFQgDAEgGAAg");
-	this.shape_1.setTransform(-0.0128,-121.3799,3.174,3.1765);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.2,0,0,4).p("AgJmNIAAMMQAAAEADADQADADADAAQAEAAADgDQADgDAAgEIAAsM");
-	this.shape_2.setTransform(0.0104,13.118,3.1734,3.1762);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#00ADE7").s().p("AgGGIQgDgDAAgEIAAsLIATAAIAAMLQAAAEgDADQgDADgEAAQgDAAgDgDg");
-	this.shape_3.setTransform(0.0104,12.324,3.1734,3.1762);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.PhiRo, rect = new cjs.Rectangle(-12.2,-139,24.5,277.9), [rect]);
-
-
-(lib.ifp = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAoAoIhPhP");
-	this.shape.setTransform(-0.1225,0.0611,3.1743,3.1781);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAognIhPBP");
-	this.shape_1.setTransform(-0.1225,0.0611,3.1743,3.1781);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("Ag4AAQAAgWARgRQARgRAWAAQAXAAARARQARARAAAWQAAAXgRARQgRARgXAAQgXAAgQgRQgRgRAAgXg");
-	this.shape_2.setTransform(-0.0432,-0.0184,3.1743,3.1781);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#00ADE7").s().p("AgnAoQgRgRAAgXQAAgWARgRQARgQAWgBQAXABARAQQARAQAAAXQAAAXgRARQgRAQgXABQgXgBgQgQg");
-	this.shape_3.setTransform(-0.0432,-0.0184,3.1743,3.1781);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.ifp, rect = new cjs.Rectangle(-19,-18.9,38,37.9), [rect]);
-
-
-(lib.ifm = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AgLgGQADgFAFgCQAFgBAFADQAFADACAFQABAFgDAFQgDAFgFACQgFABgFgDQgFgDgCgFQgBgFADgFg");
-	this.shape.setTransform(0.0003,0.0611,3.1743,3.1781);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#2B2B2A").s().p("AgGAMQgFgDgCgFQgBgFADgFQADgFAFgCQAFgBAFADQAFADACAFQABAFgDAFQgDAFgFACIgEAAQgDAAgDgCg");
-	this.shape_1.setTransform(0.0003,0.0611,3.1743,3.1781);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AgwgbQAMgUAWgHQAWgFAUALQAVAMAGAWQAGAWgMAUQgMAUgWAHQgWAFgUgLQgVgLgGgXQgGgWAMgUg");
-	this.shape_2.setTransform(-0.0193,-0.0307,3.174,3.1779);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#00ADE7").s().p("AgbAxQgVgLgGgXQgGgWAMgUQAMgUAWgGQAWgHAUAMQAVAMAGAWQAGAWgMAVQgMATgWAHQgIACgHAAQgOAAgNgIg");
-	this.shape_3.setTransform(-0.0193,-0.0307,3.174,3.1779);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.ifm, rect = new cjs.Rectangle(-19,-19,38.1,38), [rect]);
-
-
-(lib.VecXSIS = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#EC6A20").ss(2,1,1).p("AgUAEQgIAZgVA3IBjAAQgOgegPgyQgRgzgEgkQgDAkgRAzg");
-	this.shape.setTransform(-0.0649,-111.0977,1.0599,1.0581);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#EC6A20").s().p("AgxBUQAWg3AIgZQAPgzAEgkQAEAkAQAzQAQAzAOAdg");
-	this.shape_1.setTransform(-0.0649,-111.0977,1.0599,1.0581);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#EC6A20").ss(2.1,1,1).p("AAAI3IAAxt");
-	this.shape_2.setTransform(-0.0814,-60.0695,1.0598,1.058);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.VecXSIS, rect = new cjs.Rectangle(-6.3,-121.1,12.6,122.1), [rect]);
-
-
-(lib.VecUS = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#25A740").ss(2,1,1).p("AgUAEQgIAagVA2IBkAAQgQgggOgwQgRg2gEghQgFAngPAwg");
-	this.shape.setTransform(-0.0334,-111.0724,0.99,1.0594);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#25A740").s().p("AgxBUQAVg2AIgbQAPgvAFgoQAEAiARA1QAOAxAPAgg");
-	this.shape_1.setTransform(-0.0334,-111.0724,0.99,1.0594);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#25A740").ss(2.1,1,1).p("AAAI2IAAxr");
-	this.shape_2.setTransform(-0.0334,-60.0357,0.99,1.0594);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.VecUS, rect = new cjs.Rectangle(-6,-121,12,122.1), [rect]);
-
-
-(lib.VecUP = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#00ADE7").ss(2,1,1).p("AgUAEQgIAagVA2IBjAAQgOgegPgyQgQgzgFgkQgFAngPAwg");
-	this.shape.setTransform(-0.0399,-111.1004,0.9949,1.0593);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#00ADE7").s().p("AgxBUQAVg2AIgbQAPgvAFgoQAFAlAQAyQAPAzAOAeg");
-	this.shape_1.setTransform(-0.0399,-111.1004,0.9949,1.0593);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#00ADE7").ss(2.1,1,1).p("AAAI2IAAxr");
-	this.shape_2.setTransform(-0.0341,-60.0899,0.9949,1.0593);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.VecUP, rect = new cjs.Rectangle(-6,-121.1,12,122.1), [rect]);
-
-
-(lib.ESB = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#EC6A20").ss(0.5,1,1).p("AgXAAIAvAA");
-	this.shape.setTransform(-86.8772,-58.9017,1.8241,1.8285);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#EC6A20").s().p("AgEAtIgJgDIgIgCIgCABIgBAEIgDAAIAAgdIADAAQABAJADAFQADAEAGADQAFADAGAAQAIAAAFgEQAEgEAAgGQAAgDgBgDQgCgEgEgCIgMgJIgQgIQgFgEgCgFQgDgEAAgGQAAgJAIgHQAHgGALAAQAGAAAHADIAFACIADgBIACgEIACAAIAAAeIgCAAQgBgJgDgFQgDgFgGgDQgFgDgFAAQgHAAgEAEQgEAEAAAFQAAAEACADQAEAFAOAIIARAJQAEAEACAEQADAFAAAFQAAAKgIAHQgHAHgMAAIgGAAg");
-	this.shape_1.setTransform(-77.775,-64.075);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#EC6A20").s().p("AgrBDIABgEIALgCQAEgBACgDQADgEAEgMIAWhQQADgKAAgFIgBgEIgEgDIgJgBIABgEIAzAAIgCAEQgGAAgDACQgEABgCAEQgDAEgEAMIgVBQIgEANQAAABAAABQAAAAAAABQABAAAAABQAAAAAAABQACABACABIAKACIgBAEg");
-	this.shape_2.setTransform(-84.3,-68.05);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f().s("#EC6A20").ss(0.5,1,1).p("AgXAAIAvAA");
-	this.shape_3.setTransform(8.7967,-74.5356,1.8241,1.8285);
-
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#EC6A20").s().p("AgEAtIgJgDIgIgCIgCABIgBAEIgDAAIAAgdIADAAQABAJADAFQADAEAGADQAFADAGAAQAIAAAFgEQAEgEAAgGQAAgDgBgDQgCgEgEgCIgMgJIgQgIQgFgEgCgFQgDgEAAgGQAAgJAIgHQAHgGALAAQAGAAAHADIAFACIADgBIACgEIACAAIAAAeIgCAAQgBgJgDgFQgDgFgGgDQgFgDgFAAQgHAAgEAEQgEAEAAAFQAAAEACADQAEAFAOAIIARAJQAEAEACAEQADAFAAAFQAAAKgIAHQgHAHgMAAIgGAAg");
-	this.shape_4.setTransform(16.525,-79.975);
-
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#EC6A20").s().p("AgrBCIABgDIALgBQAFgCACgDQADgFADgMIAWhPQADgKAAgFIgBgFIgEgCIgJgBIABgEIAzAAIgCAEQgGAAgDACQgEACgCADQgDADgEANIgWBPIgDAPQAAAAAAABQAAAAAAABQABAAAAABQAAAAAAAAQABACADACIALABIgBADg");
-	this.shape_5.setTransform(10,-83.95);
-
-	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#EC6A20").s().p("AgEAtIgJgDIgIgCIgCABIgBAEIgDAAIAAgdIADAAQABAJADAFQADAEAGADQAFADAGAAQAIAAAFgEQAEgEAAgGQAAgDgBgDQgCgEgEgCIgMgJIgQgIQgFgEgCgFQgDgEAAgGQAAgJAIgHQAHgGALAAQAGAAAHADIAFACIADgBIACgEIACAAIAAAeIgCAAQgBgJgDgFQgDgFgGgDQgFgDgFAAQgHAAgEAEQgEAEAAAFQAAAEACADQAEAFAOAIIARAJQAEAEACAEQADAFAAAFQAAAKgIAHQgHAHgMAAIgGAAg");
-	this.shape_6.setTransform(-0.925,-79.975);
-
-	this.shape_7 = new cjs.Shape();
-	this.shape_7.graphics.f("#EC6A20").s().p("AgHBCIABgDQAIgBADgCQADgCAAgDIgDgNIgIghIgfAfIgLANIgBADQAAADADACIAIACIAAADIgtAAIABgDQAJgBAFgDQAIgFANgOIAmgmIgKglQgEgSgEgFQgEgEgIAAIABgEIAuAAIgBAEQgHAAgCABQgBAAAAAAQAAABAAAAQgBAAAAABQAAAAAAAAQgBABAAAAQAAABgBAAQAAABAAAAQAAABAAAAIADALIAIAhIAUgVQAMgMAFgHIACgGQAAAAAAAAQAAgBgBAAQAAgBAAAAQgBgBAAAAQgCgCgIAAIABgEIAtAAIgBAEQgJACgHAEQgIAEgMANIgiAjIAJAjIAGAQIAEAJQADADADACQADABAIABIgBADg");
-	this.shape_7.setTransform(-10.05,-83.95);
-
-	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.f("#EC6A20").s().p("AgWBYQgEgDAAgDQAAgEACgCQADgDADAAIAFACIAHAFQAEAEACAAIAFgCQACgCABgEQACgEAAgPIAAg/QAAgOgBgFIgDgEIgEgBIgFABIgCgDIAagLIAFAAIAABZQAAAXgKALQgKAMgPAAQgJAAgEgEgAAKhJQgDgDAAgEQAAgFADgDQADgDAEAAQAEAAADADQADADAAAFQAAAEgDADQgDADgEAAQgEAAgDgDg");
-	this.shape_8.setTransform(-22.375,-82.125);
-
-	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.f().s("#00ADE7").ss(0.5,1,1).p("AgcAAIA5AA");
-	this.shape_9.setTransform(127.8881,24.5817,1.8241,1.8285);
-
-	this.shape_10 = new cjs.Shape();
-	this.shape_10.graphics.f().s("#25A740").ss(0.5,1,1).p("AgbAAIA3AA");
-	this.shape_10.setTransform(-136.2958,23.1989,1.8241,1.8285);
-
-	this.shape_11 = new cjs.Shape();
-	this.shape_11.graphics.f().s("#EC6A20").ss(1,1,1).p("AgBgJQgCgBgngOIAAAxQAPgHAagIQAYgHAUgDQgOgBgegIg");
-	this.shape_11.setTransform(-81.004,-51.0417,1.8243,1.8286);
-
-	this.shape_12 = new cjs.Shape();
-	this.shape_12.graphics.f("#EC6A20").s().p("AgpgYIAoAPQAeAIANABQgTADgYAHQgaAIgOAHg");
-	this.shape_12.setTransform(-81.004,-51.0417,1.8243,1.8286);
-
-	this.shape_13 = new cjs.Shape();
-	this.shape_13.graphics.f().s("#00ADE7").ss(1,1,1).p("AAKgBQACgHANghIgxAAQAGALAJAdQAHAYACATQACgNAIgeg");
-	this.shape_13.setTransform(116.3334,70.4545,1.824,1.8284);
-
-	this.shape_14 = new cjs.Shape();
-	this.shape_14.graphics.f("#00ADE7").s().p("AgJgBQgJgdgGgLIAxAAIgPAoQgIAegCANQgCgTgHgYg");
-	this.shape_14.setTransform(116.3334,70.4545,1.824,1.8284);
-
-	this.shape_15 = new cjs.Shape();
-	this.shape_15.graphics.f().s("#00ADE7").ss(1,1,1).p("AAAkVIAAIr");
-	this.shape_15.setTransform(116.3445,14.9383,1.8239,1.8283);
-
-	this.shape_16 = new cjs.Shape();
-	this.shape_16.graphics.f().s("#25A740").ss(1,1,1).p("AAKgBQAEgNALgbIgxAAQAHAQAHAYQAIAYACATQADgTAHgYg");
-	this.shape_16.setTransform(-116.1778,70.4545,1.824,1.8284);
-
-	this.shape_17 = new cjs.Shape();
-	this.shape_17.graphics.f("#25A740").s().p("AgKgBQgHgYgHgQIAxAAIgOAoQgIAYgDATQgCgTgIgYg");
-	this.shape_17.setTransform(-116.1778,70.4545,1.824,1.8284);
-
-	this.shape_18 = new cjs.Shape();
-	this.shape_18.graphics.f().s("#25A740").ss(1,1,1).p("AAAkVIAAIr");
-	this.shape_18.setTransform(-116.1986,14.9383,1.8239,1.8283);
-
-	this.shape_19 = new cjs.Shape();
-	this.shape_19.graphics.f().s("#EC6A20").ss(1,1,1).p("AgBgJQgOgFgbgKIAAAxQAYgJARgFQAZgIATgDQgTgBgZgIg");
-	this.shape_19.setTransform(44.5144,-67.2251,1.824,1.8284);
-
-	this.shape_20 = new cjs.Shape();
-	this.shape_20.graphics.f("#EC6A20").s().p("AgpgYQAaAKAOAFQAZAIASABQgSADgZAIIgoAOg");
-	this.shape_20.setTransform(44.5144,-67.2251,1.824,1.8284);
-
-	this.shape_21 = new cjs.Shape();
-	this.shape_21.graphics.f().s("#EC6A20").ss(1,1,1).p("AjuAAIHeAA");
-	this.shape_21.setTransform(-3.8484,-67.2428,1.8239,1.8283);
-
-	this.shape_22 = new cjs.Shape();
-	this.shape_22.graphics.f().s("#2B2B2A").ss(1,1,2).p("ACqA5IAAhxIlTAAIAABxg");
-	this.shape_22.setTransform(-6.0268,-51.0417,1.8243,1.8286);
-
-	this.shape_23 = new cjs.Shape();
-	this.shape_23.graphics.f("#2B2B2A").s().p("AipA5IAAhxIFTAAIAABxg");
-	this.shape_23.setTransform(-6.0268,-51.0417,1.8243,1.8286);
-
-	this.shape_24 = new cjs.Shape();
-	this.shape_24.graphics.f("#2B2B2A").s().p("AgEAtIgJgDIgIgCIgCABIgBAEIgDAAIAAgdIADAAQABAJADAFQADAEAGADQAFADAGAAQAIAAAFgEQAEgEAAgGQAAgDgBgDQgCgEgEgCIgMgJIgQgIQgFgEgCgFQgDgEAAgGQAAgJAIgHQAHgGALAAQAGAAAHADIAFACIADgBIACgEIACAAIAAAeIgCAAQgBgJgDgFQgDgFgGgDQgFgDgFAAQgHAAgEAEQgEAEAAAFQAAAEACADQAEAFAOAIIARAJQAEAEACAEQADAFAAAFQAAAKgIAHQgHAHgMAAIgGAAg");
-	this.shape_24.setTransform(5.625,-23.275);
-
-	this.shape_25 = new cjs.Shape();
-	this.shape_25.graphics.f("#2B2B2A").s().p("AgHBCIABgDQAIgBAEgCQACgCAAgDIgCgNIgJghIgfAfIgLANIgBADQAAADADACIAIACIgBADIgsAAIABgDQAIgBAGgDQAIgFANgOIAmgmIgKglQgFgSgDgFQgEgEgIAAIAAgEIAvAAIgCAEQgGAAgCABQgBAAAAAAQAAABAAAAQgBAAAAABQAAAAAAAAQgBABAAAAQAAABgBAAQAAABAAAAQAAABAAAAIADALIAIAhIAUgVQAMgMAFgHIACgGQAAAAAAAAQAAgBAAAAQgBgBAAAAQAAgBgBAAQgDgCgHAAIABgEIAtAAIgBAEQgJACgIAEQgGAEgNANIgjAjIAKAjIAGAQIAEAJQACADAEACQAEABAHABIgBADg");
-	this.shape_25.setTransform(-3.55,-27.25);
-
-	this.shape_26 = new cjs.Shape();
-	this.shape_26.graphics.f("#2B2B2A").s().p("AgWBYQgEgDAAgDQAAgEACgCQADgDADAAIAFACIAHAFQAEAEACAAIAFgCQACgCABgEQACgEAAgPIAAg/QAAgOgBgFIgDgEIgEgBIgFABIgCgDIAagLIAFAAIAABZQAAAXgKALQgKAMgPAAQgJAAgEgEgAAKhJQgDgDAAgEQAAgFADgDQADgDAEAAQAEAAADADQADADAAAFQAAAEgDADQgDADgEAAQgEAAgDgDg");
-	this.shape_26.setTransform(-15.875,-25.425);
-
-	this.shape_27 = new cjs.Shape();
-	this.shape_27.graphics.f().s("#2B2B2A").ss(1,1,2).p("AAAAcQAMAAAIgIQAIgJAAgLQAAgLgIgIQgIgJgMAAQgLAAgIAJQgIAIAAALQAAALAIAJQAIAIALAAg");
-	this.shape_27.setTransform(-116.0299,-51.636,1.8243,1.8286);
-
-	this.shape_28 = new cjs.Shape();
-	this.shape_28.graphics.f("#FFFFFF").s().p("AgTAUQgIgJAAgLQAAgKAIgJQAJgIAKAAQALAAAJAIQAIAJAAAKQAAALgIAJQgJAIgLAAQgKAAgJgIg");
-	this.shape_28.setTransform(-116.0299,-51.636,1.8243,1.8286);
-
-	this.shape_29 = new cjs.Shape();
-	this.shape_29.graphics.f("#25A740").s().p("AgEAtIgJgDIgIgCIgCABIgBAEIgDAAIAAgdIADAAQABAJADAFQADAEAGADQAFADAGAAQAIAAAFgEQAEgEAAgGQAAgDgBgDQgCgEgEgCIgMgJIgQgIQgFgEgCgFQgDgEAAgGQAAgJAIgHQAHgGALAAQAGAAAHADIAFACIADgBIACgEIACAAIAAAeIgCAAQgBgJgDgFQgDgFgGgDQgFgDgFAAQgHAAgEAEQgEAEAAAFQAAAEACADQAEAFAOAIIARAJQAEAEACAEQADAFAAAFQAAAKgIAHQgHAHgMAAIgGAAg");
-	this.shape_29.setTransform(-124.425,18.275);
-
-	this.shape_30 = new cjs.Shape();
-	this.shape_30.graphics.f("#25A740").s().p("Ag6A5QgMgLAAgQIABgMIAEgPIANgsQACgKABgEQgBgEgCgCQgDgCgLAAIABgEIA4AAIgBAEQgJgBgDACQgEACgDADQgDAEgCAJIgOAuIgEARIgCAMQABAMAIAIQAJAIAPAAQAKAAAHgEQAHgDAFgHQAGgGAFgMIAHgWIAMgoQAFgPgBgFQAAgEgCgCQgEgCgIAAIABgEIAqAAIgCAEQgGgBgEACQgDACgDADQgCADgDALIgPAxQgGAXgGAMQgHALgLAJQgLAHgRAAQgVAAgMgLg");
-	this.shape_30.setTransform(-132.75,14.45);
-
-	this.shape_31 = new cjs.Shape();
-	this.shape_31.graphics.f("#00ADE7").s().p("AggArIAAgCIADAAQAGAAACgEQABgCAAgHIAAg3QAAgIgBgCQgDgDgFAAIgDAAIAAgCIAgAAQALAAAGACQAHACAEAGQAFAGAAAIQAAAKgHAHQgHAGgNAAIgGgBIgIgBIAAAZQAAAIADACQACADAEAAIADAAIAAACgAgIgkIAAAkIAHAAIADAAQAHAAAFgEQAEgFAAgIQAAgGgCgFQgCgEgFgDQgEgCgFAAIgIABg");
-	this.shape_31.setTransform(139.3,19.475);
-
-	this.shape_32 = new cjs.Shape();
-	this.shape_32.graphics.f("#00ADE7").s().p("Ag6A5QgMgMAAgOIABgNIAEgOIANgtQADgJgBgGQABgDgDgCQgDgCgLgBIABgDIA4AAIgBADQgJABgEABQgDABgDAEQgCAEgDAJIgOAvIgEAQIgBAMQAAAMAJAIQAIAIAPAAQAKAAAHgDQAHgEAGgHQAFgGAFgMIAIgWIALgpQAFgPgBgEQAAgEgDgBQgDgDgIgBIABgDIAqAAIgCADQgGABgEABQgDABgCAEQgDAEgDALIgPAvQgHAZgGALQgGAMgMAHQgLAIgQAAQgVAAgMgLg");
-	this.shape_32.setTransform(131.15,15.65);
-
-	this.shape_33 = new cjs.Shape();
-	this.shape_33.graphics.f().s("#2B2B2A").ss(1,1,2).p("AAAAcQAMAAAIgIQAIgIAAgMQAAgLgIgIQgIgIgMAAQgLAAgIAIQgIAIAAALQAAAMAIAIQAIAIALAAg");
-	this.shape_33.setTransform(-117.0789,93.8759,1.8243,1.8286);
-
-	this.shape_34 = new cjs.Shape();
-	this.shape_34.graphics.f("#FFFFFF").s().p("AgTAUQgIgIAAgMQAAgLAIgIQAIgIALAAQAMAAAIAIQAIAIAAALQAAAMgIAIQgIAIgMAAQgLAAgIgIg");
-	this.shape_34.setTransform(-117.0789,93.8759,1.8243,1.8286);
-
-	this.shape_35 = new cjs.Shape();
-	this.shape_35.graphics.f().s("#2B2B2A").ss(1,1,2).p("AodmLIQ7AAIAAMXIw7AA");
-	this.shape_35.setTransform(-18.1125,21.3714,1.8243,1.8286);
-
-	this.shape_36 = new cjs.Shape();
-	this.shape_36.graphics.f().s("#2B2B2A").ss(1,1,2).p("ACOAAQAAA7gqApQgpAqg7AAQg6AAgpgqQgqgpAAg7QAAg6AqgpQApgqA6AAQA7AAApAqQAqApAAA6g");
-	this.shape_36.setTransform(80.8538,20.9142,1.8243,1.8286);
-
-	this.shape_37 = new cjs.Shape();
-	this.shape_37.graphics.f("#FFFFFF").s().p("AhjBkQgqgpAAg7QAAg6AqgpQApgqA6AAQA7AAApAqQAqApAAA6QAAA7gqApQgpAqg7AAQg6AAgpgqg");
-	this.shape_37.setTransform(80.8538,20.9142,1.8243,1.8286);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_37},{t:this.shape_36},{t:this.shape_35},{t:this.shape_34},{t:this.shape_33},{t:this.shape_32},{t:this.shape_31},{t:this.shape_30},{t:this.shape_29},{t:this.shape_28},{t:this.shape_27},{t:this.shape_26},{t:this.shape_25},{t:this.shape_24},{t:this.shape_23},{t:this.shape_22},{t:this.shape_21},{t:this.shape_20},{t:this.shape_19},{t:this.shape_18},{t:this.shape_17},{t:this.shape_16},{t:this.shape_15},{t:this.shape_14},{t:this.shape_13},{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.ESB, rect = new cjs.Rectangle(-146,-99,292,199.1), [rect]);
-
-
-(lib.SliderBarP = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#737372").s().p("Av8AcIAAg3If4AAIAAA3g");
-	this.shape.setTransform(0.0217,-0.0169,0.9535,0.881);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AQZAcQAAAMgIAIQgJAJgLAAI/4AAQgMAAgIgJQgJgIAAgMIAAg3QAAgMAJgIQAIgJAMAAIf4AAQALAAAJAJQAIAIAAAMg");
-	this.shape_1.setTransform(-0.0021,-0.0169,0.9535,0.881);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.lf(["#92D4F6","#8ED3F6","#81CEF4","#67C5F1","#36BAED","#00ADE7"],[0,0.235,0.443,0.643,0.831,1],-104.8,0,104.9,0).s().p("Av7A5QgMAAgIgJQgJgIAAgMIAAg3QAAgMAJgIQAIgJAMAAIf4AAQALAAAJAJQAIAIAAAMIAAA3QAAAMgIAIQgJAJgLAAg");
-	this.shape_2.setTransform(-0.0021,-0.0169,0.9535,0.881);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.SliderBarP, rect = new cjs.Rectangle(-101,-6,202,12), [rect]);
-
-
-(lib.SliderBar = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#737372").s().p("Av8AcIAAg3If5AAIAAA3g");
-	this.shape.setTransform(0.0134,0.0061,0.9535,0.8833);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AQZAcQAAAMgIAIQgJAJgLAAI/4AAQgMAAgIgJQgJgIAAgMIAAg3QAAgMAJgIQAIgJAMAAIf4AAQALAAAJAJQAIAIAAAMg");
-	this.shape_1.setTransform(-0.0104,0.0061,0.9535,0.8833);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.rf(["#92D4F6","#76CAF3","#00B1E9","#00ADE7"],[0,0.298,0.91,1],0,0,0,0,0,74.3).s().p("Av7A5QgMAAgIgJQgJgIAAgMIAAg3QAAgMAJgIQAIgJAMAAIf4AAQALAAAJAJQAIAIAAAMIAAA3QAAAMgIAIQgJAJgLAAg");
-	this.shape_2.setTransform(-0.0104,0.0061,0.9535,0.8833);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.SliderBar, rect = new cjs.Rectangle(-101,-6,202,12), [rect]);
-
-
-(lib.Slider = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AArBjQAAAOgNAKQgMAJgSAAQgRAAgMgJQgNgKAAgOIAAjFQAAgOANgKQAMgJARAAQASAAAMAJQANAKAAAOg");
-	this.shape.setTransform(0.0052,-0.0043,0.9417,0.9073);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.rf(["#DBF0FD","#B1DDF8","#83CCF3","#52BEEE","#08B4EA","#00AFE8","#00ADE7"],[0,0.169,0.353,0.529,0.702,0.863,1],0,0,0,0,0,12.4).s().p("AgdB7QgNgKAAgOIAAjFQAAgOANgKQANgJAQAAQASAAAMAJQANAKAAAOIAADFQAAAOgNAKQgMAJgSAAQgQAAgNgJg");
-	this.shape_1.setTransform(0.0052,-0.0043,0.9417,0.9073);
+	this.shape_1.graphics.rf(["#DBF0FD","#C3E2D9","#A6D3AF","#8CC58A","#73BA6C","#5DB356","#4BAE49","#3FAB42","#3BAA40"],[0,0.106,0.235,0.369,0.498,0.627,0.753,0.878,1],0,0,0,0,0,12.4).s().p("AgbBwQgMgJAAgLIAAi3QAAgMAMgIQAMgIAPAAQAQAAANAIQALAIAAAMIAAC3QAAALgLAJQgNAIgQAAQgPAAgMgIg");
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Slider, rect = new cjs.Rectangle(-5,-13,10,26), [rect]);
+}).prototype = getMCSymbolPrototype(lib.sliderV, rect = new cjs.Rectangle(-5,-13,10,26), [rect]);
 
 
-(lib.FrameUp = function(mode,startPosition,loop,reversed) {
+(lib.sliderU = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -723,14 +105,199 @@ if (reversed == null) { reversed = false; }
 
 	// Ebene_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#E63F24").ss(2.1,0,0,4).p("AhxAcQAAAkAZAYQAZAZAkAAIA3AAQAkAAAYgZQAZgYAAgkIAAg3QAAgjgZgZQgYgZgkAAIg3AAQgkAAgZAZQgZAZAAAjg");
-	this.shape.setTransform(0.0327,0.0109,0.6586,0.6622);
+	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("AAoBcQAAAMgMAIQgMAIgQAAQgQAAgLgIQgMgIAAgMIAAi3QAAgLAMgJQALgIAQAAQAQAAAMAIQAMAJAAALg");
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.rf(["#DBF0FD","#E0EFE2","#E6ECBA","#EBEA93","#EEE86D","#F1E74C","#F2E62F","#F3E614","#F3E603"],[0,0.086,0.22,0.353,0.486,0.62,0.749,0.875,1],0,0,0,0,0,12.4).s().p("AgbBwQgMgJAAgLIAAi3QAAgMAMgIQAMgIAPAAQAQAAANAIQALAIAAAMIAAC3QAAALgLAJQgNAIgQAAQgPAAgMgIg");
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.FrameUp, rect = new cjs.Rectangle(-8.5,-8.5,17.1,18.1), [rect]);
+}).prototype = getMCSymbolPrototype(lib.sliderU, rect = new cjs.Rectangle(-5,-13,10,26), [rect]);
+
+
+(lib.sliderBarWp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAWIAAgrIeTAAIAAArg");
+	this.shape.setTransform(0,-0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAWQAAALgJAJQgIAIgMAAI+UAAQgLAAgJgIQgIgJAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALg");
+	this.shape_1.setTransform(0.025,0);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.lf(["#DBF0FD","#D3C9DF","#C995B7","#C16898","#BC4482","#B83078","#B72674"],[0,0.169,0.396,0.6,0.776,0.914,1],-99.8,0,99.9,0).s().p("AvKAyQgLAAgJgJQgIgIAAgMIAAgqQAAgMAIgIQAJgIALAAIeUAAQAMAAAIAIQAJAIAAAMIAAAqQAAAMgJAIQgIAJgMAAg");
+	this.shape_2.setTransform(0.025,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarWp, rect = new cjs.Rectangle(-100.8,-6,201.8,12), [rect]);
+
+
+(lib.sliderBarW = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAWIAAgrIeTAAIAAArg");
+	this.shape.setTransform(0,-0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAWQAAALgJAJQgIAIgMAAI+UAAQgLAAgJgIQgIgJAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALg");
+	this.shape_1.setTransform(0.025,0);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["#DBF0FD","#B72674"],[0,1],0,0,0,0,0,70.7).s().p("AvKAyQgLAAgJgJQgIgIAAgMIAAgqQAAgMAIgIQAJgIALAAIeUAAQAMAAAIAIQAJAIAAAMIAAAqQAAAMgJAIQgIAJgMAAg");
+	this.shape_2.setTransform(0.025,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarW, rect = new cjs.Rectangle(-100.8,-6,201.8,12), [rect]);
+
+
+(lib.sliderBarVp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAWIAAgrIeTAAIAAArg");
+	this.shape.setTransform(0,-0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAWQAAALgJAJQgIAIgMAAI+UAAQgLAAgJgIQgIgJAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALg");
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.lf(["#DBF0FD","#C1E1D5","#9ACC9E","#77BC71","#59B254","#44AC45","#3BAA40"],[0,0.165,0.392,0.6,0.776,0.914,1],-99.8,0,99.9,0).s().p("AvJAyQgMAAgJgJQgIgIAAgLIAAgrQAAgLAIgJQAJgIAMAAIeTAAQAMAAAIAIQAJAJAAALIAAArQAAALgJAIQgIAJgMAAg");
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarVp, rect = new cjs.Rectangle(-100.9,-6,201.8,12), [rect]);
+
+
+(lib.sliderBarV = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAWIAAgrIeTAAIAAArg");
+	this.shape.setTransform(0,-0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAVQAAAMgJAIQgIAJgMAAI+UAAQgLAAgJgJQgIgIAAgMIAAgqQAAgMAIgIQAJgIALAAIeUAAQAMAAAIAIQAJAIAAAMg");
+	this.shape_1.setTransform(0.025,0);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["#DBF0FD","#3BAA40"],[0,1],0,0,0,0,0,70.7).s().p("AvKAyQgLAAgJgJQgIgIAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALIAAArQAAALgJAIQgIAJgMAAg");
+	this.shape_2.setTransform(0.025,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarV, rect = new cjs.Rectangle(-100.8,-6,201.8,12), [rect]);
+
+
+(lib.sliderBarUp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAWIAAgrIeTAAIAAArg");
+	this.shape.setTransform(0,-0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAWQAAALgJAJQgIAIgMAAI+UAAQgLAAgJgIQgIgJAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALg");
+	this.shape_1.setTransform(0.025,0);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.lf(["#DBF0FD","#E1EEDE","#E8EBA8","#EDE974","#F1E747","#F3E621","#F3E603"],[0,0.141,0.376,0.588,0.769,0.914,1],-99.8,0,99.9,0).s().p("AvKAyQgLAAgJgIQgIgJAAgLIAAgrQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALIAAArQAAALgJAJQgIAIgMAAg");
+	this.shape_2.setTransform(0.025,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarUp, rect = new cjs.Rectangle(-100.8,-6,201.8,12), [rect]);
+
+
+(lib.sliderBarU = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#737372").s().p("AvJAVIAAgpIeTAAIAAApg");
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("APnAVQAAALgJAJQgIAIgMAAI+UAAQgLAAgJgIQgIgJAAgLIAAgpQAAgMAIgIQAJgIALAAIeUAAQAMAAAIAIQAJAIAAAMg");
+	this.shape_1.setTransform(0.025,0);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["#DBF0FD","#F3E603"],[0,1],0,0,0,0,0,70.7).s().p("AvKAxQgLAAgJgIQgIgJAAgLIAAgpQAAgLAIgJQAJgIALAAIeUAAQAMAAAIAIQAJAJAAALIAAApQAAALgJAJQgIAIgMAAg");
+	this.shape_2.setTransform(0.025,0);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.sliderBarU, rect = new cjs.Rectangle(-100.8,-5.9,201.8,11.8), [rect]);
 
 
 (lib.FrameGo = function(mode,startPosition,loop,reversed) {
@@ -754,41 +321,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.FrameGo, rect = new cjs.Rectangle(-26.5,-11.6,53.2,23.4), [rect]);
-
-
-(lib.BtnUp = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Ebene_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#2B2B2A").ss(1.4,1,1).p("Ag4A5IA4hxIA5BxIg5gdg");
-	this.shape.setTransform(0.0455,0.0109,0.66,0.6622);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#2B2B2A").s().p("AAAAcIg4AdIA4hxIA5Bxg");
-	this.shape_1.setTransform(0.0455,0.0109,0.66,0.6622);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AhwAcQAAAkAZAYQAZAZAjAAIA3AAQAkAAAYgZQAZgYAAgkIAAg3QAAgjgZgZQgYgZgkAAIg3AAQgjAAgZAZQgZAZAAAjg");
-	this.shape_2.setTransform(0.0455,0.0109,0.66,0.6622);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#F6CA19").s().p("AgbBxQgjAAgZgZQgZgYAAgkIAAg3QAAgjAZgZQAZgZAjAAIA3AAQAkAAAYAZQAZAZAAAjIAAA3QAAAkgZAYQgYAZgkAAg");
-	this.shape_3.setTransform(0.0455,0.0109,0.66,0.6622);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.BtnUp, rect = new cjs.Rectangle(-8.4,-8.5,17,17), [rect]);
 
 
 (lib.BtnStop = function(mode,startPosition,loop,reversed) {
@@ -820,18 +352,18 @@ if (reversed == null) { reversed = false; }
 	this.shape_3.setTransform(-16.65,-0.15);
 
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AD/AVQAAAkgZAZQgZAZgjAAIlTAAQgjAAgZgZQgZgZAAgkIAAgqQAAgjAZgZQAZgZAjAAIFTAAQAjAAAZAZQAZAZAAAjg");
-	this.shape_4.setTransform(0.025,0.15);
+	this.shape_4.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AD/AVQAAAkgZAYQgZAZgjAAIlTAAQgjAAgZgZQgZgYAAgkIAAgpQAAgjAZgZQAZgZAjAAIFTAAQAjAAAZAZQAZAZAAAjg");
+	this.shape_4.setTransform(0,0.175);
 
 	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#F6CA19").s().p("AipBqQgjAAgZgYQgZgZAAgkIAAgqQAAgiAZgaQAZgYAjAAIFTAAQAjAAAZAYQAZAaAAAiIAAAqQAAAkgZAZQgZAYgjAAg");
-	this.shape_5.setTransform(0.025,0.15);
+	this.shape_5.graphics.f("#F6CA19").s().p("AipBqQgjAAgZgZQgZgYAAgkIAAgpQAAgjAZgZQAZgZAjAAIFTAAQAjAAAZAZQAZAZAAAjIAAApQAAAkgZAYQgZAZgjAAg");
+	this.shape_5.setTransform(0,0.175);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.BtnStop, rect = new cjs.Rectangle(-26.5,-11.5,53.1,23.3), [rect]);
+}).prototype = getMCSymbolPrototype(lib.BtnStop, rect = new cjs.Rectangle(-26.5,-11.4,53,23.3), [rect]);
 
 
 (lib.BtnGo = function(mode,startPosition,loop,reversed) {
@@ -847,30 +379,405 @@ if (reversed == null) { reversed = false; }
 
 	// Ebene_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#2B2B2A").s().p("AgHA7IAAgQIAQAAIAAAQgAgEAdIgEg9IAAgaIARAAIAAAaIgEA9g");
-	this.shape.setTransform(13,-0.15);
+	this.shape.graphics.f("#2B2B2A").s().p("AgHA7IAAgQIAPAAIAAAQgAgDAdIgFg9IAAgaIARAAIAAAaIgEA9g");
+	this.shape.setTransform(12.95,-0.15);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#2B2B2A").s().p("AgdA1QgNgIgHgOQgGgOgBgQQABgcAQgQQAPgRAYAAQARAAANAIQANAHAHAOQAGAOABARQAAASgIAOQgHAOgOAIQgNAHgPAAQgPAAgOgIgAgcgjQgMALABAZQAAAWALANQALAMARgBQARAAAMgMQAMgMAAgXQAAgOgGgKQgEgLgKgGQgJgGgMAAQgPAAgNAMg");
-	this.shape_1.setTransform(4.3,-0.15);
+	this.shape_1.graphics.f("#2B2B2A").s().p("AgdA1QgNgIgHgOQgHgOAAgQQAAgcAQgQQAQgRAYAAQAQAAANAIQAOAHAGAOQAIAOgBARQAAASgHAOQgHAOgNAIQgOAHgPAAQgPAAgOgIgAgbgjQgMALgBAZQAAAWAMANQAMAMAQgBQASAAALgMQALgMAAgXQAAgOgEgKQgGgLgJgGQgJgGgMAAQgQAAgLAMg");
+	this.shape_1.setTransform(4.25,-0.15);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#2B2B2A").s().p("AgZA2QgOgIgIgOQgGgOgBgRQABgRAGgPQAIgOANgIQAOgHARAAQAMAAAKAEQALAEAGAIQAGAHADAMIgOAEQgDgJgEgFQgEgGgHgCQgHgEgJAAQgKAAgIAEQgIADgFAFQgFAGgCAGQgEAKgBANQABAPAFALQAGALAJAFQALAFALAAQAKAAAJgEQAKgEAFgEIAAgXIgiAAIAAgMIAxAAIAAArQgLAIgMAFQgNAFgNAAQgQAAgOgHg");
-	this.shape_2.setTransform(-8.65,-0.15);
+	this.shape_2.graphics.f("#2B2B2A").s().p("AgZA2QgOgIgHgOQgIgOABgRQgBgRAIgPQAGgOAOgIQAOgHAQAAQANAAALAEQAKAEAGAIQAGAHADAMIgPAEQgCgJgEgFQgEgGgHgCQgIgEgJAAQgJAAgIAEQgIADgEAFQgFAGgDAGQgFAKABANQgBAPAGALQAFALALAFQAKAFAKAAQALAAAKgEQAJgEAFgEIAAgXIgjAAIAAgMIAzAAIAAArQgMAIgMAFQgNAFgNAAQgQAAgOgHg");
+	this.shape_2.setTransform(-8.7,-0.15);
 
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AD/AVQAAAkgZAZQgZAZgjAAIlTAAQgjAAgZgZQgZgZAAgkIAAgqQAAgjAZgZQAZgZAjAAIFTAAQAjAAAZAZQAZAZAAAjg");
-	this.shape_3.setTransform(0,0.15);
+	this.shape_3.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AD/AVQAAAkgZAYQgZAZgjAAIlTAAQgjAAgZgZQgZgYAAgkIAAgpQAAgjAZgZQAZgZAjAAIFTAAQAjAAAZAZQAZAZAAAjg");
+	this.shape_3.setTransform(0,0.175);
 
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#F6CA19").s().p("AipBqQgjAAgZgYQgZgZAAgkIAAgqQAAgiAZgaQAZgYAjAAIFTAAQAjAAAZAYQAZAaAAAiIAAAqQAAAkgZAZQgZAYgjAAg");
-	this.shape_4.setTransform(0,0.15);
+	this.shape_4.graphics.f("#F6CA19").s().p("AipBqQgjAAgZgZQgZgYAAgkIAAgpQAAgjAZgZQAZgZAjAAIFTAAQAkAAAYAZQAZAZAAAjIAAApQAAAkgZAYQgYAZgkAAg");
+	this.shape_4.setTransform(0,0.175);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.BtnGo, rect = new cjs.Rectangle(-26.5,-11.5,53,23.3), [rect]);
+}).prototype = getMCSymbolPrototype(lib.BtnGo, rect = new cjs.Rectangle(-26.5,-11.4,53,23.3), [rect]);
+
+
+(lib.vecW = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgxgBQgLAlgUAwIgFANQgFAMAHALQAHALAOAAIB9AAQAOAAAHgLQAHgMgFgMQgFgLgLgcQgMgggIgaQgTg+gGgtQgBgJgHgGQgHgHgKAAQgIAAgIAHQgHAGgBAJQgGAtgTA+g");
+	this.shape.setTransform(0.033,-96.9);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#B82775").s().p("Ag+CDQgOAAgHgLQgHgLAFgNIAFgMQAUgxALglQATg+AGgsQABgKAHgFQAIgHAIAAQAKAAAHAHQAHAFABAKQAGAsATA+QAIAaAMAhIAQAmQAFAMgHANQgHALgOAAg");
+	this.shape_1.setTransform(0.033,-96.9);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgYnGIAANwQAAAKAIAHQAHAIAJgBQAKAAAIgHQAHgHAAgLIAAtv");
+	this.shape_2.setTransform(0.025,-45.0236);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#B82775").s().p("AgQG+QgIgHAAgLIAAtwIAxAAIAANwQAAAKgHAIQgIAHgKAAIAAAAQgKAAgGgHg");
+	this.shape_3.setTransform(0.025,-45.2734);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.vecW, rect = new cjs.Rectangle(-9.8,-111,19.7,112), [rect]);
+
+
+(lib.vecV = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgxgCQgLAlgUAxIgFAMQgFANAHALQAHALAOAAIB9AAQAOAAAHgMQAHgMgFgMQgFgLgLgbQgMghgIgaQgTg+gGgsQgBgKgHgGQgHgGgKAAQgIAAgIAGQgHAGgBAKQgGAsgTA+g");
+	this.shape.setTransform(0.033,-96.875);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#3CAA41").s().p("Ag+CDQgOAAgHgLQgHgLAFgNIAFgMQAUgxALglQATg+AGgsQABgKAHgGQAIgGAIAAQAKAAAHAGQAHAGABAKQAGAsATA+QAIAaAMAhIAQAmQAFAMgHAMQgHAMgOAAg");
+	this.shape_1.setTransform(0.033,-96.875);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgYnGIAANwQAAAKAIAHQAHAIAJgBQAKAAAIgHQAHgHAAgLIAAtv");
+	this.shape_2.setTransform(0.025,-45.0236);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#3CAA41").s().p("AgQG+QgIgHAAgLIAAtwIAxAAIAANwQAAAKgHAIQgIAHgKAAIAAAAQgKAAgGgHg");
+	this.shape_3.setTransform(0.025,-45.2734);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.vecV, rect = new cjs.Rectangle(-9.8,-110.9,19.7,112), [rect]);
+
+
+(lib.vecU = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgxgCQgLAlgUAxIgFAMQgFANAHALQAHALAOAAIB9AAQAOAAAHgMQAHgLgFgNQgFgLgLgbQgMghgIgaQgTg+gGgsQgBgKgHgGQgHgGgKAAQgIAAgIAGQgHAGgBAKQgGAsgTA+g");
+	this.shape.setTransform(0.033,-96.9);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#F1E624").s().p("Ag+CDQgOAAgHgLQgHgLAFgNIAFgMQAUgwALgmQATg9AGgtQABgKAHgFQAIgHAIAAQAKAAAHAHQAHAFABAKQAGAtATA9QAIAaAMAhIAQAmQAFAMgHANQgHALgOAAg");
+	this.shape_1.setTransform(0.033,-96.9);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgYnGIAANwQAAAKAIAHQAHAIAJgBQAKAAAIgHQAHgHAAgLIAAtv");
+	this.shape_2.setTransform(0.025,-45.0236);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#F1E624").s().p("AgQG+QgIgHAAgLIAAtwIAxAAIAANwQAAAKgHAIQgIAHgKAAIAAAAQgKAAgGgHg");
+	this.shape_3.setTransform(0.025,-45.2734);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.vecU, rect = new cjs.Rectangle(-9.8,-111,19.7,112), [rect]);
+
+
+(lib.vecSum = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgxgCQgLAlgUAxIgFAMQgFANAHALQAHALAOAAIB9AAQAOAAAHgMQAHgLgFgNQgFgLgLgbQgMghgIgaQgTg+gGgsQgBgKgHgGQgHgGgKAAQgIAAgIAGQgHAGgBAKQgGAsgTA+g");
+	this.shape.setTransform(0.033,-176.9);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#676767").s().p("Ag+CDQgOAAgHgLQgHgLAFgNIAFgMQAUgxALglQATg+AGgsQABgKAHgFQAIgHAIAAQAKAAAHAHQAHAFABAKQAGAsATA+QAIAaAMAhIAQAmQAFAMgHAMQgHAMgOAAg");
+	this.shape_1.setTransform(0.033,-176.9);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(0.5,0,0,4).p("AgYtWIAAaQQAAAKAIAHQAHAIAJgBQAKAAAIgHQAHgHAAgLIAA6P");
+	this.shape_2.setTransform(0.025,-85.0235);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#676767").s().p("AgQNOQgIgHAAgLIAA6QIAxAAIAAaQQAAAKgHAIQgIAHgKAAIAAAAQgKAAgGgHg");
+	this.shape_3.setTransform(0.025,-85.2734);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.vecSum, rect = new cjs.Rectangle(-9.8,-191,19.7,192), [rect]);
+
+
+(lib.locusPt = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#000000").ss(1,1,1).p("AAyAAQAAAWgPANQgNAPgWAAQgTAAgPgPQgPgNAAgWQAAgTAPgPQAPgPATAAQAWAAANAPQAPAPAAATg");
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#676767").s().p("AgiAjQgPgNAAgWQAAgTAPgPQAPgPATAAQAWAAANAPQAPAPAAATQAAAWgPANQgNAPgWAAQgTAAgPgPg");
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.locusPt, rect = new cjs.Rectangle(-6,-6,12,12), [rect]);
+
+
+(lib.iWp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMCNIEZkZ");
+	this.shape.setTransform(-0.025,0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMiMIEZEZ");
+	this.shape_1.setTransform(-0.025,0.025);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg7A6Qg6A7hTAAQhSAAg6g7Qg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSg");
+	this.shape_2.setTransform(0,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#B82775").s().p("AiNCNQg6g6AAhTQAAhSA6g6QA7g7BSAAQBSAAA7A7QA7A6AABSQAABTg7A6Qg7A7hSAAQhSAAg7g7g");
+	this.shape_3.setTransform(0,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iWp, rect = new cjs.Rectangle(-21,-20.9,42,42), [rect]);
+
+
+(lib.iWm = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AAAgxQAVAAAOAPQAPAOAAAUQAAAVgPAPQgOAOgVAAQgUAAgPgOQgOgPAAgVQAAgUAOgOQAPgPAUAAg");
+	this.shape.setTransform(0,0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#2B2B2A").s().p("AgjAkQgOgPAAgVQAAgUAOgOQAQgPATAAQAVAAAOAPQAPAOAAAUQAAAVgPAPQgOAOgVAAQgTAAgQgOg");
+	this.shape_1.setTransform(0,0.025);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg7A6Qg6A7hTAAQhSAAg6g7Qg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSg");
+	this.shape_2.setTransform(0.025,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#B82775").s().p("AiMCNQg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSQAABTg7A6Qg6A7hTAAQhSAAg6g7g");
+	this.shape_3.setTransform(0.025,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iWm, rect = new cjs.Rectangle(-20.9,-20.9,42,42), [rect]);
+
+
+(lib.iVp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMCNIEZkZ");
+	this.shape.setTransform(-0.025,0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMiMIEZEZ");
+	this.shape_1.setTransform(-0.025,0.025);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg7A6Qg6A7hTAAQhSAAg6g7Qg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSg");
+	this.shape_2.setTransform(0,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#3CAA41").s().p("AiNCNQg6g6AAhTQAAhSA6g6QA7g7BSAAQBSAAA7A7QA7A6AABSQAABTg7A6Qg7A7hSAAQhSAAg7g7g");
+	this.shape_3.setTransform(0,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iVp, rect = new cjs.Rectangle(-21,-20.9,42,42), [rect]);
+
+
+(lib.iVm = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AAAgxQAVAAAOAOQAPAPAAAUQAAAVgPAPQgOAOgVAAQgUAAgPgOQgOgPAAgVQAAgUAOgPQAPgOAUAAg");
+	this.shape.setTransform(0,0.05);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#2B2B2A").s().p("AgjAkQgOgPAAgVQAAgUAOgOQAQgPATAAQAVAAAOAPQAPAOAAAUQAAAVgPAPQgOAOgVAAQgTAAgQgOg");
+	this.shape_1.setTransform(0,0.05);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg7A6Qg6A7hTAAQhSAAg6g7Qg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSg");
+	this.shape_2.setTransform(0.025,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#3CAA41").s().p("AiMCNQg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSQAABTg7A6Qg6A7hTAAQhSAAg6g7g");
+	this.shape_3.setTransform(0.025,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iVm, rect = new cjs.Rectangle(-20.9,-20.9,42,42), [rect]);
+
+
+(lib.iUp = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMCNIEZkZ");
+	this.shape.setTransform(-0.025,0.025);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AiMiMIEZEZ");
+	this.shape_1.setTransform(-0.025,0.025);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg7A6Qg6A7hTAAQhSAAg6g7Qg7g6AAhTQAAhSA7g6QA6g7BSAAQBTAAA6A7QA7A6AABSg");
+	this.shape_2.setTransform(0,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#F1E624").s().p("AiMCNQg7g6AAhTQAAhSA7g6QA6g7BSAAQBSAAA7A7QA7A6AABSQAABTg7A6Qg7A7hSAAQhSAAg6g7g");
+	this.shape_3.setTransform(0,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iUp, rect = new cjs.Rectangle(-21,-21,42,42.1), [rect]);
+
+
+(lib.iUm = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Ebene_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("AAAgxQAVAAAPAOQAOAPAAAUQAAAVgOAPQgPAOgVAAQgTAAgPgOQgPgPAAgVQAAgUAPgPQAPgOATAAg");
+	this.shape.setTransform(-0.05,0.05);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#2B2B2A").s().p("AgjAkQgOgPAAgVQAAgUAOgOQAQgPATAAQAVAAAOAPQAPAOAAAUQAAAVgPAPQgOAOgVAAQgTAAgQgOg");
+	this.shape_1.setTransform(-0.05,0.05);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f().s("#2B2B2A").ss(2,0,0,4).p("ADIAAQAABTg6A6Qg7A7hTAAQhSAAg7g7Qg6g6AAhTQAAhSA6g6QA7g7BSAAQBTAAA7A7QA6A6AABSg");
+	this.shape_2.setTransform(0,0.025);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#F1E624").s().p("AiNCNQg6g6AAhTQAAhSA6g6QA7g7BSAAQBTAAA7A7QA6A6AABSQAABTg6A6Qg7A7hTAAQhSAAg7g7g");
+	this.shape_3.setTransform(0,0.025);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.iUm, rect = new cjs.Rectangle(-21,-21,42,42.1), [rect]);
 
 
 (lib.Rectangle_35 = function(mode,startPosition,loop,reversed) {
@@ -4461,7 +4368,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.CompoundPath, rect = new cjs.Rectangle(0,0,22.8,31.5), [rect]);
 
 
-(lib.PhiSt = function(mode,startPosition,loop,reversed) {
+(lib.stYoke = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -4473,20 +4380,22 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Ebene_1
-	this.instance = new lib.PhiStN();
-	this.instance.setTransform(0,180.65,1,1,0,0,0,0,39.1);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#2B2B2A").ss(0.3,0,0,4).p("ArEAAQAAiPA4iEQA2h/BihiQDQjPEkAAQEmAADPDPQBiBiA2B/QA4CEAACPQAACQg4CEQg2B/hiBiQjPDPkmAAQiPAAiEg3Qh/g2hihiQhihig2h/Qg4iEAAiQgAAAHFQC8AACFiFQCFiEAAi8QAAi7iFiEQiFiFi8AAQi7AAiECFQiFCEAAC7QAAC8CFCEQCECFC7AAg");
+	this.shape.setTransform(0.0144,-0.0025,3.1746,3.1771);
 
-	this.instance_1 = new lib.PhiStS();
-	this.instance_1.setTransform(0,-179.25,1,1,0,0,0,0,-40.8);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#8CCCC1").s().p("AkTKNQh/g2hihiQhihig2h/Qg4iEAAiQQAAiPA4iEQA2h/BihiQDQjPEkAAQEmAADPDPQBiBiA2B/QA4CEAACPQAACQg4CEQg2B/hiBiQjPDPkmAAQiPAAiEg3gAk/k/QiFCEAAC7QAAC8CFCEQCECFC7AAQC8AACFiFQCFiEAAi8QAAi7iFiEQiFiFi8AAQi7AAiECFg");
+	this.shape_1.setTransform(0.0144,-0.0025,3.1746,3.1771);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.PhiSt, rect = new cjs.Rectangle(-11.2,-219.9,22.5,440), [rect]);
+}).prototype = getMCSymbolPrototype(lib.stYoke, rect = new cjs.Rectangle(-226,-226,452,452), [rect]);
 
 
-(lib.BGTTZ = function(mode,startPosition,loop,reversed) {
+(lib.bckGrndTTZ = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -4519,8 +4428,8 @@ if (reversed == null) { reversed = false; }
 	this.shape_4.setTransform(175.55,589.6);
 
 	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#000000").s().p("AgPAfQgGgGgBgJIAJgBQABAIADADQAFADAEAAQAGAAAEgEQAEgEAAgHQAAgGgDgEQgFgEgGAAIgFABIABgGIACAAQAEAAAEgDQAFgDAAgGQAAgFgDgDQgDgDgFAAQgFAAgDADQgDADgBAGIgJgBQABgJAGgFQAGgFAIAAQAFAAAFADQAFACACAFQADAEAAAFQAAAFgDADQgCAEgFACQAGACAEAEQADAEAAAHQABAJgIAHQgGAHgKAAQgJAAgGgGg");
-	this.shape_5.setTransform(171.35,589.675);
+	this.shape_5.graphics.f("#000000").s().p("AgMAjQAAgIADgMQADgMAGgKQAFgLAHgIIgiAAIAAgIIAtAAIAAAGQgHAIgGAMQgHALgDANQgCAJgBAKg");
+	this.shape_5.setTransform(171.375,589.675);
 
 	this.shape_6 = new cjs.Shape();
 	this.shape_6.graphics.f("#000000").s().p("AgPAdQgIgIAAgVQAAgLADgIQADgIAFgEQAFgEAHgBQAGABAEACQAEADAEADQACAFABAGQACAHAAAJQAAANgDAHQgCAIgFAFQgFADgIAAQgKABgFgIgAgJgXQgEAGgBARQABASAEAGQAEAFAFAAQAGAAAEgFQAFgGgBgSQABgRgFgFQgEgGgGAAQgFAAgEAFg");
@@ -5278,11 +5187,11 @@ if (reversed == null) { reversed = false; }
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.BGTTZ, rect = new cjs.Rectangle(0,0,850,600), [rect]);
+}).prototype = getMCSymbolPrototype(lib.bckGrndTTZ, rect = new cjs.Rectangle(0,0,850,600), [rect]);
 
 
 // stage content:
-(lib.animateSMGrid = function(mode,startPosition,loop,reversed) {
+(lib.animatePhasor = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -5304,193 +5213,128 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		////////////////////////////////////////////////////////////////////////
-		// animateSMGrid.fla
+		// animatePhasor.fla
 		////////////////////////////////////////////////////////////////////////
-		// global declarations
-		var c, // CreateJS-bib
-			r, // Device Pixel Ratio
-			w, h; // width, height
+		var c; 					// CreateJS-bib
+		var r; 					// Device Pixel Ratio
+		var w, h; 				// width, height
 		var root = this;
-		var backGround, // reference to all the static stuff
-			header, // title
-			game; // it's just a kind of game...
-		var inGame = false; // game stopped
-		const titGen = "synchronous generator", titMot = "synchronous motor";
-		const centerX = 275, centerY = 300, rRe = 165; // rotor center + outer radius
-		const xSmin = 1.05, xSmax = 1.5, xSdel = 0.05; // range for xS
-		var phBaseX, phBaseY;
-		var uXn = 1.3,
-			uSn = 1,
-			uPn = 2.0; // nominal voltages
-		var psi = 0.0; // arc (I_S -> U_P)
-		var phNom = 160; // phasor nominal length = 1 p.u.
+		var backGround;			// reference to all the static stuff
+		var header; 			// title
+		var omegatText;
+		var game; 				// it's just a kind of game...
+		var inGame = false; 	// game stopped
+		const title = "rotating field of a 3 phase machine";
+		const centerX = 275, centerY = 300, rWinding = 170; // rotor center + outer radius
+		const posX = 725; 		// x-center of all sliders
+		const scaleVec = 1.38;
+		const scaleVecSum = scaleVec * 110.0/190.0;
+		var phNom = 110; 		// phasor nominal length = 1 p.u.
+		var barLength = 200; 	// 200px? set in createSlider()
 		const W32 = Math.sqrt(3.0) / 2.0;
-		const rad2deg = 180.0 / Math.PI;
-		const posWdgs = [ // positions for coil-sides:
+		var posWdgs = [ 	// default values, maybe changed by sliderPos[]
 			[
-				[centerX, centerY - rRe], // U1
-				[centerX, centerY + rRe] // U2
+				[centerX, centerY - rWinding], // U1
+				[centerX, centerY + rWinding] // U2
 			],
 			[
-				[centerX + W32 * rRe, centerY + rRe / 2], // V1
-				[centerX - W32 * rRe, centerY - rRe / 2] // V2
+				[centerX + W32 * rWinding, centerY + rWinding / 2], // V1
+				[centerX - W32 * rWinding, centerY - rWinding / 2] // V2
 			],
 			[
-				[centerX - W32 * rRe, centerY + rRe / 2], // W1
-				[centerX + W32 * rRe, centerY - rRe / 2] // W2
+				[centerX - W32 * rWinding, centerY + rWinding / 2], // W1
+				[centerX + W32 * rWinding, centerY - rWinding / 2] // W2
 			]
 		];
-		var current = []; // objects for U1, V1, W1, U2, V2, W2
-		const base = 245 - 3, offset = 36 + 3, lft = 176 + 4, rgt = 374 - 4;
-		var posFldWdgs = [
-			[lft, base],
-			[lft, base + offset],
-			[lft, base + 2 * offset],
-			[lft, base + 3 * offset],
-			[rgt, base],
-			[rgt, base + offset],
-			[rgt, base + 2 * offset],
-			[rgt, base + 3 * offset]
-		];
-		var fldCurrent = []; // objects for 1F1, 1F2, 2F1, ... 4F1, 4F2,  
-		var vecUS, vecUP, vecXSIS; // objects for phasor-diagram
-		var sliderBarField, sliderBarTorque, sliderField, sliderTorque, txtSpeed, txtTorque;
-		var state = { // state-values
-			theta: 0.0,
-			thetaL: 0.0,
-			speed: 1.0,
-			psi: 0.0,
-			torque: 1.0, // inner torque
-			iS: 1.0,
-			torqueNom: 1.0 // constant(!) nominal torque (i=1, uSn=1, uPn=2.0), =f(uXn)
-		};
+		let current = []; 	// U1, V1, W1, U2, V2, W2
+		let phasor = [], phasorSum; // 4 phasors: U/V/W/U+V+W
+		let sliderBarPos = [], sliderBarPhase = [], sliderBarAmp = [];
+		let sliderPos = [],    sliderPhase = [], 	sliderAmp = [];
+		let txtPos = [], 	   txtPhase = [], 		txtAmp = [];
+		let status = [ 					// status[type][phase]
+			[+1.0,   +1.0,   +1.0], 	// amplitudes UVW
+			[+0.0, +120.0, -120.0], 	// phase shift UVW
+			[+0.0, +120.0, -120.0] 		// coil position UVW
+		]; // e.g. state[2][0] = coil_position_phaseU, state[0][1] = amplitude_phaseV;
+		let omega_t = +0.0;				// time in radians
+		let counter = 0;
+		let locus = [];
 		
-		// stuff for start&stop, direction of speed&torque
-		var startBtn, stopBtn, touch; // speedCW, speedCCW, torqCW, torqCCW, 
-		const DEBUG = false, DEBUG1 = true, DEBUG2 = false;
-		
+		// stuff for GUI
+		var startBtn, stopBtn, touch; //
+		const DEBUG = true;
+		const DEBUG1 = false;
+		const DEBUG2 = false;
 		
 		function init() {
 			c = createjs;
 			r = window.devicePixelRatio;
 			w = 850; //stage.canvas.width / r;
 			h = 600; // stage.canvas.height / r;
-			phBaseX = w - 160; // = 690
-			phBaseY = h - 180; // = 420
-			// TTZ-Logos & static stuff
-			backGround = new c.Container();
-			stage.addChild(backGround);
-			// dynamic stuff
-			game = new c.Container();
-			stage.addChild(game);
 		
 			if (DEBUG2) console.log("stage.canvas.width: " + stage.canvas.width.toFixed(3) +
 				", stage.canvas.height: " + stage.canvas.height.toFixed(0));
 			if (DEBUG2) console.log("r: " + r.toFixed(3) + ", w: " + w.toFixed(0) +
 				", h: " + h.toFixed(0));
-			if (DEBUG2) console.log("phBaseX: " + phBaseX + ", phBaseY: " + phBaseY);
 		
+			createBackground();
 			createSlotAT();
-			createRotorAT();
 			createTouchControl();
-			createPhasorDiag();
 		
 			c.Ticker.addEventListener("tick", gameCore);
 			stage.enableMouseOver(30);
 		
 			initStartStop();
-			initUpDn();
-			initSlider();
+			for (let phase = 0; phase < 3; phase++) {
+				initSlider(+0.0, +1.0, sliderAmp[phase],   txtAmp[phase],   +0, phase);
+				initSlider(-180, +180, sliderPhase[phase], txtPhase[phase], +1, phase);
+				initSlider(-180, +180, sliderPos[phase],   txtPos[phase],   +2, phase);
+			}
 		
-			function initSlider() {
-				sliderField.addEventListener("pressmove", function (e) {
-					// update GUI, uPn & vecUP.scale => updatePhasors
+			function initSlider(minValue, maxValue, slider, txt, type, phase) {
+				slider.addEventListener("pressmove", function (e) { 
 					let p = stage.globalToLocal(e.stageX, e.stageY);
-					sliderField.x = limitIt(p.x, sliderBarField.x - sliderBarField.nominalBounds.width / 2,
-						sliderBarField.x + sliderBarField.nominalBounds.width / 2)
-					txtField.x = sliderField.x;
-					uPn = 1.0 + (2.0 * (sliderField.x - sliderBarField.x) / sliderBarField.nominalBounds.width);
-					if (uPn < Math.abs(state.torque * state.torqueNom)) uPn = Math.abs(state.torque * state.torqueNom);
-					txtField.text = uPn.toFixed(2);
-					for (let phase = 0; phase < 8; phase++) {
-						fldCurrent[phase].scale = Math.sqrt(uPn / 2.0);
-					}
-					vecUP.scale = uPn * phNom;
-					updatePhasors();
-				});
-				sliderTorque.addEventListener("pressmove", function (e) {
-					// update GUI & state.torque => updatePhasors
-					let p = stage.globalToLocal(e.stageX, e.stageY);
-					sliderTorque.x = limitIt(p.x, sliderBarTorque.x - sliderBarTorque.nominalBounds.width / 2,
-						sliderBarTorque.x + sliderBarTorque.nominalBounds.width / 2)
-					txtTorque.x = sliderTorque.x;
-					state.torque = (2 * (sliderTorque.x - sliderBarTorque.x) / sliderBarTorque.nominalBounds.width);
-					if (Math.abs(state.torque * state.torqueNom) > uPn) {
-						state.torque = (state.torque > 0 ? 0.999999*uPn/state.torqueNom : -0.99999*uPn/state.torqueNom)
-					}
-					txtTorque.text = state.torque.toFixed(2);
-					if (state.speed * state.torque < 0) { // generator
-						header.text = titGen;
+					slider.x = limitIt(p.x, posX - barLength / 2, posX + barLength / 2);
+					if (DEBUG2) console.log("pressmove: sliderBarPos[0].x: " + sliderBarPos[0].x.toFixed(0) +
+						", posX: " + posX + ", p.x: " + p.x +
+						", sliderBarPos[0]].nominalBounds.width: " + sliderBarPos[0].nominalBounds.width);
+					txt.x = slider.x;
+					let value = minValue + (0.5 + (slider.x - posX) / barLength) * (+maxValue - minValue);
+					if (Math.abs(+maxValue - minValue) > 99) {
+						txt.text = (value / 5).toFixed(0) * 5;
 					} else {
-						header.text = titMot;
+						txt.text = ((value * 50.0).toFixed(0) / 50).toFixed(2);
 					}
-					updatePhasors();
-					if (DEBUG2) console.log("pressmove: sliderBarTorque.x: " + sliderBarTorque.x.toFixed(0) +
-						", e.localX: " + e.localX.toFixed(0) +
-						", e.stageX: " + e.stageX.toFixed(0) +
-						", sliderTorque.x: " + sliderTorque.x.toFixed(0));
+					status[type][phase] = parseFloat(txt.text);
+					// consequences for changed value by sliderPos[phase]: 
+					// current[phase + 3*side].x/.y AND posWdgs[phase][side][0] have to be changed
+					if (type == 2){
+						posWdgs[phase][0][0] = centerX + rWinding*Math.sin(status[type][phase]*Math.PI/180.0);
+						posWdgs[phase][0][1] = centerY - rWinding*Math.cos(status[type][phase]*Math.PI/180.0);
+						posWdgs[phase][1][0] = centerX - rWinding*Math.sin(status[type][phase]*Math.PI/180.0);
+						posWdgs[phase][1][1] = centerY + rWinding*Math.cos(status[type][phase]*Math.PI/180.0);
+						let amp = status[0][phase] * Math.cos(omega_t + status[1][phase] * Math.PI /180.0); 				
+						for (let side = 0; side < 2; side++) {
+							if (amp < 0) {
+								current[phase + (1 - side) * 3].x = posWdgs[phase][side][0];
+								current[phase + (1 - side) * 3].y = posWdgs[phase][side][1];
+							} else {
+								current[phase + side * 3].x = posWdgs[phase][side][0];
+								current[phase + side * 3].y = posWdgs[phase][side][1];
+							}
+						}
+					} 
 				});
 			}
-			function updatePhasors() {
-				// direction of phasor u_P
-				state.thetaL = Math.asin(state.torque * state.torqueNom / uPn) * rad2deg;
-				vecUP.rotation = state.thetaL;
-				let vecUPlength = vecUP.nominalBounds.height * vecUP.scale * 0.99;
-				// tip of u_P is base of j*XS*IS:
-				vecXSIS.x = vecUP.x + vecUPlength * Math.sin(state.thetaL / rad2deg);
-				vecXSIS.y = vecUP.y - vecUPlength * Math.cos(state.thetaL / rad2deg);
-				// length of j*XS*IS:
-				let uX = Math.sqrt(1 + uPn*uPn - 2*uPn*Math.cos(state.thetaL / rad2deg));
-				vecXSIS.scale = uX * phNom;
-				state.iS = uX/uXn;
-				// direction of j*XS*IS:
-				let phi = Math.acos(Math.abs(state.torque)*state.torqueNom / uX) * rad2deg; // = -90°...+90°
-				if (state.torque > 0){	// motor
-					if (uPn*Math.cos(state.thetaL / rad2deg) < 1.0){	// underexc. mot.
-						vecXSIS.rotation = -90.0 + phi; 
-						state.psi = 180.0 -state.thetaL + phi;
-					} else {	// overexc. mot.
-						vecXSIS.rotation = -90.0 - phi; 
-						state.psi = 180.0 -state.thetaL - phi;
-					}
-				} else {	// generator
-					if (uPn*Math.cos(state.thetaL / rad2deg) < 1.0){	// underexc. gen.
-						vecXSIS.rotation = +90.0 - phi; 
-						state.psi = -state.thetaL - phi;
-					} else {	// overexc. gen.
-						vecXSIS.rotation = +90.0 + phi; 
-						state.psi = -state.thetaL + phi;
-					}
-				}
-				//root.infoParam.text = "thetaL = " + state.thetaL.toFixed(1) + "; phi = " + phi.toFixed(1)
-				//		+ "; psi = " + state.psi.toFixed(1);
-				root.infoParam.text = "uS = " + uSn.toFixed(2) + "; iS = " + state.iS.toFixed(2) + 
-					"; xS = " + (Math.abs(state.speed) * uXn).toFixed(2) + "; uP = " + uPn.toFixed(2);
-			}
-			function limitTorque(mLimit) {
-				state.torque = mLimit;
-				txtTorque.text = state.torque.toFixed(2);
-				sliderTorque.x = state.torque * sliderBarTorque.nominalBounds.width / 2 + sliderBarTorque.x;
-				txtTorque.x = sliderTorque.x;
-			}
-			function limitIt(value, min, max) {
-				if (DEBUG2) console.log("limitIt: value: " + value + ", min: " + min + ", max: " + max);
-				if (value < min)
-					return min;
-				else if (value > max)
-					return max;
+		
+			function limitIt(val, minVal, maxVal) {
+				if (DEBUG2) console.log("limitIt: value: " + val + ", min: " + minVal + ", max: " + maxVal);
+				if (val < minVal)
+					return minVal;
+				else if (val > maxVal)
+					return maxVal;
 				else
-					return value;
+					return val;
 			}
 			function initStartStop() { // event-listener start/stop
 				// start-button
@@ -5515,70 +5359,10 @@ if (reversed == null) { reversed = false; }
 					goFrame.visible = false;
 				});
 			}
-			function initUpDn() { // event-listener start/stop
-				// Down-Button
-				dnBtn.addEventListener("mousedown", function (event) {
-					uXn = (uXn < xSmin + xSdel / 10 ? xSmin : uXn - xSdel);
-					resetGUI();
-				});
-				dnBtn.addEventListener("mouseover", function (event) {
-					dnFrame.visible = true;
-				});
-				dnBtn.addEventListener("mouseout", function (event) {
-					dnFrame.visible = false;
-				});
-				// Up-Button
-				upBtn.addEventListener("mousedown", function (event) {
-					uXn = (uXn > xSmax - xSdel / 10 ? xSmax : uXn + xSdel);
-					resetGUI();
-				});
-				upBtn.addEventListener("mouseover", function (event) {
-					upFrame.visible = true;
-				});
-				upBtn.addEventListener("mouseout", function (event) {
-					upFrame.visible = false;
-				});
-				// default-values
-				// uXn = 1.30;
-				// root.infoXS.text = uXn.toFixed(2);
 		
-				function resetGUI() {
-					stopTheGame();
-					root.infoXS.text = uXn.toFixed(2);
-					uPn = 2.0;
-					// reset sliders to max
-					txtField.x = sliderBarField.x + sliderBarField.nominalBounds.width / 2;
-					txtField.text = "2.0";
-					sliderField.x = txtField.x;
-					txtTorque.x = sliderBarTorque.x - sliderBarTorque.nominalBounds.width / 2;
-					txtTorque.text = "-1.00";
-					sliderTorque.x = txtTorque.x;
-		
-					state.thetaL = Math.acos((uSn * uSn + uPn * uPn - uXn * uXn) / (2 * uSn * uPn)) * rad2deg; // > 0: generator!
-					state.torqueNom = uPn * Math.sin(state.thetaL / rad2deg); // > 0: reference value
-					let phi = Math.acos(state.torqueNom / uXn) * rad2deg; // = -90°...+90°
-		
-					// reset vecUP
-					vecUP.scale = uPn * phNom;
-					vecUP.rotation = -state.thetaL;
-		
-					// reset vecXSIS
-					let vecUPlength = vecUP.nominalBounds.height * vecUP.scale * 0.99;
-					vecXSIS.x = vecUP.x - vecUPlength * Math.sin(state.thetaL / rad2deg);
-					vecXSIS.y = vecUP.y - vecUPlength * Math.cos(state.thetaL / rad2deg);
-					vecXSIS.scale = uXn * phNom;
-					vecXSIS.rotation = +90.0 + phi;
-		
-					state.psi = 180.0 - state.thetaL - phi;
-					state.theta = state.thetaL - state.speed;
-					rotateArmature();
-					setSlotAT(state.psi);
-				}
-		
-			}
 		}
 		
-		function stopTheGame() { // workaround for debugging
+		function stopTheGame() { // also workaround for debugging
 			stopBtn.visible = false;
 			startBtn.visible = true;
 			inGame = false;
@@ -5586,8 +5370,14 @@ if (reversed == null) { reversed = false; }
 		
 		function gameCore(event) { // infinite loop
 			if (inGame) {
-				rotateArmature();
-				setSlotAT(state.psi); // psi = f(speed)
+				if (omega_t > 1.997*Math.PI) { // > 359.46°
+					omega_t = Math.PI/180.0;
+				} else {
+					omega_t += Math.PI/180.0;
+				} 
+				counter = (omega_t*180.0/Math.PI).toFixed(0);
+				omegatText.text = "omega*t = " + counter + "°";
+				updateSlotAT(); 
 			}
 		}
 		
@@ -5598,52 +5388,107 @@ if (reversed == null) { reversed = false; }
 		
 			createStartStop();
 			createSlider();
-			createUpDn();
 		
-			function createSlider() { // 2 sliders
+			function createSlider() { // 3x3 sliders
+				const posXLabel = posX - 210;
+				let posY = centerY + 230 - 5;
+				const delY = 40;
 		
-				// 1. slider for field-current:
-				sliderBarField = new lib.SliderBarP();
-				sliderField = new lib.Slider();
-				sliderBarField.x = sliderField.x = phBaseX;
-				sliderBarField.y = sliderField.y = stopBtn.y;
-				touch.addChild(sliderBarField);
-				touch.addChild(sliderField);
-				txtField = new c.Text("2.00", "normal 10px Arial", "#000000");
-				txtField.textAlign = "center";
-				txtField.x = sliderBarField.x + sliderBarField.nominalBounds.width / 2;
-				sliderField.x = txtField.x;
-				txtField.y = sliderField.y - 23;
-				txtField.width = 40;
-				touch.addChild(txtField);
-				let labelFld = new c.Text("field (p.u.):", "normal 16px Arial", "#000000");
-				labelFld.textAlign = "left";
-				labelFld.x = phBaseX - 210;
-				labelFld.y = sliderBarField.y - 9;
-				labelFld.width = 50;
-				backGround.addChild(labelFld);
+				// 1. 3 sliders for coil-positions:
+				sliderBarPos[0] = new lib.sliderBarU();
+				sliderBarPos[1] = new lib.sliderBarV();
+				sliderBarPos[2] = new lib.sliderBarW();
+				sliderPos[0] = new lib.sliderU();
+				sliderPos[1] = new lib.sliderV();
+				sliderPos[2] = new lib.sliderW();
+				txtPos[0] = new c.Text("0", "normal 10px Arial", "#000000");
+				txtPos[1] = new c.Text("120", "normal 10px Arial", "#000000");
+				txtPos[2] = new c.Text("-120", "normal 10px Arial", "#000000");
+				let labelPos = new c.Text("position/°:", "bold 14px Arial", "#000000");
+				labelPos.textAlign = "left";
+				labelPos.x = posXLabel;
+				labelPos.y = posY - 2 * delY - 9;
+				labelPos.width = 50;
+				backGround.addChild(labelPos);
+				barLength = sliderBarPos[0].nominalBounds.width;
 		
-				// 2. slider for torque:
-				sliderBarTorque = new lib.SliderBar();
-				sliderTorque = new lib.Slider();
-				sliderBarTorque.x = sliderTorque.x = phBaseX;
-				sliderBarTorque.y = sliderTorque.y = stopBtn.y - 50;
-				touch.addChild(sliderBarTorque);
-				touch.addChild(sliderTorque);
-				txtTorque = new c.Text("-1.00", "normal 10px Arial", "#000000");
-				txtTorque.textAlign = "center";
-				txtTorque.x = sliderBarTorque.x - sliderBarTorque.nominalBounds.width / 2;
-				sliderTorque.x = txtTorque.x;
-				txtTorque.y = sliderTorque.y - 23;
-				txtTorque.width = 40;
-				touch.addChild(txtTorque);
-				let labelTrq = new c.Text("torque (p.u.):", "normal 16px Arial", "#000000");
-				labelTrq.textAlign = "left";
-				labelTrq.x = labelFld.x;
-				labelTrq.y = sliderBarTorque.y - 9;
-				labelTrq.width = 50;
-				backGround.addChild(labelTrq);
+				for (let phase = 0; phase < 3; phase++) {
+					sliderBarPos[phase].x = posX;
+					sliderBarPos[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderBarPos[phase]);
+					sliderPos[phase].x = posX + parseFloat((barLength * txtPos[phase].text / 360.0).toFixed(0));
+					sliderPos[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderPos[phase]);
+					txtPos[phase].textAlign = "center";
+					txtPos[phase].x = sliderPos[phase].x;
+					txtPos[phase].y = sliderPos[phase].y - 23;
+					txtPos[phase].width = 40;
+					touch.addChild(txtPos[phase]);
+				}
+		
+				// 2. 3 slider for phase-shifts:
+				posY -= delY * 4;
+				sliderBarPhase[0] = new lib.sliderBarU();
+				sliderBarPhase[1] = new lib.sliderBarV();
+				sliderBarPhase[2] = new lib.sliderBarW();
+				sliderPhase[0] = new lib.sliderU();
+				sliderPhase[1] = new lib.sliderV();
+				sliderPhase[2] = new lib.sliderW();
+				txtPhase[0] = new c.Text("0", "normal 10px Arial", "#000000");
+				txtPhase[1] = new c.Text("120", "normal 10px Arial", "#000000");
+				txtPhase[2] = new c.Text("-120", "normal 10px Arial", "#000000");
+				let labelPhase = new c.Text("phase/°:", "bold 14px Arial", "#000000");
+				labelPhase.textAlign = "left";
+				labelPhase.x = posXLabel;
+				labelPhase.y = posY - 2 * delY - 9;
+				labelPhase.width = 50;
+				backGround.addChild(labelPhase);
+		
+				for (let phase = 0; phase < 3; phase++) {
+					sliderBarPhase[phase].x = posX;
+					sliderBarPhase[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderBarPhase[phase]);
+					sliderPhase[phase].x = posX + parseFloat((barLength * txtPhase[phase].text / 360.0).toFixed(0));
+					sliderPhase[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderPhase[phase]);
+					txtPhase[phase].textAlign = "center";
+					txtPhase[phase].x = sliderPhase[phase].x;
+					txtPhase[phase].y = sliderPhase[phase].y - 23;
+					txtPhase[phase].width = 40;
+					touch.addChild(txtPhase[phase]);
+				}
+		
+				// 2. 3 slider for amplitudes:
+				posY -= delY * 4;
+				sliderBarAmp[0] = new lib.sliderBarUp();
+				sliderBarAmp[1] = new lib.sliderBarVp();
+				sliderBarAmp[2] = new lib.sliderBarWp();
+				sliderAmp[0] = new lib.sliderU();
+				sliderAmp[1] = new lib.sliderV();
+				sliderAmp[2] = new lib.sliderW();
+				let labelAmp = new c.Text("amplitude/p.u.:", "bold 14px Arial", "#000000");
+				labelAmp.textAlign = "left";
+				labelAmp.x = posXLabel;
+				labelAmp.y = posY - 2 * delY - 9;
+				labelAmp.width = 50;
+				backGround.addChild(labelAmp);
+		
+				for (let phase = 0; phase < 3; phase++) {
+					sliderBarAmp[phase].x = posX;
+					sliderBarAmp[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderBarAmp[phase]);
+					sliderAmp[phase].x = posX + parseFloat((barLength / 2.0).toFixed(0));
+					sliderAmp[phase].y = posY - delY * (2 - phase);
+					touch.addChild(sliderAmp[phase]);
+					txtAmp[phase] = new c.Text("1.0", "normal 10px Arial", "#000000");
+					txtAmp[phase].textAlign = "center";
+					txtAmp[phase].x = sliderAmp[phase].x;
+					txtAmp[phase].y = sliderAmp[phase].y - 23;
+					txtAmp[phase].width = 40;
+					touch.addChild(txtAmp[phase]);
+				}
 			}
+		
 			function createStartStop() { // start-/stop-button + mouseover-frame
 				startBtn = new lib.BtnGo();
 				startBtn.x = centerX;
@@ -5665,126 +5510,103 @@ if (reversed == null) { reversed = false; }
 				goFrame.visible = false;
 				touch.addChild(goFrame);
 			}
-			function createUpDn() { // Up/Down für input XS
-				dnBtn = new lib.BtnUp;
-				dnBtn.x = 683;
-				dnBtn.y = 97;
-				dnBtn.rotation = 180;
-				touch.addChild(dnBtn);
-				upBtn = new lib.BtnUp;
-				upBtn.x = 733;
-				upBtn.y = 97;
-				touch.addChild(upBtn);
-				dnFrame = new lib.FrameUp;
-				dnFrame.x = dnBtn.x;
-				dnFrame.y = dnBtn.y;
-				dnFrame.visible = false;
-				touch.addChild(dnFrame);
-				upFrame = new lib.FrameUp;
-				upFrame.x = upBtn.x;
-				upFrame.y = upBtn.y;
-				upFrame.visible = false;
-				touch.addChild(upFrame);
-			}
 		}
 		
-		function createPhasorDiag() { // phasors & header: ok
-		
-			state.thetaL = Math.acos((uSn * uSn + uPn * uPn - uXn * uXn) / (2 * uSn * uPn)) * rad2deg; // > 0: generator!
-			state.torqueNom = uPn * Math.sin(state.thetaL / rad2deg); // > 0: reference value
-			let phi = Math.acos(state.torqueNom / uXn) * rad2deg; // = -90°...+90°
-			state.torque = -1.0;
-		
-			vecUP = new lib.VecUP();
-			vecUP.x = phBaseX;
-			vecUP.y = phBaseY;
-			phNom /= vecUP.nominalBounds.height;
-			vecUP.scale = uPn * phNom;
-			vecUP.rotation = -state.thetaL;
-			game.addChild(vecUP);
-		
-			vecXSIS = new lib.VecXSIS();
-			let vecUPlength = vecUP.nominalBounds.height * vecUP.scale * 0.99;
-			vecXSIS.x = vecUP.x - vecUPlength * Math.sin(state.thetaL / rad2deg);
-			vecXSIS.y = vecUP.y - vecUPlength * Math.cos(state.thetaL / rad2deg);
-			if (DEBUG) console.log("vecUP.nominalBounds: " + vecUP.nominalBounds);
-			vecXSIS.scale = uXn * phNom;
-			vecXSIS.rotation = +90.0 + phi;
-			game.addChild(vecXSIS);
-		
-			vecUS = new lib.VecUS();
-			vecUS.x = vecUP.x;
-			vecUS.y = vecUP.y;
-			game.addChild(vecUS);
-			vecUS.scale = uSn * phNom; // will never be changed (grid voltage)
-		
-			state.psi = state.thetaL + phi;
-			state.theta = state.thetaL - state.speed;
-			rotateArmature();
-			setSlotAT(state.psi);
-		
+		function createBackground() { // header
+			// create background-container
+			backGround = new c.Container();
+			stage.addChild(backGround);
+			// background with different logos
+			// TTZ-logo:
+			back = new lib.bckGrndTTZ();
+			back.x = 0;
+			back.y = 0;
+			backGround.addChild(back);
+			// core:
+			core = new lib.stYoke();
+			core.x = centerX;
+			core.y = centerY;
+			backGround.addChild(core);
+			// create game-container
+			game = new c.Container();
+			stage.addChild(game);
 			// title
-			header = new c.Text(titGen, "bold 24px Arial", "#000000");
+			header = new c.Text(title, "bold 24px Arial", "#000000");
 			header.textAlign = "center";
 			header.x = centerX;
 			header.y = 35;
 			header.width = 300;
-			game.addChild(header);
-		
-		
+			backGround.addChild(header);
+			// time
+			omegatText = new c.Text("omega*t = 0°", "bold 16px Arial", "#000000");
+			omegatText.textAlign = "center";
+			omegatText.x = posX;
+			omegatText.y = 35;
+			omegatText.width = 300;
+			backGround.addChild(omegatText);
 		}
 		
 		function createSlotAT() { // armature ampere turns
 			let amp = [1.0, -0.5, -0.5];
+			current[0] = new lib.iUp();
+			current[1] = new lib.iVp();
+			current[2] = new lib.iWp();
+			current[3] = new lib.iUm();
+			current[4] = new lib.iVm();
+			current[5] = new lib.iWm();
+			phasor[0] = new lib.vecU();
+			phasor[1] = new lib.vecV();
+			phasor[2] = new lib.vecW();
+			phasorSum = new lib.vecSum();
+			phasorSum.x = centerX;
+			phasorSum.y = centerY;
+			let sumReal = 0, sumImag = 0;
 			for (let phase = 0; phase < 3; phase++) {
-				current[phase] = new lib.iSp();
-				current[phase + 3] = new lib.iSm();
+				phasor[phase].x = centerX;
+				phasor[phase].y = centerY;
+				phasor[phase].scale = scaleVec * Math.abs(amp[phase]);
+				phasor[phase].rotation = ( amp[phase] > 0 ? -90.0 + status[2][phase] : +90.0 + status[2][phase]);
+				sumReal += Math.abs(amp[phase]) * Math.cos(phasor[phase].rotation*Math.PI/180.0);
+				sumImag += Math.abs(amp[phase]) * Math.sin(phasor[phase].rotation*Math.PI/180.0);
+				if (DEBUG) console.log("createSlotAT: sumReal: " + sumReal + ", sumImag: " + sumImag);
+				tmp = phasor[phase]; game.addChild(tmp);
 				for (let side = 0; side < 2; side++) {
 					if (amp[phase] < 0) {
 						current[phase + (1 - side) * 3].x = posWdgs[phase][side][0];
-						if (DEBUG) console.log("posWdgs: " + posWdgs[phase][side][1]);
 						current[phase + (1 - side) * 3].y = posWdgs[phase][side][1];
-						if (DEBUG) console.log("posWdgs: " + posWdgs[phase][side][1]);
 		
 					} else {
 						current[phase + side * 3].x = posWdgs[phase][side][0];
-						if (DEBUG) console.log("posWdgs: " + posWdgs[phase][side][0]);
 						current[phase + side * 3].y = posWdgs[phase][side][1];
-						if (DEBUG) console.log("posWdgs: " + posWdgs[phase][side][1]);
 					}
 					current[phase + side * 3].scale = Math.sqrt(Math.abs(amp[phase]));
 					tmp = current[phase + side * 3];
 					game.addChild(tmp);
 				}
 			}
-			root.phiSt.rotation = -90;
-		}
-		
-		function createRotorAT() {
-			for (let phase = 0; phase < 4; phase++) {
-				fldCurrent[phase] = new lib.ifm();
-				fldCurrent[phase + 4] = new lib.ifp();
-			}
-			for (let phase = 0; phase < 8; phase++) {
-				fldCurrent[phase].x = posFldWdgs[phase][0];
-				fldCurrent[phase].y = posFldWdgs[phase][1];
-				tmp = fldCurrent[phase];
+			phasorSum.scale = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
+			phasorSum.rotation = Math.atan2(sumImag, sumReal)*180.0/Math.PI;
+			game.addChild(phasorSum);
+			if (DEBUG) console.log("createSlotAT: phasorSum.nominalBounds.height: " + phasorSum.nominalBounds.height + 
+							", phasorSum.scale: " + phasorSum.scale);
+			for (let cnt = 0; cnt < 361; cnt++) {
+				locus[cnt] = new lib.locusPt();
+				locus[cnt].x = centerX;
+				locus[cnt].y = centerY;
+				locus[cnt].scale = 0.4;
+				tmp = locus[cnt];
 				game.addChild(tmp);
 			}
 		}
 		
-		function setSlotAT(psi) { // psi = arc(IS -> UP)
-			let amp = 0.0; //ampMax = 0.0; // init tmp vars
-			let phi = 0;
-			
-			root.phiSt.rotation = 90.0 - state.theta + psi;
-			phi = (-root.phiSt.rotation-90.0) * Math.PI / 180;
-			
-			if (DEBUG1 && Math.abs(psi) > 1.0) console.log("setSlotAT, phi: " + (phi * 190 / Math.PI).toFixed(1) +
-				", psi: " + psi.toFixed(1) +
-				", torque: " + state.torque.toFixed(3)); //phi: -221.9, psi: 64.4, torque: -1.000
+		function updateSlotAT() { 
+			let amp = 0.0, sumReal = 0.0, sumImag = 0.0; // init tmp vars
 			for (let phase = 0; phase < 3; phase++) {
-				amp = state.iS * Math.cos(phi + phase * Math.PI * 2 / 3);
+				amp = status[0][phase] * Math.cos(omega_t + status[1][phase] * Math.PI /180.0);
+				phasor[phase].scale = scaleVec * Math.abs(amp);
+				phasor[phase].rotation = ( amp > 0 ? -90.0 + status[2][phase] : +90.0 + status[2][phase]);
+				sumReal += Math.abs(amp) * Math.cos(phasor[phase].rotation*Math.PI/180.0);
+				sumImag += Math.abs(amp) * Math.sin(phasor[phase].rotation*Math.PI/180.0);
 				for (let side = 0; side < 2; side++) {
 					if (amp < 0) {
 						current[phase + (1 - side) * 3].x = posWdgs[phase][side][0];
@@ -5796,84 +5618,26 @@ if (reversed == null) { reversed = false; }
 					current[phase + side * 3].scale = Math.sqrt(Math.abs(amp));
 				}
 			}
-		}
-		
-		function rotateArmature() { // shaft, AT, flux
-			// shaft:
-			state.theta += state.speed; // nominal speed: 1°/step
-			if (state.theta > 360) {
-				state.theta -= 360;
-			} else if (state.theta < -360) {
-				state.theta += 360;
-			}
-			root.roShaftPoles.rotation = -state.theta;
-			root.phiRo.rotation = -state.theta;
-			let co = Math.cos(-state.theta / rad2deg),
-			si = Math.sin(-state.theta / rad2deg);
-			for (let phase = 0; phase < 8; phase++) {
-				let x1 = posFldWdgs[phase][0],
-				y1 = posFldWdgs[phase][1];
-				fldCurrent[phase].x = (x1 - centerX) * co + (centerY - y1) * si + centerX;
-				fldCurrent[phase].y = (x1 - centerX) * si + (y1 - centerY) * co + centerY;
-				fldCurrent[phase].rotation = -state.theta;
-			}
+			phasorSum.scale = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
+			phasorSum.rotation = Math.atan2(sumImag, sumReal)*180.0/Math.PI;
+			locus[counter].x = centerX + sumImag * scaleVecSum * phasorSum.nominalBounds.height;
+			locus[counter].y = centerY - sumReal * scaleVecSum * phasorSum.nominalBounds.height;
 		}
 		
 		init();
+		
+		////////////////////////////////////////////////////////////////////////
+		// end of animatePhasor.fla
+		////////////////////////////////////////////////////////////////////////
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// game
-	this.phiRo = new lib.PhiRo();
-	this.phiRo.name = "phiRo";
-	this.phiRo.setTransform(275,300);
-
-	this.roShaftPoles = new lib.roShaftPoles();
-	this.roShaftPoles.name = "roShaftPoles";
-	this.roShaftPoles.setTransform(275,300);
-
-	this.infoXS = new cjs.Text("1.30", "10px 'Arial'");
-	this.infoXS.name = "infoXS";
-	this.infoXS.textAlign = "center";
-	this.infoXS.lineHeight = 13;
-	this.infoXS.lineWidth = 46;
-	this.infoXS.parent = this;
-	this.infoXS.setTransform(708,91.55);
-
-	this.infoParam = new cjs.Text("u = 1.00; i = 1.00; x = 1.30; uP = 2.00", "12px 'Arial'");
-	this.infoParam.name = "infoParam";
-	this.infoParam.lineHeight = 15;
-	this.infoParam.lineWidth = 231;
-	this.infoParam.parent = this;
-	this.infoParam.setTransform(617,7);
-
-	this.phiSt = new lib.PhiSt();
-	this.phiSt.name = "phiSt";
-	this.phiSt.setTransform(275,300);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.phiSt},{t:this.infoParam},{t:this.infoXS},{t:this.roShaftPoles},{t:this.phiRo}]}).wait(1));
-
-	// backGround
-	this.stYoke = new lib.stYoke();
-	this.stYoke.name = "stYoke";
-	this.stYoke.setTransform(275,300);
-
-	this.staticESB = new lib.ESB();
-	this.staticESB.name = "staticESB";
-	this.staticESB.setTransform(713.1,100.25,0.8079,0.8079,0,0,0,0.1,0.3);
-
-	this.BGTTZ = new lib.BGTTZ();
-	this.BGTTZ.name = "BGTTZ";
-	this.BGTTZ.setTransform(425,300,1,1,0,0,0,425,300);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.BGTTZ},{t:this.staticESB},{t:this.stYoke}]}).wait(1));
-
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = rect = new cjs.Rectangle(425,300,850,600);
+p.nominalBounds = rect = null;
 p.frameBounds = [rect];
 // library properties:
 lib.properties = {

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <config>
-<oamfile src="Assets/animateSMGrid_oam.xml" />
+<oamfile src="Assets/anPhasor_oam.xml" />
 </config>

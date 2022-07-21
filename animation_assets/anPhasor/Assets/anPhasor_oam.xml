@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns="http://openajax.org/metadata" spec="1.0" name="animateSMGrid" version="1">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" name="anPhasor" version="1">
 
 <description type="text/html"><![CDATA[Widget Exported from Flash Professional]]></description>
 
 <category name="Flash Animation"/>
 <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
-<icon src="PosterImg_154.png" width="850" height="600"/>
-<require type="other" src="iSEE04_SMGrid.html"/>
-<require type="javascript" src="iSEE04_SMGrid.js"/>
+<icon src="PosterImg_96.png" width="850" height="600"/>
+<require type="other" src="iSEE05_RotField.html"/>
+<require type="javascript" src="iSEE05_RotField.js"/>
 <require type="javascript" src="components/sdk/anwidget.js"/>
 <require type="javascript" src="components/ui/src/numericstepper.js"/>
 <require type="other" src="images/_preloader.gif"/>
@@ -23,7 +23,7 @@
 <property name="resizable" defaultValue="true" hidden="true"/>
 <property name="centering" defaultValue="both" hidden="true"/>
 <property name="scaling" defaultValue="both" hidden="true"/>
-<property name="html-page" defaultValue="iSEE04_SMGrid.html" hidden="true"/>
+<property name="html-page" defaultValue="iSEE05_RotField.html" hidden="true"/>
 <property name="target-platform" defaultValue="htmlcanvas" hidden="true"/>
 <property name="created-in" defaultValue="Adobe Animate CC" hidden="true"/>
 </properties>
