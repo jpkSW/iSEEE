@@ -5587,7 +5587,8 @@ if (reversed == null) { reversed = false; }
 					vecXSIS.scale = uXn * phNom;
 					vecXSIS.rotation = +90.0 + phi;
 		
-					state.psi = 180.0 - state.thetaL - phi;
+					state.psi = state.thetaL + phi; // same as in createPhasorDiag(){..}, 13.09.2022
+					//state.psi = 180.0 - state.thetaL - phi;
 					state.theta = state.thetaL - state.speed;
 					rotateArmature();
 					setSlotAT(state.psi);
