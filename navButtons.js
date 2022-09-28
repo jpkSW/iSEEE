@@ -25,7 +25,7 @@ document.write('\
             title="Synchronmotor mit Erregerwicklung (WRSM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"\
+        <a href="scim.html"><img src="images/SCIMLogo.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"\
             title="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"> </a>\
       </div>\
       <div class="navButton">\
