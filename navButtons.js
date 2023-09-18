@@ -33,11 +33,11 @@ document.write('\
             title="Asynchronmaschine mit Schleifringläufer (WRIM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)"\
+        <a href="scimdq.html"><img src="images/SCIMdqLogo.svg" alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)"\
             title="Asynchronmaschine in dq-Darstellung (SCIM/dq)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg"\
+        <a href="scimFC.html"><img src="images/SCIMFOCLogo.svg"\
             alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"\
             title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"> </a>\
       </div>\

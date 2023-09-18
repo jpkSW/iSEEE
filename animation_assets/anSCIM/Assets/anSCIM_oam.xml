@@ -5,7 +5,7 @@
 
 <category name="Flash Animation"/>
 <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
-<icon src="PosterImg_496.png" width="850" height="600"/>
+<icon src="PosterImg_725.png" width="850" height="600"/>
 <require type="other" src="iSEE05_SCIM.html"/>
 <require type="javascript" src="iSEE05_SCIM.js"/>
 <require type="javascript" src="components/sdk/anwidget.js"/>
