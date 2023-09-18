@@ -1,43 +1,43 @@
 document.write('\
-	<h3 align="center"><a href="index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische\
+	<h3 align="center"><a href="en_index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische\
           Energiewandlung</a> </h3>	\
 	<aside class="navBar">\
       <div class="navButton">\
-        <a href="dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>\
+        <a href="en_dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg" alt="Drehzahlverstellung DC-Motor"\
+        <a href="en_index.html"><img src="images/simple_stator.svg" alt="Drehzahlverstellung DC-Motor"\
             title="Drehzahlverstellung DC-Motor"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)"\
+        <a href="en_pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)"\
             title="Synchronmotor mit Permanentmagneten (PMSM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a>\
+        <a href="en_rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="wrsm.html"><img src="images/WRSMLogo.svg" alt="Netzgespeiste Synchronmaschine (MO(WR)SM)"\
+        <a href="en_wrsm.html"><img src="images/WRSMLogo.svg" alt="Netzgespeiste Synchronmaschine (MO(WR)SM)"\
             title="Netzgespeiste Synchronmaschine (MO(WR)SM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg" alt="Synchronmotor mit Erregerwicklung (WRSM)"\
+        <a href="en_index.html"><img src="images/simple_stator.svg" alt="Synchronmotor mit Erregerwicklung (WRSM)"\
             title="Synchronmotor mit Erregerwicklung (WRSM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="scim.html"><img src="images/SCIMLogo.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"\
+        <a href="en_scim.html"><img src="images/SCIMLogo.svg" alt="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"\
             title="Asynchronmaschine mit Kurzschlusswicklung (SCIM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Schleifringläufer (WRIM)"\
+        <a href="en_index.html"><img src="images/simple_stator.svg" alt="Asynchronmaschine mit Schleifringläufer (WRIM)"\
             title="Asynchronmaschine mit Schleifringläufer (WRIM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="scimdq.html"><img src="images/SCIMdqLogo.svg" alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)"\
+        <a href="en_scimdq.html"><img src="images/SCIMdqLogo.svg" alt="Asynchronmaschine in dq-Darstellung (SCIM/dq)"\
             title="Asynchronmaschine in dq-Darstellung (SCIM/dq)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="scimFC.html"><img src="images/SCIMFOCLogo.svg"\
+        <a href="en_scimFC.html"><img src="images/SCIMFOCLogo.svg"\
             alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"\
             title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"> </a>\
       </div>\
