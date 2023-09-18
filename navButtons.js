@@ -3,7 +3,7 @@ document.write('\
           Energiewandlung</a> </h3>	\
 	<aside class="navBar">\
       <div class="navButton">\
-        <a href="de/dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>\
+        <a href="dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>\
       </div>\
       <div class="navButton">\
         <a href="index.html"><img src="images/simple_stator.svg" alt="Drehzahlverstellung DC-Motor"\
