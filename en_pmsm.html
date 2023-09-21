@@ -27,53 +27,41 @@
     </div>
     <!-- Identity details -->
     <section class="profileHeader">
-      <h1> PMSM: <br>Synchronmotor mit Permanentmagneten</h1>
-      <h3><u>P</u>ermanent<u>M</u>agnet <u>S</u>ynchronous <u>M</u>otor</h3>
+      <h1> PMSM: <u>P</u>ermanent<u>M</u>agnet <u>S</u>ynchronous <u>M</u>otor</h1>
       <hr>
-      <p>Der Synchronmotor mit Dauermagnete im Rotor ist sehr ähnlich zu einem Gleichstrommotor, wenn die
-        Erregerwicklung durch Dauermagnete ersetzt wird und der Stator mit dem Rotor vertauscht wird.</p>
+      <p>The synchronous motor with permanent magnets in the rotor is very similar to a DC motor if the excitation winding is replaced by permanent magnets and the stator is exchanged with the rotor.</p>
       <!-- animation-block -->
       <p align="center">
         <object id="EdgeID" type="text/html" width="870" height="620" data-dw-widget="Edge" data="animation_assets/anPSM/Assets/iSEE02_PSM.html">
         </object>
       </p>
       <!-- topics to think about -->
-      <p>Experimentieren Sie mit der Vorgabe von Drehzahl (Schieberegler "speed (p.u.)") und Drehmoment (Schieberegler
-        "torque (p.u.)")!</p>
+      <p>Experiment with the setting of speed (slider "speed (p.u.)") and torque und Drehmoment (slider "torque (p.u.)")!</p>
       <div class="row">
         <div class="col">
           <div class="tabs">
             <div class="tab">
               <input type="radio" id="rd1" name="rd">
-              <label class="tab-label" for="rd1">Ersatzschaltbild</label>
+              <label class="tab-label" for="rd1">equivalent cicuit diagramm</label>
               <div class="tab-content">
-                Im Ersatzschaltbild sind die Strangspannung <u><em>U</em></u><sub>S</sub> (grün), der Spannungsabfall an
-                der Synchronreaktanz j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> (rot) und die Polradspannung
-                <u><em>U</em></u><sub>P</sub> (blau) mit den gleichen Farben eingepfeilt wie im Spannungszeigerdiagramm.
+				  In the equivalent circuit diagram, the stator voltage <u><em>U</em></u><sub>S</sub> (green), the voltage drop at the synchronous choke j<em>X</em><sub>S</sub> <u><em>I</em></u><sub>S</sub> (red) and the field e.m.f. <u><em>U</em></u><sub>P</sub> (blue) are drawn with the same colors as in the voltage phasor diagram.
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd2" name="rd">
-              <label class="tab-label" for="rd2">Grundstellbereich</label>
+              <label class="tab-label" for="rd2">|n| ≤ 1</label>
               <div class="tab-content">
-                Es wird bei dieser Darstellung unterstellt, dass Polradspannung und Strangstrom bei Drehzahlen (Regler
-                "speed") |n| ≤ 1 immer in Phase zueinander sind. In diesem Bereich "bläst" sich das Zeigerdiagramm
-                proportional zur Drehzahl auf. Es ist die Strangspannung <em>U</em><sub>S</sub> offensichtlich wie auch
-                die Polradspannung <em>U</em><sub>P</sub> proportional zur Drehzahl. <br>
-                Warum muss das bei dieser Betriebsart so sein?
+				  As long as |n| ≤ 1 it is assumed that the field e.m.f. <u><em>U</em></u><sub>P</sub> and the stator current <u><em>I</em></u><sub>S</sub> are always in phase with each other (may be varied with the slider "speed"). In this range, the phasor diagram "inflates" in proportion to the speed. It seems that the stator voltage <em>U</em><sub>S</sub> is proportional to the speed, as is the field e.m.f. <em>U</em><sub>P</sub>. <br> 
+				  Why must this be the case in this operating mode?
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd3" name="rd">
-              <label class="tab-label" for="rd3">Feldschwächung</label>
+              <label class="tab-label" for="rd3">|n| &gt; 1 with constant (nominal) stator voltage</label>
               <div class="tab-content">
-                Wenn die Maschine aber schneller als mit Drehzahl |n| ≥ 1 läuft, reicht die Strangspannung nicht mehr
-                aus, um auch bei der immer größer werdenden Polradspannung den Strangstrom mit der gleichen Phasenlage
-                einzuprägen. Dann muss der Strangstrom voreilend zur Polradspannung eingeprägt werden. Man spricht dann
-                von einer "aktiven Feldschwächung".<br>
-                Warum muss der Strom voreilend zur Polradspannung sein, wenn die Statorspannung
-                <u><em>U</em></u><sub>S</sub> nicht mehr größer werden kann? Was würde passieren, wenn der Strom
-                nacheilend zur Polradspannung wäre?
+				  However, if the machine runs faster than with speed |n| ≥ 1, the phase voltage is no longer sufficient to impress the phase current at the same phase position with an increasing field e.m.f.. Therefore, the phase current must be leading to the field e.m.f.. This is called "active field weakening".
+				  <br>
+				  Why does the current have to be leading to the field e.m.f. if the stator voltage <em>U</em><sub>S</sub> can no longer increase? What would happen if the current were lagging behind the pole wheel voltage?
               </div>
             </div>
             <div class="tab">

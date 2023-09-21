@@ -2802,13 +2802,13 @@ if (reversed == null) { reversed = false; }
 		var shaft; // rotating shaft
 		var header; // title
 		var game; // it's just a kind of game...
-		var touch, startBtn, stopBtn; // GUI-stuff
+		var touch, startBtn, stopBtn, goFrame; // GUI-stuff
 		var speedCW, speedCCW, speedCWFrame, speedCCWFrame;
 		var torqCW, torqCCW, torqCWFrame, torqCCWFrame;
 		let BTN_SCALE = 1.4;
 		var inGame = false; // game stopped
 		const centerX = 275, centerY = 300;
-		var shaft, rRe; // = root.shaft.nominalBounds.width / 2; // rotor outer radius
+		var rRe; // = root.shaft.nominalBounds.width / 2; // rotor outer radius
 		let iF = new Array(4); // field AT
 		let QA = 16; // number of slots
 		let iA = new Array(QA); // QA armature slot AT
@@ -2831,8 +2831,8 @@ if (reversed == null) { reversed = false; }
 			r = window.devicePixelRatio;
 			w = stage.canvas.width / r;
 			h = stage.canvas.height / r;
-			let titGen = "Gleichstromgenerator";
-			let titMot = "Gleichstrommotor";
+			let titGen = "DC-Generator";
+			let titMot = "DC-Motor";
 		
 			if (DEBUG) console.log("r: " + r + ", w: " + w + ", h: " + h);
 		
@@ -3060,17 +3060,17 @@ if (reversed == null) { reversed = false; }
 		
 			// background with different logos
 			// TTZ-logo:
-			back = new lib.bckGrndTTZthws();
+			let back = new lib.bckGrndTTZthws();
 			back.x = 0;
 			back.y = 0;
 			backGround.addChild(back);
 			
-			yoke = new lib.stYoke();
+			let yoke = new lib.stYoke();
 			yoke.x = centerX;
 			yoke.y = centerY;
 			backGround.addChild(yoke);
 		
-			eqc = new lib.eqCirc();
+			let eqc = new lib.eqCirc();
 			eqc.x = 520;
 			eqc.y = 20;
 			backGround.addChild(eqc);
@@ -3094,21 +3094,21 @@ if (reversed == null) { reversed = false; }
 			backGround.addChild(vecUBr);
 		
 			// title
-			header = new c.Text("Gleichstrommotor", "bold 24px Arial", "#000000");
+			header = new c.Text("DC-Motor", "bold 24px Arial", "#000000");
 			header.textAlign = "center";
 			header.x = centerX;
 			header.y = 35;
 			header.width = 300;
 			backGround.addChild(header);
 		
-			var text1 = new c.Text("Drehrichtung:", "bold 18px Arial", "#000000");
+			var text1 = new c.Text("direction of rotation:", "bold 18px Arial", "#000000");
 			text1.textAlign = "left";
 			text1.x = w / 2 + 100;
 			text1.y = (h + centerY) / 2 + 450 / 4 - 8;
 			text1.width = 200;
 			backGround.addChild(text1);
 		
-			var text2 = new c.Text("Drehmomentrichtung:", "bold 18px Arial", "#000000");
+			var text2 = new c.Text("direction of torque:", "bold 18px Arial", "#000000");
 			text2.textAlign = "left";
 			text2.x = text1.x;
 			text2.y = (h + centerY) / 2 + 450 / 4 - 55;
@@ -3161,6 +3161,7 @@ if (reversed == null) { reversed = false; }
 			shaft.x = centerX;
 			shaft.y = centerY;
 			game.addChild(shaft);
+			let tmp = 0.0;
 		
 			rRe = shaft.nominalBounds.width / 2;
 		
@@ -3200,7 +3201,7 @@ if (reversed == null) { reversed = false; }
 			shaft.rotation = -state.theta;
 		
 			// slot ampere turns:
-			angle = ((state.theta + 180 / QA) % (360 / QA)) * Math.PI / 180;
+			let angle = ((state.theta + 180 / QA) % (360 / QA)) * Math.PI / 180;
 			if (angle < 0) {
 				angle += (360 / QA) * Math.PI / 180;
 			}
@@ -3209,6 +3210,7 @@ if (reversed == null) { reversed = false; }
 			let tmp = ((state.torque > 0) ? rRe - iA[0].nominalBounds.width / 2 : -rRe + iA[0].nominalBounds.width / 2); // rRe := sign(torque) * rRe;
 			let meanAngle = 0;
 			let mmf = 0;
+			let amplComm = 0.0;
 		
 			for (let i = 0; i < QA / 2; i++) {
 				iA[i].x = centerX + tmp * Math.cos(angle);

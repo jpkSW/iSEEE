@@ -2776,8 +2776,8 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////////////////////////////////////////
 								
 		var c, // CreateJS-bib
-		    r, // Device Pixel Ratio
-		    w, h; // width, height
+			r, // Device Pixel Ratio
+			w, h; // width, height
 		var root = this;
 		var backGround, // reference to all the static stuff
 			header, // title
@@ -2791,7 +2791,7 @@ if (reversed == null) { reversed = false; }
 		var uXn = 0.75,
 			uSn = 1,
 			uPn = Math.sqrt(uSn * uSn - uXn * uXn); // nominal values
-		var psi = 0.0; // arc (I_S -> U_P)
+		//var psi = 0.0; // arc (I_S -> U_P)
 		var phNom = 160; // phasor nominal length = 1 p.u.
 		const W32 = Math.sqrt(3.0) / 2.0;
 		const posWdgs = [
@@ -2811,7 +2811,7 @@ if (reversed == null) { reversed = false; }
 		var current = []; // U1, V1, W1, U2, V2, W2
 		var vecUS, vecUP, vecXSIS;
 		var roShaft, phiSt, phiRo;
-		var infoXS;
+		var infoXS, infoParam;
 		var sliderBarSpeed, sliderBarTorque, sliderSpeed, sliderTorque, txtSpeed, txtTorque;
 		var state = {
 			theta: 0.0,
@@ -2823,7 +2823,8 @@ if (reversed == null) { reversed = false; }
 		};
 		
 		// stuff for start&stop, direction of speed&torque
-		var startBtn, stopBtn, touch; // speedCW, speedCCW, torqCW, torqCCW, 
+		var startBtn, stopBtn, touch, goFrame; // speedCW, speedCCW, torqCW, torqCCW, 
+		var dnBtn, upBtn, dnFrame, upFrame;
 		const DEBUG = false, DEBUG1 = false, DEBUG2 = false;
 		
 		////////////////////////////////////////////////////////////////////////
@@ -2904,13 +2905,13 @@ if (reversed == null) { reversed = false; }
 				let uS = Math.sqrt(uP * uP + uX * uX);
 				let thetaL = 0.0;
 				if (uS <= 1.0) {
-					vecUP.scale = uP * phNom;
+					vecUP.scaleY = uP * phNom;
 		
-					vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scale;
-					vecXSIS.scale = uX * phNom;
+					vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scaleY;
+					vecXSIS.scaleY = uX * phNom;
 					vecXSIS.rotation = (state.torque * state.speed > 0 ? -90 : +90);
 		
-					vecUS.scale = uS * phNom;
+					vecUS.scaleY = uS * phNom;
 					thetaL = Math.asin(uX / uS) * 180 / Math.PI;
 					vecUS.rotation = (state.torque * state.speed > 0 ? -thetaL : thetaL);
 					state.iS = state.torque;
@@ -2922,7 +2923,7 @@ if (reversed == null) { reversed = false; }
 						", mKipp: " + mKipp.toFixed(3) +
 						", torque: " + state.torque.toFixed(3)); ///////////////////////////////////////////////////////
 					if (mKipp < Math.abs(state.torque)) {
-						state.torque = (torque >= 0.0 ? mKipp : -mKipp);;
+						state.torque = (state.torque >= 0.0 ? mKipp : -mKipp);
 						limitTorque(state.torque);
 					}
 					let X_iq = Math.abs(state.speed * state.torque) * uXn;
@@ -2945,12 +2946,12 @@ if (reversed == null) { reversed = false; }
 						", torque: " + state.torque.toFixed(3) +
 						", iS: " + state.iS.toFixed(3)); ///////////////////////////////////////////////////////
 		
-					vecUP.scale = uP * phNom;
-					vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scale;
-					vecXSIS.scale = uX * phNom;
+					vecUP.scaleY = uP * phNom;
+					vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scaleY;
+					vecXSIS.scaleY = uX * phNom;
 					vecXSIS.rotation = (state.torque * state.speed > 0 ? -90 - psi : +90 + psi);
 					vecUS.rotation = (state.torque * state.speed > 0 ? -thetaL : thetaL);
-					vecUS.scale = uSn * phNom;
+					vecUS.scaleY = uSn * phNom;
 					uS = uSn;
 				}
 				infoParam.text = "uS = " + uS.toFixed(2) 
@@ -3170,12 +3171,12 @@ if (reversed == null) { reversed = false; }
 			game = new c.Container();
 			stage.addChild(game);
 			// TTZ-logo:
-			back = new lib.bckGrndTTZthws();
+			let back = new lib.bckGrndTTZthws();
 			back.x = 0;
 			back.y = 0;
 			backGround.addChild(back);
 			
-			eqCirc = new lib.ESB();
+			let eqCirc = new lib.ESB();
 			eqCirc.x = 713;
 			eqCirc.y = 100;
 			eqCirc.scale = 0.8;
@@ -3183,7 +3184,7 @@ if (reversed == null) { reversed = false; }
 			//eqCirc.scale = 140;
 			backGround.addChild(eqCirc);
 			
-			core = new lib.stYoke();
+			let core = new lib.stYoke();
 			core.x = centerX;
 			core.y = centerY;
 			backGround.addChild(core);
@@ -3192,22 +3193,22 @@ if (reversed == null) { reversed = false; }
 			vecUP.x = phBaseX;
 			vecUP.y = phBaseY;
 			phNom /= vecUP.nominalBounds.height;
-			vecUP.scale = uPn * phNom;
+			vecUP.scaleY = uPn * phNom;
 			game.addChild(vecUP);
 		
 			vecXSIS = new lib.VecXSIS();
 			vecXSIS.x = vecUP.x;
-			vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scale;
+			vecXSIS.y = vecUP.y - vecUP.nominalBounds.height * vecUP.scaleY;
 			if (DEBUG) console.log("vecUP.nominalBounds: " + vecUP.nominalBounds);
 			vecXSIS.rotation = -90;
-			vecXSIS.scale = uXn * phNom;
+			vecXSIS.scaleY = uXn * phNom;
 			game.addChild(vecXSIS);
 		
 			vecUS = new lib.VecUS();
 			vecUS.x = vecUP.x;
 			vecUS.y = vecUP.y;
 			game.addChild(vecUS);
-			vecUS.scale = uSn * phNom;
+			vecUS.scaleY = uSn * phNom;
 			let theta = Math.asin(uXn / uSn) * 180 / Math.PI;
 			vecUS.rotation = -theta;
 		
@@ -3226,6 +3227,7 @@ if (reversed == null) { reversed = false; }
 			roShaft.y = centerY;
 			game.addChild(roShaft);
 			let amp = [1.0, -0.5, -0.5];
+			let tmp = 0.0;
 			for (let phase = 0; phase < 3; phase++) {
 				current[phase] = new lib.iSp();
 				current[phase + 3] = new lib.iSm();
@@ -3296,17 +3298,7 @@ if (reversed == null) { reversed = false; }
 				state.theta += 360;
 			}
 			roShaft.rotation = -state.theta;
-			phiRo.rotation = -state.theta;
-			/*
-			// slot ampere turns:
-			angle = ((state.theta + 180/QA) % (360/QA)) * Math.PI/180;
-			if (angle < 0) {
-				angle += (360/QA) * Math.PI/180;
-			}
-		
-			phiA.rotation = meanAngle*180/Math.PI;
-			phiA.scale = mmf / (QA/2);*/
-		
+			phiRo.rotation = -state.theta;		
 		}
 		
 		init();

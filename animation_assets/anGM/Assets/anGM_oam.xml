@@ -5,12 +5,13 @@
 
 <category name="Flash Animation"/>
 <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
-<icon src="PosterImg_65.png" width="850" height="600"/>
+<icon src="PosterImg_678.png" width="850" height="600"/>
 <require type="other" src="iSEE01_GM.html"/>
 <require type="javascript" src="iSEE01_GM.js"/>
 <require type="javascript" src="components/sdk/anwidget.js"/>
 <require type="javascript" src="components/ui/src/numericstepper.js"/>
 <require type="image" src="images/iSEE05_SCIM_atlas_1.png"/>
+<require type="image" src="images/iSEE07_SCIMdq_atlas_1.png"/>
 <require type="other" src="images/_preloader.gif"/>
 <require type="folder" src="components"/>
 <require type="folder" src="components/sdk"/>

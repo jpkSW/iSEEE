@@ -1,6 +1,6 @@
 document.write('\
-	<h3 align="center"><a href="en_index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische\
-          Energiewandlung</a> </h3>	\
+	<h3 align="center"><a href="en_index.html"> iSEEE: Interactive Seminar\
+      "Introduction to Electromagnetic Energy Conversion"</a> </h3>	\
 	<aside class="navBar">\
       <div class="navButton">\
         <a href="en_dcMotor.html"><img src="images/dcMotLogo.svg" alt="DC-Motor" title="DC-Motor"></a>\
@@ -10,15 +10,15 @@ document.write('\
             title="Drehzahlverstellung DC-Motor"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="en_pmsm.html"><img src="images/PMSMLogo.svg" alt="Synchronmotor mit Permanentmagneten (PMSM)"\
-            title="Synchronmotor mit Permanentmagneten (PMSM)"> </a>\
+        <a href="en_pmsm.html"><img src="images/PMSMLogo.svg" alt="Permanentmagnet Synchronous Motor (PMSM)"\
+            title="Permanentmagnet Synchronous Motor (PMSM)"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="en_rotField.html"><img src="images/DFM_Logo.svg" alt="Drehfeld" title="Drehfeld"> </a>\
+        <a href="en_rotField.html"><img src="images/DFM_Logo.svg" alt="Rotating Field" title="Rotating Field"> </a>\
       </div>\
       <div class="navButton">\
-        <a href="en_wrsm.html"><img src="images/WRSMLogo.svg" alt="Netzgespeiste Synchronmaschine (MO(WR)SM)"\
-            title="Netzgespeiste Synchronmaschine (MO(WR)SM)"> </a>\
+        <a href="en_wrsm.html"><img src="images/WRSMLogo.svg" alt="Mains-Operated (Wound Rotor) Synchronous Machine (MO(WR)SM)"\
+            title="Mains-Operated (Wound Rotor) Synchronous Machine (MO(WR)SM)"> </a>\
       </div>\
       <div class="navButton">\
         <a href="en_index.html"><img src="images/simple_stator.svg" alt="Synchronmotor mit Erregerwicklung (WRSM)"\

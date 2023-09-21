@@ -2790,7 +2790,7 @@ if (reversed == null) { reversed = false; }
 		const posX = 725; 		// x-center of all sliders
 		const scaleVec = 1.38;
 		const scaleVecSum = scaleVec * 110.0/190.0;
-		var phNom = 110; 		// phasor nominal length = 1 p.u.
+		//var phNom = 110; 		// phasor nominal length = 1 p.u.
 		var barLength = 200; 	// 200px? set in createSlider()
 		const W32 = Math.sqrt(3.0) / 2.0;
 		var posWdgs = [ 	// default values, maybe changed by sliderPos[]
@@ -2822,9 +2822,9 @@ if (reversed == null) { reversed = false; }
 		let locus = [];
 		
 		// stuff for GUI
-		var startBtn, stopBtn, touch; //
+		var startBtn, stopBtn, touch, goFrame; //
 		const DEBUG = true;
-		const DEBUG1 = false;
+		//const DEBUG1 = false;
 		const DEBUG2 = false;
 		
 		function init() {
@@ -3079,12 +3079,12 @@ if (reversed == null) { reversed = false; }
 			stage.addChild(backGround);
 			// background with different logos
 			// TTZ-logo:
-			back = new lib.bckGrndTTZthws();
+			let back = new lib.bckGrndTTZthws();
 			back.x = 0;
 			back.y = 0;
 			backGround.addChild(back);
 			// core:
-			core = new lib.stYoke();
+			let core = new lib.stYoke();
 			core.x = centerX;
 			core.y = centerY;
 			backGround.addChild(core);
@@ -3121,11 +3121,11 @@ if (reversed == null) { reversed = false; }
 			phasorSum = new lib.vecSum();
 			phasorSum.x = centerX;
 			phasorSum.y = centerY;
-			let sumReal = 0, sumImag = 0;
+			let sumReal = 0, sumImag = 0, tmp= 0;
 			for (let phase = 0; phase < 3; phase++) {
 				phasor[phase].x = centerX;
 				phasor[phase].y = centerY;
-				phasor[phase].scale = scaleVec * Math.abs(amp[phase]);
+				phasor[phase].scaleY = scaleVec * Math.abs(amp[phase]);
 				phasor[phase].rotation = ( amp[phase] > 0 ? -90.0 + status[2][phase] : +90.0 + status[2][phase]);
 				sumReal += Math.abs(amp[phase]) * Math.cos(phasor[phase].rotation*Math.PI/180.0);
 				sumImag += Math.abs(amp[phase]) * Math.sin(phasor[phase].rotation*Math.PI/180.0);
@@ -3145,11 +3145,11 @@ if (reversed == null) { reversed = false; }
 					game.addChild(tmp);
 				}
 			}
-			phasorSum.scale = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
+			phasorSum.scaleY = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
 			phasorSum.rotation = Math.atan2(sumImag, sumReal)*180.0/Math.PI;
 			game.addChild(phasorSum);
 			if (DEBUG) console.log("createSlotAT: phasorSum.nominalBounds.height: " + phasorSum.nominalBounds.height + 
-							", phasorSum.scale: " + phasorSum.scale);
+							", phasorSum.scale: " + phasorSum.scaleY);
 			for (let cnt = 0; cnt < 361; cnt++) {
 				locus[cnt] = new lib.locusPt();
 				locus[cnt].x = centerX;
@@ -3164,7 +3164,7 @@ if (reversed == null) { reversed = false; }
 			let amp = 0.0, sumReal = 0.0, sumImag = 0.0; // init tmp vars
 			for (let phase = 0; phase < 3; phase++) {
 				amp = status[0][phase] * Math.cos(omega_t + status[1][phase] * Math.PI /180.0);
-				phasor[phase].scale = scaleVec * Math.abs(amp);
+				phasor[phase].scaleY = scaleVec * Math.abs(amp);
 				phasor[phase].rotation = ( amp > 0 ? -90.0 + status[2][phase] : +90.0 + status[2][phase]);
 				sumReal += Math.abs(amp) * Math.cos(phasor[phase].rotation*Math.PI/180.0);
 				sumImag += Math.abs(amp) * Math.sin(phasor[phase].rotation*Math.PI/180.0);
@@ -3179,7 +3179,7 @@ if (reversed == null) { reversed = false; }
 					current[phase + side * 3].scale = Math.sqrt(Math.abs(amp));
 				}
 			}
-			phasorSum.scale = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
+			phasorSum.scaleY = scaleVecSum * Math.sqrt(sumReal*sumReal + sumImag*sumImag);
 			phasorSum.rotation = Math.atan2(sumImag, sumReal)*180.0/Math.PI;
 			locus[counter].x = centerX + sumImag * scaleVecSum * phasorSum.nominalBounds.height;
 			locus[counter].y = centerY - sumReal * scaleVecSum * phasorSum.nominalBounds.height;
