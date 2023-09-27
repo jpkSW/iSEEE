@@ -3176,7 +3176,7 @@ if (reversed == null) { reversed = false; }
 		const titGen = "induction generator", titMot = "induction motor", titBrake = "induction brake";
 		const centerX = 240, centerY = 300;
 		const rSi = 165, rRe = 165 - 50; // center + stator inner radius
-		const xSmin = 1.05, xSmax = 1.5, xSdel = 0.05; // range for xS
+		//const xSmin = 1.05, xSmax = 1.5, xSdel = 0.05; // range for xS
 		var phBaseX, phBaseY;
 		var phNom = 160; // phasor nominal length = 1 p.u.
 		const W32 = Math.sqrt(3.0) / 2.0;
@@ -3212,10 +3212,9 @@ if (reversed == null) { reversed = false; }
 		var stCurrent = []; // objects for U1, V1, W1, U2, V2, W2
 		var roCurrent = []; // objects for u1, u2, v1, v2, w1, w2
 		const CURR_SCALE = 1.4;
-		var vecUS, vecIS, vecIR, vecI0, locus; // objects for phasor-diagram
+		var vecUS, vecIS, vecIR, vecI0, locusIS; // objects for phasor-diagram
 		var roShaft, phiRo, phiSt;
-		var sliderBarRR, sliderRR, txtRR;
-		var sliderBarSpeed, sliderSpeed, txtSpeed;
+		var sliderSpeed, sliderfS;
 		var infoXS, infoParam;
 		var scim = { // params & status of the SCIM
 			sigma: 0.15,
@@ -3232,7 +3231,7 @@ if (reversed == null) { reversed = false; }
 			iR: [0.9, 90]
 		};
 		// stuff for start&stop, direction of speed&torque
-		var startBtn, stopBtn, touch; // speedCW, speedCCW, torqCW, torqCCW, 
+		var startBtn, stopBtn, touch, goFrame; // speedCW, speedCCW, torqCW, torqCCW, 
 		const DBG_CREATE = false, DBG_ECD = true, DBG_SLIDER = false;
 		
 		init();
@@ -3269,24 +3268,25 @@ if (reversed == null) { reversed = false; }
 		
 			function createBackground() { // background, stator-yoke, equiv. circuit
 				// TTZ-logo:
-				back = new lib.bckGrndTTZthws();
+				let back = new lib.bckGrndTTZthws();
 				back.x = 0;
 				back.y = 0;
 				backGround.addChild(back);
 		
-				eqCirc = new lib.ECD_IM_dq();
+				let eqCirc = new lib.ECD_IM_dq();
 				eqCirc.x = 700;
 				eqCirc.y = 90;
 				eqCirc.scale = 1.5;
 				backGround.addChild(eqCirc);
 		
-				core = new lib.stYoke();
+				let core = new lib.stYoke();
 				core.x = centerX;
 				core.y = centerY;
 				backGround.addChild(core);
 			}
 			function createStatorAT() { // stator ampere turns
 				//let amp = [-1.0, 0.5, 0.5];
+				let tmp = 0.0;
 				for (let phase = 0; phase < 3; phase++) {
 					stCurrent[phase] = new lib.iSp();
 					stCurrent[phase + 3] = new lib.iSm();
@@ -3303,6 +3303,7 @@ if (reversed == null) { reversed = false; }
 			}
 			function createRotorAT() { // roShaft, rotor ampere turns, phiRo
 				const ROTOR_SCALE = 1.4;
+				let tmp = 0.0;
 				roShaft = new lib.roShaft();
 				roShaft.x = centerX;
 				roShaft.y = centerY;
@@ -3406,7 +3407,7 @@ if (reversed == null) { reversed = false; }
 				vecIS.y = vecUS.y;
 				vecIS.rotation = 90;
 				phNom = (w - vecUS.x - 10) / vecIS.nominalBounds.height;
-				vecIS.scale = phNom;
+				vecIS.scaleY = phNom;
 				game.addChild(vecIS);
 		
 				// vec I_0 stays constant
@@ -3414,8 +3415,8 @@ if (reversed == null) { reversed = false; }
 				vecI0.x = vecUS.x;
 				vecI0.y = vecUS.y;
 				vecI0.rotation = 90 -90;
-				let vecI0scale = scim.sigma * vecIS.nominalBounds.height * vecIS.scale / vecI0.nominalBounds.width;
-				vecI0.scale = 0.0; //scim.sigma * vecIS.nominalBounds.height * vecIS.scale / vecI0.nominalBounds.width;
+				let vecI0scale = scim.sigma * vecIS.nominalBounds.height * vecIS.scaleY / vecI0.nominalBounds.width;
+				vecI0.scaleX = 0.0; //scim.sigma * vecIS.nominalBounds.height * vecIS.scale / vecI0.nominalBounds.width;
 				game.addChild(vecI0);
 		
 				// vec I_R = I_Roo
@@ -3424,13 +3425,13 @@ if (reversed == null) { reversed = false; }
 				vecIR.x = vecUS.x; // + vecISlength;
 				vecIR.y = vecUS.y;
 				vecIR.rotation = 90;// -90;
-				vecIR.scale = phNom; // *(1 - scim.sigma); 
+				vecIR.scaleY = phNom; // *(1 - scim.sigma); 
 				game.addChild(vecIR);
 		
 				// params for locus itself:
 				locusIS.y = vecI0.y;
 				locusIS.x = vecI0.x + vecI0.nominalBounds.width * vecI0scale;
-				locusIS.scale = vecIR.nominalBounds.height * vecIS.scale *(1 - scim.sigma) / locusIS.nominalBounds.height;
+				locusIS.scale = vecIR.nominalBounds.height * vecIS.scaleY *(1 - scim.sigma) / locusIS.nominalBounds.height;
 				locusIS.x0 = locusIS.x;
 				locusIS.scale0 = locusIS.scale;
 		
@@ -3492,9 +3493,9 @@ if (reversed == null) { reversed = false; }
 						scim.fS = 0.000001;
 					}
 					if (scim.fS < 1.0) {
-						vecUS.scale = scim.fS;
+						vecUS.scaleY = scim.fS;
 					} else {
-						vecUS.scale =1.0;
+						vecUS.scaleY =1.0;
 					}
 					sliderfS.txt.text = scim.fS.toFixed(2);
 					scim.speed = step((scim.fS - fR), 0.05);
@@ -3553,6 +3554,7 @@ if (reversed == null) { reversed = false; }
 			function setStatorAT([iS, phi]) { //
 				phi += scim.omt;
 				phiSt.rotation = phi;
+				let amp = 0.0;
 				for (let phase = 0; phase < 3; phase++) {
 					amp = -iS * Math.sin(phi / rad2deg - phase * Math.PI * 2 / 3);
 					for (let side = 0; side < 2; side++) {
@@ -3570,6 +3572,7 @@ if (reversed == null) { reversed = false; }
 			function setRotor(phi) {
 				roShaft.rotation = phi + 180;
 				scim.theta = phi;
+				let amp = 0.0;
 				if (scim.theta < -180.0) {
 					scim.theta += 360.0;
 				}
@@ -3597,7 +3600,7 @@ if (reversed == null) { reversed = false; }
 			}
 			function calcECD() { // get iS and iR 
 				let iSimag = scim.uS / scim.x;
-				let vecI0scale = scim.sigma * vecIS.nominalBounds.height * vecIS.scale / vecI0.nominalBounds.width;
+				//vecI0scale = scim.sigma * vecIS.nominalBounds.height * vecIS.scaleY / vecI0.nominalBounds.width;
 				if (scim.fS > 1.0) {
 					iSimag = scim.uS / (scim.x * scim.fS); 
 					// shift locus position
@@ -3639,16 +3642,16 @@ if (reversed == null) { reversed = false; }
 					}
 				}
 				// |IS|, phi:
-				vecIS.scale = phNom * scim.iS[0];
+				vecIS.scaleY = phNom * scim.iS[0];
 				vecIS.rotation = scim.iS[1];
 				// |IR|, phiR:
-				vecIR.scale = phNom * scim.iR[0];
+				vecIR.scaleY = phNom * scim.iR[0];
 				vecIR.rotation = scim.iR[1];
 				// IR starts @ end of IS:
-				let vecISlength = vecIS.nominalBounds.height * vecIS.scale;
-				let vecIRlength = vecIR.nominalBounds.height * vecIR.scale;
+				let vecISlength = vecIS.nominalBounds.height * vecIS.scaleY;
+				let vecIRlength = vecIR.nominalBounds.height * vecIR.scaleY;
 				let vecI0length = Math.sqrt(vecISlength*vecISlength - vecIRlength*vecIRlength);
-				vecI0.scale = vecI0length / vecI0.nominalBounds.width*1.05;
+				vecI0.scaleX = vecI0length / vecI0.nominalBounds.width*1.05;
 				vecIR.x = vecIS.x + vecISlength * Math.sin(scim.iS[1] / rad2deg) -
 									vecIRlength * Math.sin(scim.iR[1] / rad2deg);
 				vecIR.y = vecIS.y - vecISlength * Math.cos(scim.iS[1] / rad2deg) +

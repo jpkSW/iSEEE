@@ -27,12 +27,11 @@
     </div>
     <!-- Identity details -->
     <section class="profileHeader">
-      <h1> SCIM: Asynchronmaschine mit Kurzschlussläufer </h1>
-      <h3><u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine </h3>
+      <h1> SCIM: <u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine </h1>
       <hr>
-      <p>Die Asynchronmaschine mit Kurzschlussläufer benötigt keinen Anschluss für die Rotorwicklung. Die Wicklung besteht aus metallischen Stäben (Aluminium oder Kupfer), die an den beiden Stirnseiten des Rotors mit jeweils einem Ring kurzgeschlossen sind. (squirrel-cage bzw. "Hamsterkäfig")</p>
-      <p>Die Schieberegler sind zunächst so eingestellt, dass eine ideale verlustlose Rotorwicklung bei stillstehendem Rotor unterstellt wird.</p>
-      <p>Betrachtet wird hier der Betrieb am starren Netz, d.h. die Statorspannung und -frequenz bleiben konstant.</p>
+      <p>The asynchronous machine with squirrel-cage rotor does not require a connection for the rotor winding. The winding consists of metallic bars (aluminum or copper) which are short-circuited with a ring at each end of the rotor. </p>
+      <p>The sliders are initially set so that an ideal lossless rotor winding is assumed with the rotor stationary.</p>
+      <p>Here the operation in a grid with constant voltage and constant frequency is considered.</p>
 
       <!-- animation-block -->
       <p align="center">
@@ -47,52 +46,53 @@
           <div class="tabs">
             <div class="tab">
               <input type="radio" id="rd1" name="rd">
-              <label class="tab-label" for="rd1">Ersatzschaltbild</label>
+              <label class="tab-label" for="rd1">equivalent circuit diagram</label>
               <div class="tab-content">
-                Im Ersatzschaltbild sind die Strangspannung <u><em>U</em></u><sub>S</sub> (grün), der "Leerlaufstrom" <u><em>I</em></u><sub>0</sub> (grün), der Statorstrom <u><em>I</em></u><sub>S</sub> (rot) und der Rotorstrom <u><em>I</em></u><sub>R&#963;</sub> (blau) mit den gleichen Farben eingepfeilt wie im Spannungs- bzw. Stromzeigerdiagramm.
-                <br>
-                Da in dieser Animation der Betrieb bei konstanter Spannung und Frequenz betrachtet wird, werden sich die beiden "grünen Zeiger" <u><em>U</em></u><sub>S</sub> und <u><em>I</em></u><sub>0</sub> nicht ändern.
-				  Verändern Sie zunächst nicht die beiden Schieberegler (n = 0, <u><em>R</em></u><sub>R&#915;</sub> = 0) und starten Sie die Animation!
+				  In the equivalent circuit diagram, the stator voltage <u><em>U</em></u><sub>S</sub> (green), the "no-load current" <u><em>I</em></u><sub>0</sub> (green), the stator current <u><em>I</em></u><sub>S</sub> (red) and the rotor current <u><em>I</em></u><sub>R&#963;</sub> (blue) are arrowed with the same colors as in the voltage or current pointer diagram.
+				  <br>
+				  Since this animation considers operation at constant voltage and frequency, the two "green pointers" <u><em>U</em></u><sub>S</sub> and <u><em>I</em></u><sub>0</sub> will not change. Do not change the two sliders (speed = 0, <em>R</em><sub>R&#915;</sub> = 0) at first and start the animation!
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd2" name="rd">
-              <label class="tab-label" for="rd2">Anlaufpunkt (Drehzahl n = 0)</label>
+              <label class="tab-label" for="rd2">short-circuit point (speed n = 0)</label>
               <div class="tab-content">
-                In der kurzgeschlossen Rotorwicklung werden Ströme so induziert, dass das Statorfeld fast vollständig kompensiert wird. Dadurch stehen aber die Nord- und die Südpole genau gegenüber, so dass kein Drehmoment erzeugt werden kann.<br>
-				  Es ist aber der (Rotor-)Wicklungswiderstand vernachlässigt worden: die Ströme <u><em>I</em></u><sub>0</sub> und <u><em>I</em></u><sub>R&#963;</sub> müssen genau gegenphasig sein!<br>
-				  Vergrößern Sie jetzt über den unteren Schieberegler den Rotorwicklungswiderstand <u><em>R</em></u><sub>R&#915;</sub>! Je größer der Widerstand wird, um so größer wird die Phasenverschiebung zwischen den beiden Strömen und es werden somit auch die Nord- bzw. Südpole des Stator- und Rotorfeldes auseinander gedrückt: die Statorpole "schieben" die Rotorpole vor sich her!
+				  Currents are induced in the short-circuited rotor winding so that the stator field will be almost completely compensated by the rotor field. However, this has the consequence that the north and south poles are exactly opposite each other, so that no torque can be generated.
+				  <br>
+				  Up to now the (rotor) winding resistance has been neglected: this is the only reason why the currents <u><em>I</em></u><sub>S</sub> and <u><em>I</em></u><sub>R&#963;</sub> are exactly in phase opposition!
+				  <br>
+				  Now increase the rotor winding resistance <em>R</em><sub>R&#915;</sub> via the lower slider! The greater the resistance, the greater the phase shift between the two currents and thus the north and south poles of the stator and rotor field are pushed apart: the stator poles "push" the rotor poles in front of them!
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd3" name="rd">
-              <label class="tab-label" for="rd3">Motorbetrieb, Frequenzbedingung</label>
+              <label class="tab-label" for="rd3">motor, frequency condition</label>
               <div class="tab-content">
-               Stellen Sie jetzt <u><em>R</em></u><sub>R&#915;</sub>/<u><em>X</em></u><sub>&#963;&#915;</sub> = 0.20 mit dem unteren Schieberegler ein!<br>
-				  Variieren Sie jetz die Drehzahl im Bereich 0.00...1.00!<br>
-				  Bei n = 1.00 hat der Rotor die gleiche Drehzahl wie das Statorfeld: der Rotor "sieht" ein Gleichfeld<br>
-				  =&gt; es wird keine Spannung in die Rotorwicklung induziert <br>
-				  =&gt; es fließt kein Rotorstrom: der Motor hat die Leerlaufdrehzahl erreicht <br>
-				  Es gilt hier(!) die Frequenzbedingung: Statorfrequenz = Drehzahl + Rotorfrequenz. Überlegen Sie sich die Rotorfrequenz bei einer Drehzahl in Umdrehungen pro Sekunden von 0, 25, 40 und 45, wenn eine Statorfrequenz von 50 Hz unterstellt wird! <br>
-				  Wie groß ist die Leerlaufdrehzahl?
+				  Now set <u><em>R</em></u><sub>R&#915;</sub>/<u><em>X</em></u><sub>&#963;&#915;</sub> = 0.20 with the lower slider!<br>
+				  Next, vary the speed in the range from 0.00 to 1.00!<br>
+				  At n = 1.00 the rotor has the same speed as the stator field: the rotor "sees" a DC field<br>
+				  =&gt; no voltage is induced into the rotor winding <br>
+				  =&gt; no rotor current flows: the motor has reached the no-load speed <br>
+				  The frequency condition applies here: stator frequency = speed + rotor frequency. Consider the rotor frequency at a speed of 0, 25, 40 and 45 revolutions per second, if a stator frequency of 50 Hz is assumed! <br>
+				  What is then the no-load speed in revolutions per second?
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd4" name="rd">
-              <label class="tab-label" for="rd4">Generatorbetrieb</label>
+              <label class="tab-label" for="rd4">generator</label>
               <div class="tab-content">
-                Im eben betrachteten Drehzahlbereich von 0...1 haben die (roten) Statorpole die (blauen) Rotorpole vor sich "hergeschoben":<br>
-				  =&gt;  die Maschine läuft als Motor!<br>
-				Vergößern Sie jetzt die Drehzahl auf Werte &gt; 1.00! Jetzt ist es genau umgekehrt: die (blauen) Rotorpole "schieben" die (roten) Statorpole vor sich her:<br>
-				  =&gt;  die Maschine läuft als Generator!
+				  In the just considered speed range of 0...1 the (red) stator poles have "pushed" the (blue) rotor poles in front of them:<br>
+				  =&gt;  the machine runs as a motor!<br>
+				  Now increase the speed to values > 1.00! Now it is the other way round: the (blue) rotor poles "push" the (red) stator poles in front of them:<br>
+				  =&gt;  the machine runs as a generator!
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd5" name="rd">
-              <label class="tab-label" for="rd5">Bremsbetrieb</label>
+              <label class="tab-label" for="rd5">brake</label>
               <div class="tab-content">
-                Verändern Sie jetzt die Drehrichtung des Rotors (n &lt; 0) und den Rotorwiderstand auf seinen größtmöglichen Wert!<br>
-				  Manche vergleichen das Statordrehfeld und den rotierenden Rotor mit zwei mit unterschiedlicher Drehzahl rotierenden Kupplungsscheiben. Der Zustand den Sie jetzt in der Animation sehen, könnte man mit einem noch vorwärtsrollenden Fahrzeug vergleichen, bei dem der Rückwärtsgang eingekuppelt wird...
+                Now change the direction of rotation of the rotor (n &lt; 0) and the rotor resistance to its largest possible value!<br>
+				  Some compare the stator rotating field and the rotating rotor with two clutch disks rotating with different speed. The state you see now in the animation could be compared to a vehicle still rolling forward, where the reverse gear is engaged...
               </div>
             </div>
             <div class="tab">

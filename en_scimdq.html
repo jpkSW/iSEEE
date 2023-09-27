@@ -27,12 +27,11 @@
     </div>
     <!-- Identity details -->
     <section class="profileHeader">
-      <h1> SCIM/dq: Asynchronmaschine mit Käfigläufer in dq-Darstellung </h1>
-      <h3><u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine in <u>dq</u>-representation </h3>
+      <h1> SCIM/dq: <u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine in <u>dq</u>-representation </h1>
       <hr>
-      <p>Das Ersatzschaltbild der Asynchronmaschine wird meist entweder als T-Ersatzschaltbild (T-ESB) oder wie in der ersten Animation zur Asynchronmaschine als Γ-Ersatzschaltbild (Γ-ESB) dargestellt. als Übersetzungsverhältnis wird im ersten Fall (T-ESB) das Windungszahlverhältnis und im zweiten Fall Leerlaufspannungsverhältnis (Γ-ESB) bei Speisung von der Statorseite gewählt.</p>
-      <p>Wird als Übersetzung hingegen das Leerlaufspannungsverhältnis bei Speisung von Rotorseite gewählt, erhält man das abgebildete inverse Γ-ESB.</p>
-<p>Auch hier sind die Schieberegler wieder zunächst so eingestellt, dass eine ideale verlustlose Rotorwicklung bei stillstehendem Rotor unterstellt wird. Betrachtet wird wiederum der Betrieb am starren Netz, d.h. die Statorspannung und -frequenz bleiben konstant.</p>
+		<p>The equivalent circuit of the induction machine is usually shown either as a T-equivalen-circuit (T-EC) or, as in the first animation for the induction machine, as a Γ-equivalent-circuit (Γ-EC). The transmittions ratio is selected as the ratio of the number of windings in the first case (T-ESB) and the open-circuit voltage ratio with voltage-input from the stator side in the second case (Γ-ESB).</p>
+		<p>If, on the other hand, the open-circuit voltage ratio with voltage-input from the rotor side is selected as the transmittion ratio, the inverse Γ-ESB shown is obtained.</p>
+		<p> Here again the sliders are initially set so that an ideal lossless rotor winding is assumed and the rotor is at standstill. Also the operation in a grid with constant voltage and constant frequency is considered again.</p>
 
       <!-- animation-block -->
      
@@ -48,44 +47,44 @@
           <div class="tabs">
             <div class="tab">
               <input type="radio" id="rd1" name="rd">
-              <label class="tab-label" for="rd1">Ersatzschaltbild</label>
+              <label class="tab-label" for="rd1">equivalent cicuit diagramm (ECD)</label>
               <div class="tab-content">
-				  In diesem Ersatzschaltbild ist die  Strangspannung <u><em>U</em></u><sub>S</sub> (grün) wieder als Bezug für die Ströme gewählt worden. Der Statorstrom <u><em>I</em></u><sub>S</sub> (rot) ist der gleiche wie im ursprünglichen Γ-ESB, aber er teilt sich jetzt auf zwei Stromzweige auf: aus dem ursprünglichen "Leerlaufstrom" <u><em>I</em></u><sub>0</sub> wird jetzt der "Längstrom" <u><em>I</em></u><sub>d</sub> (grün, im Anlaufpunkt sehr klein und fast nicht zu sehen &#128527;), und aus dem ursprünglichen "Rotorstrom" <u><em>I</em></u><sub>R&#963;</sub> wird jetzt der "Querstrom" <u><em>I</em></u><sub>q</sub> (blau). 
+				  In this equivalent circuit diagram, the stator voltage <u><em>U</em></u><sub>S</sub> (green) has again been selected as the reference for the currents. The stator current <u><em>I</em></u><sub>S</sub> (red) is the same as in the original Γ-ECD, and it splits aganin into two current branches: the initial "no-load current" <u><em>I</em></u><sub>0</sub> now becomes the "direct current" <u><em>I</em></u><sub>d</sub> (green, very small in the starting point and almost not visible &#128527;), and the original "rotor current" <u><em>I</em></u><sub>R&#963;</sub> now becomes the "quadrature current" <u><em>I</em></u><sub>q</sub> (blue).
 				  <br>
-				  Beide Ströme <u><em>I</em></u><sub>d</sub> und <u><em>I</em></u><sub>q</sub> müssen senkrecht aufeinanderstehen (warum?), wobei der "Querstrom" <u><em>I</em></u><sub>q</sub> im inversen Γ-ESB genau um den Faktor 1/(1&nbsp;-&nbsp;&sigma;) größer ist als der ursprüngliche "Rotorstrom" <u><em>I</em></u><sub>R&#963;</sub> (warum eigentlich?). 
+				  The two currents <u><em>I</em></u><sub>d</sub> and <u><em>I</em></u><sub>q</sub> must be perpendicular to each other (why?), with the "quadrature current" <u><em>I</em></u><sub>q</sub> in the inverse Γ-ECD being larger by exactly a factor of 1/(1&nbsp;-&nbsp;&sigma;) than the original "rotor current" <u><em>I</em></u><sub>R&#963;</sub> (why, really?).
 				  <br>
-				  Beide Ströme (<u><em>I</em></u><sub>R&#963;</sub> und <u><em>I</em></u><sub>q</sub>) müssen aber im Prinzip die gleiche Phasenlage haben. Es ist aber üblich, im inversen Γ-ESB den Statorstrom als Summe aus Längs- und Querstrom darzustellen, wohingegen im Γ-ESB der Leerlaufstrom gerne als Summe aus Stator- und Rotorstrom dargestellt wird. Deshalb sind die beiden Ströme <u><em>I</em></u><sub>q</sub> und <u><em>I</em></u><sub>R&#963;</sub> genau entgegen gerichtet.
+				  Both currents (<u><em>I</em></u><sub>R&#963;</sub> and <u><em>I</em></u><sub>q</sub>) must be in phase, the factor <u><em>I</em></u><sub>R&#963;</sub> / <u><em>I</em></u><sub>q</sub> = 1/(1&nbsp;-&nbsp;&sigma;) is real. However, it is common to represent the stator current as the sum of direct and quadrature current in the inverse Γ-ECD, whereas in the Γ-ECD the no-load current is represented as the sum of stator and rotor current. Therefore, the two currents <u><em>I</em></u><sub>q</sub> and <u><em>I</em></u><sub>R&#963;</sub> are exactly opposite.
 				  <br>
-				  Starten Sie die Animation und variieren dann erst nur die Drehzahl, die Frequenz soll nocht nicht verändert werden!
+				  Start the animation and then vary only the speed, the frequency should not be changed yet!
 				  <br>
-				  Sie können dabei beobachten, dass der Querstrom <u><em>I</em></u><sub>q</sub> (blau) immer im Leerlaufpunkt die Stromortskurve schneidet: er hat somit die gleiche Richtung wie der ursprüngliche "Rotorstrom" <u><em>I</em></u><sub>R&#963;</sub> und ist genau um den Betrag "länger", der außerhalb der Stromortskurve liegt.
+				  You can observe that the cross current <u><em>I</em></u><sub>q</sub> (blue) always intersects the current curve at the no-load-point: So it has the same direction as the original "rotor current" <u><em>I</em></u><sub>R&#963;</sub> and is "longer" exactly by the amount that lies outside the current curve.
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd2" name="rd">
-              <label class="tab-label" for="rd2">Grundstellbereich, Frequenzbedingung</label>
+              <label class="tab-label" for="rd2">basic range (|n| ≤ 1) and frequency condition</label>
               <div class="tab-content">
-                Stellen Sie die Drehzahl auf 0.9 ein und verstellen Sie dann die (Stator-)Frequenz auf beliebige Werte <em>f</em><sub>S</sub>&#8804;1 ein!
+				  Set the speed to 0.9 and then adjust the (stator) frequency to any value <em>f</em><sub>S</sub>&#8804;1!
 				  <br>
-				  Zwei Parameter werden dabei gleichzeitig mit verstellt:
+				  Two parameters are adjusted at the same time:
 				  <ul>
-				  	<li>Die Differenz aus Statorfrequenz und Drehzahl bleibt zunächst konstant, so dass dadurch die Rotorfrequenz auch erst einmal konstant bleibt - es gilt die Frequenzbedingung <em>f</em><sub>S</sub> = <em>f</em><sub>R</sub> + <em>p</em> &#183; <em>n</em>, bzw. <em>f</em><sub>R</sub> = <em>f</em><sub>S</sub> - <em>p</em> &#183; <em>n</em>.</li>
-					<li>Im Grundstellbereich wird die Statorspannung <em>U</em><sub>S</sub> proportional zur Frequenz <em>f</em><sub>S</sub> verstellt: Es gilt hier: <em>U</em><sub>S</sub>/<em>f</em><sub>S</sub> = const.</li>
+				  	<li>The difference between the stator frequency and the rotational speed remains constant at first, so that the rotor frequency also remains constant at first - the well-known frequency condition applies <em>f</em><sub>S</sub> = <em>f</em><sub>R</sub> + <em>p</em> &#183; <em>n</em>, respectively <em>f</em><sub>R</sub> = <em>f</em><sub>S</sub> - <em>p</em> &#183; <em>n</em>.</li>
+					<li>In the basic range (|n| ≤ 1), the stator voltage <em>U</em><sub>S</sub> is adjusted in proportion to the frequency <em>f</em><sub>S</sub>: <em>U</em><sub>S</sub>/<em>f</em><sub>S</sub> = const.</li>
 				  </ul>
-				  Wenn die Rotorfrequenz konstant bleibt, ändern sich im Ersatzschaltbild alle drei Impedanzen gleichzeitig und damit auch die Gesamtimpedanz proportional zur Statorfrequenz. Wird aber die Statorspannung ebenfalls proportional zur Frequenz verstellt, bleibt der Statorstrom <u><em>I</em></u><sub>S</sub> = <u><em>U</em></u><sub>S</sub> / <u><em>Z</em></u><sub>ges</sub> ebenfalls konstant. Das einzige, was sich ändert sind die Drehzahl und die Frequenzen in der Animation.
+				  If the rotor frequency remains constant, all three impedances change simultaneously in the equivalent circuit and thus the total impedance is also proportional to the stator frequency. However, if the stator voltage is also adjusted proportionally to the frequency, the stator current <u><em>I</em></u><sub>S</sub> = <u><em>U</em></u><sub>S</sub> / <u><em>Z</em></u><sub>ges</sub> also remains constant. The only things that change are the speed and the frequencies in the animation.
 				  <br>
-				  Stellen Sie jetzt die Frequenz <em>f</em><sub>S</sub> = 0 ein! Ist das plausibel? Variieren Sie auch einmal die Drehzahl!
+				  Now set the frequency <em>f</em><sub>S</sub> = 0! Is this plausible? Vary the speed at <em>f</em><sub>S</sub> = 0!
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd3" name="rd">
-              <label class="tab-label" for="rd3">Feldschwächbereich</label>
+              <label class="tab-label" for="rd3">field weakening (|n| &#62; 1) with constant voltage</label>
               <div class="tab-content">
-               Stellen Sie die Drehzahl wieder auf 0.9 ein und verstellen Sie dann die (Stator-)Frequenz auf beliebige Werte <em>f</em><sub>S</sub> &#62; 1 ein!
+				  Set the speed again to 0.9 and then adjust the (stator) frequency to any value <em>f</em><sub>S</sub> &#62; 1!
 				  <br>
-				  Es wird jetzt nur noch die Drehzahl "mitgezogen", die Statorspannung bleibt jetzt konstant.
+				  Now only the speed is "pulled along", the stator voltage remains constant now.
 				  <br><br>
-				  Auch hier ändern sich im Ersatzschaltbild alle drei Impedanzen gleichzeitig und damit auch die Gesamtimpedanz proportional zur Statorfrequenz. Wird die Statorspannung jetzt aber konstant gehalten, wird der Statorstrom proportional zur Frequenz kleiner. Gleichzeitig wird die Stromortskurve kleiner und verschiebt sich in Richtung des Ursprungs der komplexen Ebene.
+				  Here, too, all three impedances in the equivalent circuitchange simultaneously and thus also the total impedance proportional to the stator frequency. However, if the stator voltage is now kept constant, the stator current becomes smaller in proportion to the frequency. At the same time, the current locus curve becomes smaller and shifts in the direction of the origin of the complex plane.
               </div>
             </div>
             <div class="tab">

@@ -27,13 +27,15 @@
     </div>
     <!-- Identity details -->
     <section class="profileHeader">
-      <h1> SCIM/FC: Asynchronmaschine mit feldorientierter Regelung </h1>
-      <h3><u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine with <u>F</u>ield-oriented <u>C</u>ontrol </h3>
+      <h1> SCIM/FC: <u>S</u>quirrel-<u>C</u>age <u>I</u>nduction <u>M</u>achine with <u>F</u>ield-oriented <u>C</u>ontrol </h1>
       <hr>
-      <p>Die beiden Ströme <u><em>I</em></u><sub>d</sub> (grün) bzw. <u><em>I</em></u><sub>q</sub> (blau) im inversen Γ-ESB weisen eine Phasenverschiebung von exakt 90° auf. (Warum eigentlich?) Deshalb macht es Sinn, den Längsstrom <u><em>I</em></u><sub>d</sub> als "feldbildend" und den Querstrom <u><em>I</em></u><sub>q</sub> als "Drehmoment-bildend" zu interpretieren.</p>
-      <p>Ähnlich wie bei der Drehzahlverstellung der Gleichstrommaschine wird man den Längstrom solange konstant halten, wie es die Statorspannung zuläßt. Die mit dem Längstrom erzeugte Flussverkettung <em>L</em><sub>m</sub><em>I</em><sub>d</sub> wird dabei analog zum Erregerfluss der Gleichstrommaschinen konstant gehalten.</p>
-
-      <p>Alle Größen mit Ausnahme der Drehzahl sind auf die Nennwerte bezogen. Die Drehzahl ist auf die Leerlaufdrehzahl bei Nennfrequenz bezogen. Starten Sie die Animation! </p>
+		<p>
+			The two currents <u><em>I</em></u><sub>d</sub> (green) and <u><em>I</em></u><sub>q</sub> (blue) in the inverse Γ-ECD have a phase shift of exactly 90°. (Why?) Therefore, it makes sense to interpret the direct current <u><em>I</em></u><sub>d</sub> as "field-forming" and the transverse current <u><em>I</em></u><sub>q</sub> as "torque-forming".
+		</p><p>
+			Similar to the speed adjustment of the DC machine, the direct current will be kept constant as long as the stator voltage allows it. The flux linkage <em>L</em><sub>m</sub><em>I</em><sub>d</sub> generated with the direct current is kept constant analogous to the excitation flux of the DC machines.
+		</p><p>
+			All values except the speed are referred to their nominal values. The speed is related to the no-load speed at nominal frequency. Start the animation! 
+		</p>
 
       <!-- animation-block -->
      
@@ -49,44 +51,44 @@
           <div class="tabs">
             <div class="tab">
               <input type="radio" id="rd1" name="rd">
-              <label class="tab-label" for="rd1">Grundstellbereich und Rotorfrequenz</label>
+              <label class="tab-label" for="rd1">basic range (|n| &#x2264; 1) and rotor frequency</label>
               <div class="tab-content"> 
-				  Variieren Sie das Drehmoment (unterer Schieberegler "torque") und beobachten dabei vor allem den ganz oben angegebenen Zahlenwert für die Rotorfrequenz (f_R =...)! Welchen Zusammenhang gibt es zwischen der Rotorfrequenz und dem Drehmoment? Wie kann eine negativer Zahlenwert für die Rotorfrequenz interpretiert werden?
+				  Vary the torque (lower slider "torque") and observe especially the numerical value given at the very top for the rotor frequency (f_R =...)! What is the relation between the rotor frequency and the torque? How can a negative numerical value for the rotor frequency be interpreted?
 				  <br><br>
-				  Stellen Sie einen beliebigen Wert für das Drehmoment im Bereich von -1...+1 ein. Variieren Sie dann die Drehzahl ebenfalls im Bereich von -1....+1! Welche Werte verstellen sich jetzt?
+				  Set any value for the torque in the range -1...+1. Then vary the speed also in the range of -1....+1! Which values are now changing?
 				  <br><br>
-				  Verifizieren Sie Ihre Beobachtungen anhand folgender Aussagen:
+				  Verify your observations using the following statements:
 				  <ul>
-					  <li>Das Drehmoment ist proportional zur Rotorfrequenz UND zum Querstrom.</li>
-					  <li>Die Statorfrequenz UND die Statorspannung steigen proportional zur Drehzahl, wenn die Rotorfrequenz konstant bleibt. Die Aufteilung zwischen Längs- und Querstrom wird nicht beeinflusst, wenn nur die Statorfrequenz verändert wird. </li>
+					  <li>The torque is proportional to the rotor frequency AND the q-current.</li>
+					  <li>The stator frequency AND the stator voltage increase proportionally to the speed if the rotor frequency remains constant. The split between d- and q-current is not affected if only the stator frequency is changed.</li>
 				  </ul>
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd2" name="rd">
-              <label class="tab-label" for="rd2">Feldschwächung</label>
+              <label class="tab-label" for="rd2">field weakening (|n| &#x3e; 1) with Id &#x221D; 1 / |n|</label>
               <div class="tab-content">
-                Stellen Sie das Nenndrehmoment ein (torque -&#62; 1.00) und erhöhen Sie die Drehzahl auf Werte &#62; 1 (speed -&#62; 1.00 ... 2.00)! 
+				  Set the nominal torque (torque -&#62; 1.00) and increase the speed to values &#62; 1 (speed -&#62; 1.00 ... 2.00)!
 				  <br><br>
-				  Eine Feldschwächung wird hier analog zur Feldschwächung der Gleichstrommaschine realisiert, indem der Längsstrom <em>I</em><sub>d</sub> wie der Erregerstrom der Gleichstrommaschine umgekehrt proportional zur Drehzahl reduziert wird. Um aber das geforderte Drehmoment trotzdem erzeugen zu können, muss der Querstrom <em>I</em><sub>q</sub> entsprechend vergrößert werden. 
+				  A field weakening is realized here analogous to the field weakening of the DC machine, in that the direct current <em>I</em><sub>d</sub> is reduced inversely proportional to the speed like the excitation current of the DC machine. However, in order to be able to generate the required torque nevertheless, the quadrature current <em>I</em><sub>q</sub> must be increased accordingly.
 				  <br><br>
-				  Abhängig von der last- und drehzahlabhängigen Spannung und Frequenz ändert sich die Stromortskurve (SOK). Steigt die Statorfrequenz <em>f</em><sub>S</sub> schneller an als die die Statorspannung <em>U</em><sub>S</sub>, wird die SOK kleiner und der Stromzeiger <u><em>I</em></u><sub>S</sub> (rot) "wandert" bis zum Kipppunkt.
+				  Depending on the load- and the speed-dependent voltage and frequency, the current locus (CL) changes. If the stator frequency <em>f</em><sub>S</sub> increases faster than the stator voltage <em>U</em><sub>S</sub>, the CL becomes smaller and the current phasor <u><em>I</em></u><sub>S</sub> (red) "moves" to the pull-out point.
 				  <br><br>
-				  Verifizieren Sie diese Aussage in der Animation sowohl für den motorischen als auch den generatorischen Betrieb!
+				  Check this statement in the animation for both motor and generator operation!
               </div>
             </div>
             <div class="tab">
               <input type="radio" id="rd3" name="rd">
-              <label class="tab-label" for="rd3">Spannungsreserve</label>
+              <label class="tab-label" for="rd3">voltage reserve</label>
               <div class="tab-content">
-				  In der Feldschwächung wird hier der Längsstrom <em>I</em><sub>d</sub> wie der Erregerstrom <em>I</em><sub>f</sub> der Gleichstrommaschine umgekehrt proportional zur Drehzahl reduziert. Bei der Gleichstrommaschine wird dadurch die induzierte Spannung <em>U</em><sub>i</sub> konstant gehalten.
+				  In the case of field weakening, the direct current <em>I</em><sub>d</sub> is reduced here in inverse proportion to the speed, like the excitation current <em>I</em><sub>f</sub> of the DC machine. In the case of the DC machine, this keeps the induced voltage <em>U</em><sub>i</sub> constant.
 				  <br><br>
-				  Hier wird durch diese Maßnahme die "induzierte" Spannung <em>&omega;</em><sub>S</sub><em>L</em><sub>m</sub><em>I</em><sub>d</sub> zwar auch konstant gehalten, aber der Spannungsabfall <em>&omega;</em><sub>S</sub><em>L</em><sub>&sigma;</sub><em>I</em><sub>S</sub> steigt natürlich mit der Statorfrequenz. Ein damit vergleichbares Phänomen gibt es bei der Gleichstrommaschine nicht.
+				  Here, the "induced" voltage <em>&omega;</em><sub>S</sub><em>L</em><sub>m</sub><em>I</em><sub>d</sub> is also kept constant by this method, but the voltage drop <em>&omega;</em><sub>S</sub><em>L</em><sub>&sigma;</sub><em>I</em><sub>S</sub> naturally increases with the stator frequency. A comparable phenomenon does not exist for the DC machine.
 				  <br><br>
-				  Variieren Sie noch einmal Drehzahl und Drehmoment im Feldschwächbereich und beobachten Sie dabei den Zahlenwert für die Statorspannung! 
+				  Vary the speed and torque in the field weakening range again and observe the numerical value for the stator voltage!
 				  <br><br>
-				  Warum steigt der Spannungsbedarf im generatorischen Betrieb nicht so stark an wie im motorischen Betrieb? Machen Sie hierzu jeweils einen Screenshot der Stromzeiger für einen generatorischen und einen motorischen Betriebspunkt im Feldwächbereich und skizzieren darin einmal die genannten beiden Spannungen, die in Summe wieder den senkrecht nach oben zeigenden Statorspannungszeiger ergeben müssen! 
-              </div>
+				  Why does the voltage demand not increase as much in generator operation as in motor operation? Make a screenshot of the current phasor for a generator and a motor operating point in the field weakening range and sketch the two voltages mentioned! In sum they must result in the stator voltage phasor pointing vertically upwards again!
+				</div>
             </div>
             <div class="tab">
               <input type="radio" id="rdcl" name="rd">

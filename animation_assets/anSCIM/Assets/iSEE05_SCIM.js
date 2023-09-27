@@ -7340,7 +7340,7 @@ if (reversed == null) { reversed = false; }
 		const titGen = "induction generator", titMot = "induction motor", titBrake = "induction brake";
 		const centerX = 240, centerY = 300;
 		const rSi = 165, rRe = 165 - 50; // center + stator inner radius
-		const xSmin = 1.05, xSmax = 1.5, xSdel = 0.05; // range for xS
+		//const xSmin = 1.05, xSmax = 1.5, xSdel = 0.05; // range for xS
 		var phBaseX, phBaseY;
 		var phNom = 160; // phasor nominal length = 1 p.u.
 		const W32 = Math.sqrt(3.0) / 2.0;
@@ -7376,11 +7376,10 @@ if (reversed == null) { reversed = false; }
 		var stCurrent = []; // objects for U1, V1, W1, U2, V2, W2
 		var roCurrent = []; // objects for u1, u2, v1, v2, w1, w2
 		const CURR_SCALE = 1.4;
-		var vecUS, vecIS, vecIR, vecI0, locus; // objects for phasor-diagram
+		var vecUS, vecIS, vecIR, vecI0;//, locus; // objects for phasor-diagram
 		var roShaft, phiRo, phiSt;
-		var sliderBarRR, sliderRR, txtRR;
-		var sliderBarSpeed, sliderSpeed, txtSpeed;
-		var infoXS, infoParam;
+		var sliderRR, sliderSpeed;
+		//var infoXS, infoParam;
 		var scim = { // params & status of the SCIM
 			sigma: 0.15,
 			x: 3,
@@ -7395,7 +7394,7 @@ if (reversed == null) { reversed = false; }
 			iR: [0.9, 90]
 		};
 		// stuff for start&stop, direction of speed&torque
-		var startBtn, stopBtn, touch; // speedCW, speedCCW, torqCW, torqCCW, 
+		var startBtn, stopBtn, touch,goFrame; // speedCW, speedCCW, torqCW, torqCCW, 
 		const DBG_CREATE = false, DBG_ECD = true;
 		
 		init();
@@ -7432,24 +7431,25 @@ if (reversed == null) { reversed = false; }
 		
 			function createBackground() { // background, stator-yoke, equiv. circuit
 				// TTZ-logo:
-				back = new lib.bckGrndTTZthws();
+				let back = new lib.bckGrndTTZthws();
 				back.x = 0;
 				back.y = 0;
 				backGround.addChild(back);
 		
-				eqCirc = new lib.ESB_IM();
+				let eqCirc = new lib.ESB_IM();
 				eqCirc.x = 713;
 				eqCirc.y = 90;
 				eqCirc.scale = 1.1;
 				backGround.addChild(eqCirc);
 		
-				core = new lib.stYoke();
+				let core = new lib.stYoke();
 				core.x = centerX;
 				core.y = centerY;
 				backGround.addChild(core);
 			}
 			function createStatorAT() { // stator ampere turns
 				//let amp = [-1.0, 0.5, 0.5];
+				let tmp = 0.0;
 				for (let phase = 0; phase < 3; phase++) {
 					stCurrent[phase] = new lib.iSp();
 					stCurrent[phase + 3] = new lib.iSm();
@@ -7466,6 +7466,7 @@ if (reversed == null) { reversed = false; }
 			}
 			function createRotorAT() { // roShaft, rotor ampere turns, phiRo
 				const ROTOR_SCALE = 1.4;
+				let tmp = 0.0;
 				roShaft = new lib.roShaft();
 				roShaft.x = centerX;
 				roShaft.y = centerY;
@@ -7497,53 +7498,9 @@ if (reversed == null) { reversed = false; }
 				createSlider();
 		
 				function createSlider() { // 2 sliders
-		
-					// 1. slider for R_R:
-					/*sliderBarRR = new lib.SliderBarP();
-					sliderRR = new lib.Slider();
-					sliderBarRR.x = sliderRR.x = phBaseX;
-					sliderBarRR.y = sliderRR.y = stopBtn.y;
-					touch.addChild(sliderBarRR);
-					touch.addChild(sliderRR);
-					txtRR = new c.Text("0.00", "normal 10px Arial", "#000000");
-					txtRR.textAlign = "center";
-					txtRR.x = sliderBarRR.x - sliderBarRR.nominalBounds.width / 2;
-					sliderRR.x = txtRR.x;
-					txtRR.y = sliderRR.y - 23;
-					txtRR.width = 40;
-					touch.addChild(txtRR);
-					let labelRR = new c.Text("R_R\u0393/X_\u03C3\u0393:", "normal 16px Arial", "#000000");
-					// http://www.javascripter.net/faq/greekletters.htm
-					labelRR.textAlign = "left";
-					labelRR.x = phBaseX - 210;
-					labelRR.y = sliderBarRR.y - 9;
-					labelRR.width = 50;
-					backGround.addChild(labelRR);*/
-		
+					
 					sliderRR = new createSliderObj(phBaseX, stopBtn.y, "R_R\u0393/X_\u03C3\u0393:");
 					// http://www.javascripter.net/faq/greekletters.htm
-					//touch.addChild(sliderRR);
-		
-					// 2. slider for torque:
-					/*sliderBarSpeed = new lib.SliderBar();
-					sliderSpeed = new lib.Slider();
-					sliderBarSpeed.x = sliderSpeed.x = phBaseX;
-					sliderBarSpeed.y = sliderSpeed.y = stopBtn.y - 50;
-					touch.addChild(sliderBarSpeed);
-					touch.addChild(sliderSpeed);
-					txtSpeed = new c.Text("0.00", "normal 10px Arial", "#000000");
-					txtSpeed.textAlign = "center";
-					txtSpeed.x = sliderBarSpeed.x - sliderBarSpeed.nominalBounds.width / 6;
-					sliderSpeed.x = txtSpeed.x;
-					txtSpeed.y = sliderSpeed.y - 23;
-					txtSpeed.width = 40;
-					touch.addChild(txtSpeed);
-					let labelSpd = new c.Text("speed (p.u.):", "normal 16px Arial", "#000000");
-					labelSpd.textAlign = "left";
-					labelSpd.x = phBaseX - 210;
-					labelSpd.y = sliderBarSpeed.y - 9;
-					labelSpd.width = 50;
-					backGround.addChild(labelSpd);*/
 					
 					sliderSpeed = new createSliderObj(phBaseX, stopBtn.y - 50, "speed (p.u.):");
 					sliderSpeed.slider.x += sliderSpeed.bar.nominalBounds.width / 3;
@@ -7595,7 +7552,7 @@ if (reversed == null) { reversed = false; }
 			}
 			function createPhasorDiag() { // phasors & header
 				// first, define the locus as background:
-				locusIS = new lib.locus();
+				let locusIS = new lib.locus();
 				game.addChild(locusIS);
 		
 				// vecUS stays constant
@@ -7709,38 +7666,6 @@ if (reversed == null) { reversed = false; }
 					}
 					calcECD();
 				});
-		
-				/*sliderRR.addEventListener("pressmove", function (e) {
-					// update GUI, uPn & vecUP.scale => updatePhasors
-					let p = stage.globalToLocal(e.stageX, e.stageY);
-					sliderRR.x = limitIt(p.x, sliderBarRR.x - sliderBarRR.nominalBounds.width / 2,
-						sliderBarRR.x + sliderBarRR.nominalBounds.width / 2)
-					txtRR.x = sliderRR.x;
-					scim.rR = (0.5 + (sliderRR.x - sliderBarRR.x) / sliderBarRR.nominalBounds.width);
-					scim.rR = step(scim.rR, 0.05);
-					txtRR.text = scim.rR.toFixed(2);
-					scim.rR *= scim.xsig;
-					calcECD();
-				});
-				
-				sliderSpeed.addEventListener("pressmove", function (e) {
-					// update GUI & state.torque => updatePhasors
-					let p = stage.globalToLocal(e.stageX, e.stageY);
-					sliderSpeed.x = limitIt(p.x, sliderBarSpeed.x - sliderBarSpeed.nominalBounds.width / 2,
-						sliderBarSpeed.x + sliderBarSpeed.nominalBounds.width / 2)
-					txtSpeed.x = sliderSpeed.x;
-					scim.speed = (0.5 + 3.0 * (sliderSpeed.x - sliderBarSpeed.x) / sliderBarSpeed.nominalBounds.width);
-					scim.speed = step(scim.speed, 0.05);
-					txtSpeed.text = scim.speed.toFixed(2);
-					if (scim.speed > 1) { // generator
-						header.text = titGen;
-					} else if (scim.speed < 0.0) {
-						header.text = titBrake;
-					} else {
-						header.text = titMot;
-					}
-					calcECD();
-				});*/
 			
 				function limitIt(value, min, max) {
 					if (value < min)
@@ -7765,6 +7690,7 @@ if (reversed == null) { reversed = false; }
 			function setStatorAT([iS, phi]) { //
 				phi += scim.omt;
 				phiSt.rotation = phi;
+				let amp = 0.0;
 				for (let phase = 0; phase < 3; phase++) {
 					amp = -iS * Math.sin(phi / rad2deg - phase * Math.PI * 2 / 3);
 					for (let side = 0; side < 2; side++) {
@@ -7791,6 +7717,7 @@ if (reversed == null) { reversed = false; }
 				phiRo.rotation = phi;
 				let co = Math.cos((scim.theta - 90) / rad2deg);
 				let si = Math.sin((scim.theta - 90) / rad2deg);
+				let amp =0.0;
 				for (let phase = 0; phase < 3; phase++) {
 					amp = -iR * Math.sin((phi - scim.theta + 90) / rad2deg - phase * Math.PI * 2 / 3);
 					for (let side = 0; side < 2; side++) {
