@@ -17,14 +17,8 @@
 <body>
   <!-- Header content -->
   <header>
-    <div class="profileLogo">
-      <!-- Profile logo. Add a img tag in place of <span>. -->
-      <p class="logoPlaceholder">
-        <a href="https://ttz-emo.thws.de/" title="Technologie Transfer Zentrum Elektromobilität" target="_self">
-          <img src="images/TTZLogo.svg" alt="logo" href="https://ttz-emo.thws.de/">
-        </a>
-      </p>
-    </div>
+  <div id="logo-container"></div>
+  <script src="de_profileLogo.js"></script>
     <!-- Identity details -->
     <section class="profileHeader">
       <h1> SCIM/FC: Asynchronmaschine mit feldorientierter Regelung </h1>
@@ -97,9 +91,11 @@
       </div>
       <!-- nav-buttons -->
       <hr>
+      <div id="navButtons-container"></div>
      <script src="de_navButtons.js"></script>
     </section>
   </header>
+  <div id="footer-container"></div>
   <script src="de_footer.js"></script>
   <script type="text/javascript">
     $(function () {

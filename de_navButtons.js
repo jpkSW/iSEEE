@@ -1,4 +1,4 @@
-document.write('\
+document.getElementById("navButtons-container").innerHTML = '\
 	<h3 align="center"><a href="index.html"> iSEEE: interaktives Seminar Einführung in die Elektromagnetische\
           Energiewandlung</a> </h3>	\
 	<aside class="navBar">\
@@ -41,4 +41,4 @@ document.write('\
             alt="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"\
             title="Asynchronmaschine mit feldorientierter Regelung (SCIM/FC)"> </a>\
       </div>\
-    </aside> ');
+    </aside > ';
